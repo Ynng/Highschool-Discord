@@ -1,6 +1,9 @@
 # vscode local history extension
 .history/
 
+# discord bot token
+tokens.json
+
 # Logs
 logs
 *.log
