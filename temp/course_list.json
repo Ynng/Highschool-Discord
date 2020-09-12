@@ -1,0 +1,1217 @@
+{
+  "ATB1OM": {
+    "department": "AU Dance",
+    "name": "Ballet",
+    "grade": 1
+  },
+  "ATM1OM": {
+    "department": "AU Dance",
+    "name": "Modern Dance",
+    "grade": 1
+  },
+  "ATB2OM": {
+    "department": "AU Dance",
+    "name": "Ballet",
+    "grade": 2
+  },
+  "ATM2OM": {
+    "department": "AU Dance",
+    "name": "Modern Dance",
+    "grade": 2
+  },
+  "ATB3MM": {
+    "department": "AU Dance",
+    "name": "Ballet",
+    "grade": 3
+  },
+  "ATM4MM": {
+    "department": "AU Dance",
+    "name": "Modern Dance",
+    "grade": 4
+  },
+  "ATB4MM": {
+    "department": "AU Dance",
+    "name": "Ballet",
+    "grade": 4
+  },
+  "ADA1OM": {
+    "department": "AU Drama",
+    "name": "Drama",
+    "grade": 1
+  },
+  "ADD1OM": {
+    "department": "AU Drama",
+    "name": "Drama Production",
+    "grade": 1
+  },
+  "ADA2OM": {
+    "department": "AU Drama",
+    "name": "Drama",
+    "grade": 2
+  },
+  "ADD2OM": {
+    "department": "AU Drama",
+    "name": "Drama Production",
+    "grade": 2
+  },
+  "ADF3MM": {
+    "department": "AU Drama",
+    "name": "Director\u2019s Craft",
+    "grade": 3
+  },
+  "ADD3MM": {
+    "department": "AU Drama",
+    "name": "Drama Production",
+    "grade": 3
+  },
+  "ADA4MM": {
+    "department": "AU Drama",
+    "name": "Drama",
+    "grade": 4
+  },
+  "ADD4MM": {
+    "department": "AU Drama",
+    "name": "Drama Production",
+    "grade": 4
+  },
+  "AMK1OM": {
+    "department": "AU Music",
+    "name": "Piano",
+    "grade": 1
+  },
+  "AMS1OM": {
+    "department": "AU Music",
+    "name": "Strings",
+    "grade": 1
+  },
+  "AMC1OM": {
+    "department": "AU Music",
+    "name": "Musicianship",
+    "grade": 1
+  },
+  "AMV1OM": {
+    "department": "AU Music",
+    "name": "Vocal",
+    "grade": 1
+  },
+  "AMW1OM": {
+    "department": "AU Music",
+    "name": "Woodwinds",
+    "grade": 1
+  },
+  "AMK2OM": {
+    "department": "AU Music",
+    "name": "Piano",
+    "grade": 2
+  },
+  "AMS2OM": {
+    "department": "AU Music",
+    "name": "Strings",
+    "grade": 2
+  },
+  "AMC2OM": {
+    "department": "AU Music",
+    "name": "Musicianship",
+    "grade": 2
+  },
+  "AMV2OM": {
+    "department": "AU Music",
+    "name": "Vocal",
+    "grade": 2
+  },
+  "AMW2OM": {
+    "department": "AU Music",
+    "name": "Woodwinds",
+    "grade": 2
+  },
+  "AMK3MM": {
+    "department": "AU Music",
+    "name": "Piano",
+    "grade": 3
+  },
+  "AMS3MM": {
+    "department": "AU Music",
+    "name": "Strings",
+    "grade": 3
+  },
+  "AMC3MM": {
+    "department": "AU Music",
+    "name": "Musicianship",
+    "grade": 3
+  },
+  "AMV3MM": {
+    "department": "AU Music",
+    "name": "Vocal",
+    "grade": 3
+  },
+  "AMW3MM": {
+    "department": "AU Music",
+    "name": "Woodwinds",
+    "grade": 3
+  },
+  "AMK4MM": {
+    "department": "AU Music",
+    "name": "Piano",
+    "grade": 4
+  },
+  "AMS4MM": {
+    "department": "AU Music",
+    "name": "Strings",
+    "grade": 4
+  },
+  "AMC4MM": {
+    "department": "AU Music",
+    "name": "Musicianship",
+    "grade": 4
+  },
+  "AMV4MM": {
+    "department": "AU Music",
+    "name": "Vocal",
+    "grade": 4
+  },
+  "AMW4MM": {
+    "department": "AU Music",
+    "name": "Woodwinds",
+    "grade": 4
+  },
+  "AVI1OM": {
+    "department": "AU Visual Arts",
+    "name": "Visual Arts",
+    "grade": 1
+  },
+  "AWM1OM": {
+    "department": "AU Visual Arts",
+    "name": "Drawing",
+    "grade": 1
+  },
+  "AVI2OM": {
+    "department": "AU Visual Arts",
+    "name": "Visual Arts",
+    "grade": 2
+  },
+  "AWM2OM": {
+    "department": "AU Visual Arts",
+    "name": "Drawing",
+    "grade": 2
+  },
+  "AVI3MM": {
+    "department": "AU Visual Arts",
+    "name": "Visual Arts",
+    "grade": 3
+  },
+  "AWM3MM": {
+    "department": "AU Visual Arts",
+    "name": "Drawing",
+    "grade": 3
+  },
+  "AVI4MM": {
+    "department": "AU Visual Arts",
+    "name": "Visual Arts",
+    "grade": 4
+  },
+  "AWM4MM": {
+    "department": "AU Visual Arts",
+    "name": "Drawing",
+    "grade": 4
+  },
+  "ATP1O1": {
+    "department": "Dance",
+    "name": "Dance",
+    "grade": 1
+  },
+  "ATP2O1": {
+    "department": "Dance",
+    "name": "Dance",
+    "grade": 2
+  },
+  "ATP3M1": {
+    "department": "Dance",
+    "name": "Dance",
+    "grade": 3
+  },
+  "ATP4M1": {
+    "department": "Dance",
+    "name": "Dance",
+    "grade": 4
+  },
+  "ADA1O1": {
+    "department": "Drama",
+    "name": "Dramatic Arts",
+    "grade": 1
+  },
+  "ADA2O1": {
+    "department": "Drama",
+    "name": "Dramatic Drawings",
+    "grade": 2
+  },
+  "ADV3M1": {
+    "department": "Drama",
+    "name": "Video",
+    "grade": 3
+  },
+  "ADB3M1": {
+    "department": "Drama",
+    "name": "Showtime",
+    "grade": 3
+  },
+  "ADV4M1": {
+    "department": "Drama",
+    "name": "Video",
+    "grade": 4
+  },
+  "ADB4M1": {
+    "department": "Drama",
+    "name": "Showtime",
+    "grade": 4
+  },
+  "AMI1O1": {
+    "department": "Music",
+    "name": "Percussion Band",
+    "grade": 1
+  },
+  "AMI1O2": {
+    "department": "Music",
+    "name": "Beginning Band",
+    "grade": 1
+  },
+  "AMI1O3": {
+    "department": "Music",
+    "name": "Woodwinds Band",
+    "grade": 1
+  },
+  "AMO1O1": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 1
+  },
+  "AMO1O2": {
+    "department": "Music",
+    "name": "Beginning Strings",
+    "grade": 1
+  },
+  "AMV1O1": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 1
+  },
+  "AMR1O1": {
+    "department": "Music",
+    "name": "Repertoire Band",
+    "grade": 1
+  },
+  "AMR1O2": {
+    "department": "Music",
+    "name": "Repertoire Strings",
+    "grade": 1
+  },
+  "AMR1O3": {
+    "department": "Music",
+    "name": "Repertoire Choral",
+    "grade": 1
+  },
+  "AMI2O1": {
+    "department": "Music",
+    "name": "Percussion Band",
+    "grade": 2
+  },
+  "AMI2O2": {
+    "department": "Music",
+    "name": "Beginning Band",
+    "grade": 2
+  },
+  "AMI2O3": {
+    "department": "Music",
+    "name": "Woodwinds Band",
+    "grade": 2
+  },
+  "AMO2O1": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 2
+  },
+  "AMO2O2": {
+    "department": "Music",
+    "name": "Beginning Strings",
+    "grade": 2
+  },
+  "AMV2O1": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 2
+  },
+  "AMR2O1": {
+    "department": "Music",
+    "name": "Repertoire Band",
+    "grade": 2
+  },
+  "AMR2O2": {
+    "department": "Music",
+    "name": "Repertoire Strings",
+    "grade": 2
+  },
+  "AMR2O3": {
+    "department": "Music",
+    "name": "Repertoire Choral",
+    "grade": 2
+  },
+  "AMI3M1": {
+    "department": "Music",
+    "name": "Band",
+    "grade": 3
+  },
+  "AMO3M1": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 3
+  },
+  "AMV3M1": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 3
+  },
+  "AMT3M1": {
+    "department": "Music",
+    "name": "Music Theatre",
+    "grade": 3
+  },
+  "AMR3M1": {
+    "department": "Music",
+    "name": "Repertoire Band",
+    "grade": 3
+  },
+  "AMR3M2": {
+    "department": "Music",
+    "name": "Repertoire Strings",
+    "grade": 3
+  },
+  "AMR3M3": {
+    "department": "Music",
+    "name": "Repertoire Choral",
+    "grade": 3
+  },
+  "AMI4M1": {
+    "department": "Music",
+    "name": "Band",
+    "grade": 4
+  },
+  "AMO4M1": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 4
+  },
+  "AMV4M1": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 4
+  },
+  "AMT4M1": {
+    "department": "Music",
+    "name": "Music Theatre",
+    "grade": 4
+  },
+  "AMR4M1": {
+    "department": "Music",
+    "name": "Repertoire Band",
+    "grade": 4
+  },
+  "AMR4M2": {
+    "department": "Music",
+    "name": "Repertoire Strings",
+    "grade": 4
+  },
+  "AMR4M3": {
+    "department": "Music",
+    "name": "Repertoire Choral",
+    "grade": 4
+  },
+  "AVI1O1": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 1
+  },
+  "AVI2O1": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 2
+  },
+  "AWQ2O1": {
+    "department": "Visual Arts",
+    "name": "Photography",
+    "grade": 2
+  },
+  "ASM2O1": {
+    "department": "Visual Arts",
+    "name": "Media Arts",
+    "grade": 2
+  },
+  "AWC2O1": {
+    "department": "Visual Arts",
+    "name": "Ceramics",
+    "grade": 2
+  },
+  "AVI3M1": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 3
+  },
+  "AWQ3M1": {
+    "department": "Visual Arts",
+    "name": "Photography",
+    "grade": 3
+  },
+  "ASM3M1": {
+    "department": "Visual Arts",
+    "name": "Media Arts",
+    "grade": 3
+  },
+  "AWC3M1": {
+    "department": "Visual Arts",
+    "name": "Ceramics",
+    "grade": 3
+  },
+  "AWC3O1": {
+    "department": "Visual Arts",
+    "name": "Ceramics",
+    "grade": 3
+  },
+  "AVI4M1": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 4
+  },
+  "AWQ4M1": {
+    "department": "Visual Arts",
+    "name": "Photography",
+    "grade": 4
+  },
+  "ASM4M1": {
+    "department": "Visual Arts",
+    "name": "Media Arts",
+    "grade": 4
+  },
+  "AWC4M1": {
+    "department": "Visual Arts",
+    "name": "Ceramics",
+    "grade": 4
+  },
+  "BTT1O1": {
+    "department": "Business",
+    "name": "Business Technology",
+    "grade": 1
+  },
+  "BBI2O1": {
+    "department": "Business",
+    "name": "Business Intro",
+    "grade": 2
+  },
+  "BAF3M1": {
+    "department": "Business",
+    "name": "Accounting Intro",
+    "grade": 3
+  },
+  "BMI3C1": {
+    "department": "Business",
+    "name": "Marketing",
+    "grade": 3
+  },
+  "BAT4M1": {
+    "department": "Business",
+    "name": "Accounting",
+    "grade": 4
+  },
+  "BBB4M1": {
+    "department": "Business",
+    "name": "Business",
+    "grade": 4
+  },
+  "BOH4M1": {
+    "department": "Business",
+    "name": "Leadership",
+    "grade": 4
+  },
+  "CIE3M1": {
+    "department": "Business",
+    "name": "Individual and Economy",
+    "grade": 3
+  },
+  "CIA4U1": {
+    "department": "Business",
+    "name": "Current Economic",
+    "grade": 4
+  },
+  "CGC1D1": {
+    "department": "Geography",
+    "name": "Geography",
+    "grade": 1
+  },
+  "CGC1P1": {
+    "department": "Geography",
+    "name": "Geography",
+    "grade": 1
+  },
+  "CGG3O1": {
+    "department": "Geography",
+    "name": "Travel and Tourism",
+    "grade": 3
+  },
+  "CGW4U1": {
+    "department": "Geography",
+    "name": "Geographic Analysis",
+    "grade": 4
+  },
+  "CHC2D1": {
+    "department": "History",
+    "name": "Canadian History",
+    "grade": 2
+  },
+  "CHC2P1": {
+    "department": "History",
+    "name": "Canadian History",
+    "grade": 2
+  },
+  "CHW3M1": {
+    "department": "History",
+    "name": "World History",
+    "grade": 3
+  },
+  "CLU3M1": {
+    "department": "History",
+    "name": "Canadian Law",
+    "grade": 3
+  },
+  "CHY4U1": {
+    "department": "History",
+    "name": "World History",
+    "grade": 4
+  },
+  "CHY4C1": {
+    "department": "History",
+    "name": "West World History",
+    "grade": 4
+  },
+  "CLN4U1": {
+    "department": "History",
+    "name": "International Law",
+    "grade": 4
+  },
+  "HSP3U1": {
+    "department": "Social Science",
+    "name": "Sociology etc",
+    "grade": 3
+  },
+  "HSB4U1": {
+    "department": "Social Science",
+    "name": "Society Change",
+    "grade": 4
+  },
+  "HZT4U1": {
+    "department": "Social Science",
+    "name": "Philosophy",
+    "grade": 4
+  },
+  "LKMBD1": {
+    "department": "Languages",
+    "name": "Chinese",
+    "grade": -1
+  },
+  "LWSBD1": {
+    "department": "Languages",
+    "name": "Spanish",
+    "grade": -1
+  },
+  "LKMCU1": {
+    "department": "Languages",
+    "name": "Chinese",
+    "grade": -1
+  },
+  "LWSCU1": {
+    "department": "Languages",
+    "name": "Spanish",
+    "grade": -1
+  },
+  "LKMDU1": {
+    "department": "Languages",
+    "name": "Chinese",
+    "grade": -1
+  },
+  "LWSDU1": {
+    "department": "Languages",
+    "name": "Spanish",
+    "grade": -1
+  },
+  "ICS2O1": {
+    "department": "Computer Science",
+    "name": "Com Sci Intro",
+    "grade": 2
+  },
+  "ICS3C1": {
+    "department": "Computer Science",
+    "name": "programming intro",
+    "grade": 3
+  },
+  "ICS3U1": {
+    "department": "Computer Science",
+    "name": "Com Sci Intro",
+    "grade": 3
+  },
+  "ICS4C1": {
+    "department": "Computer Science",
+    "name": "Programming",
+    "grade": 4
+  },
+  "ICS4U1": {
+    "department": "Computer Science",
+    "name": "Com Sci",
+    "grade": 4
+  },
+  "COP3X0": {
+    "department": "Co-op",
+    "name": "Co-op",
+    "grade": 3
+  },
+  "COP4X0": {
+    "department": "Co-op",
+    "name": "Co-op",
+    "grade": 4
+  },
+  "COP4X4": {
+    "department": "Co-op",
+    "name": "Co-op",
+    "grade": 4
+  },
+  "COP4X5": {
+    "department": "Co-op",
+    "name": "Co-op",
+    "grade": 4
+  },
+  "YYY4X1": {
+    "department": "Dual Credit",
+    "name": "College",
+    "grade": 4
+  },
+  "YYY4X2": {
+    "department": "Dual Credit",
+    "name": "College",
+    "grade": 4
+  },
+  "ENG1D1": {
+    "department": "English",
+    "name": "English",
+    "grade": 1
+  },
+  "ENG1P1": {
+    "department": "English",
+    "name": "English",
+    "grade": 1
+  },
+  "ENG1L1": {
+    "department": "English",
+    "name": "English",
+    "grade": 1
+  },
+  "ENG2D1": {
+    "department": "English",
+    "name": "English",
+    "grade": 2
+  },
+  "ENG2P1": {
+    "department": "English",
+    "name": "English",
+    "grade": 2
+  },
+  "ENG2L1": {
+    "department": "English",
+    "name": "English",
+    "grade": 2
+  },
+  "ENG3C1": {
+    "department": "English",
+    "name": "English",
+    "grade": 3
+  },
+  "ENG3U1": {
+    "department": "English",
+    "name": "English",
+    "grade": 3
+  },
+  "ENG3E1": {
+    "department": "English",
+    "name": "English",
+    "grade": 3
+  },
+  "EPS3O1": {
+    "department": "English",
+    "name": "Presentation",
+    "grade": 3
+  },
+  "ENG4C1": {
+    "department": "English",
+    "name": "English",
+    "grade": 4
+  },
+  "ENG4U1": {
+    "department": "English",
+    "name": "English",
+    "grade": 4
+  },
+  "ENG4E1": {
+    "department": "English",
+    "name": "English",
+    "grade": 4
+  },
+  "EWC4U1": {
+    "department": "English",
+    "name": "Writer\u2019s Craft",
+    "grade": 4
+  },
+  "EWC4C1": {
+    "department": "English",
+    "name": "Writer\u2019s Craft",
+    "grade": 4
+  },
+  "OLC4O1": {
+    "department": "English",
+    "name": "Literacy",
+    "grade": 4
+  },
+  "ESLAO1": {
+    "department": "ESL",
+    "name": "ESL 1",
+    "grade": -1
+  },
+  "ESLBO1": {
+    "department": "ESL",
+    "name": "ESL 2",
+    "grade": -1
+  },
+  "ESLCO1": {
+    "department": "ESL",
+    "name": "ESL 3",
+    "grade": -1
+  },
+  "ESLDO1": {
+    "department": "ESL",
+    "name": "ESL 4",
+    "grade": -1
+  },
+  "ESLEO1": {
+    "department": "ESL",
+    "name": "ESL 5",
+    "grade": -1
+  },
+  "FSF1D1": {
+    "department": "French",
+    "name": "French",
+    "grade": 1
+  },
+  "FSF1P1": {
+    "department": "French",
+    "name": "French",
+    "grade": 1
+  },
+  "FSF1O1": {
+    "department": "French",
+    "name": "Open French",
+    "grade": 1
+  },
+  "FSF2D1": {
+    "department": "French",
+    "name": "French",
+    "grade": 2
+  },
+  "FSF3U1": {
+    "department": "French",
+    "name": "French",
+    "grade": 3
+  },
+  "FSF4U1": {
+    "department": "French",
+    "name": "French",
+    "grade": 4
+  },
+  "GLC2O1": {
+    "department": "Career Civics",
+    "name": "Career",
+    "grade": 2
+  },
+  "CHV2O1": {
+    "department": "Career Civics",
+    "name": "Civics",
+    "grade": 2
+  },
+  "GLE1O1": {
+    "department": "Special Ed",
+    "name": "Special Ed",
+    "grade": 1
+  },
+  "GLE2O1": {
+    "department": "Special Ed",
+    "name": "Special Ed",
+    "grade": 2
+  },
+  "GLE3O1": {
+    "department": "Special Ed",
+    "name": "Special Ed",
+    "grade": 3
+  },
+  "GLE4O1": {
+    "department": "Special Ed",
+    "name": "Special Ed",
+    "grade": 4
+  },
+  "PPL1O8": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 1
+  },
+  "PPL1O9": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 1
+  },
+  "PAF2O8": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 2
+  },
+  "PAF2O9": {
+    "department": "Fitness",
+    "name": "Fitness",
+    "grade": 2
+  },
+  "PPL2O1": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 2
+  },
+  "PAD2O1": {
+    "department": "Fitness",
+    "name": "Outdoor",
+    "grade": 2
+  },
+  "PAF3O8": {
+    "department": "Fitness",
+    "name": "Fitness",
+    "grade": 3
+  },
+  "PAF3O9": {
+    "department": "Fitness",
+    "name": "Fitness",
+    "grade": 3
+  },
+  "PPL3O1": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 3
+  },
+  "PAD3O1": {
+    "department": "Fitness",
+    "name": "Outdoor",
+    "grade": 3
+  },
+  "PAF4O8": {
+    "department": "Fitness",
+    "name": "Fitness",
+    "grade": 4
+  },
+  "PAF4O9": {
+    "department": "Fitness",
+    "name": "Fitness",
+    "grade": 4
+  },
+  "PPL4O1": {
+    "department": "Fitness",
+    "name": "Phys-ed",
+    "grade": 4
+  },
+  "PLF4M1": {
+    "department": "Fitness",
+    "name": "Active Leadership",
+    "grade": 4
+  },
+  "IDC3O2": {
+    "department": "Cool things",
+    "name": "Pro-Gaming",
+    "grade": 3
+  },
+  "IDC4U3": {
+    "department": "Cool things",
+    "name": "3D",
+    "grade": 4
+  },
+  "MAT1L1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 1
+  },
+  "MFM1P1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 1
+  },
+  "MPM1D1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 1
+  },
+  "MAT2L1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 2
+  },
+  "MFM2P1": {
+    "department": "Math",
+    "name": "Math Applied",
+    "grade": 2
+  },
+  "MPM2D1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 2
+  },
+  "MBF3C1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 3
+  },
+  "MCF3M1": {
+    "department": "Math",
+    "name": "Functions Application",
+    "grade": 3
+  },
+  "MEL3E1": {
+    "department": "Math",
+    "name": "Everyday Math",
+    "grade": 3
+  },
+  "MAP4C1": {
+    "department": "Math",
+    "name": "College Math",
+    "grade": 4
+  },
+  "MCT4C1": {
+    "department": "Math",
+    "name": "Tech Math",
+    "grade": 4
+  },
+  "MEL4E1": {
+    "department": "Math",
+    "name": "Everyday Math",
+    "grade": 4
+  },
+  "MCR3U1": {
+    "department": "Tryhard Math",
+    "name": "Functions",
+    "grade": 3
+  },
+  "MCV4U1": {
+    "department": "Tryhard Math",
+    "name": "Calculus",
+    "grade": 4
+  },
+  "MDM4U1": {
+    "department": "Tryhard Math",
+    "name": "Data Management",
+    "grade": 4
+  },
+  "MHF4U1": {
+    "department": "Tryhard Math",
+    "name": "Adv Function",
+    "grade": 4
+  },
+  "SNC1D1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 1
+  },
+  "SNC1P1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 1
+  },
+  "SNC1L1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 1
+  },
+  "SNC2D1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 2
+  },
+  "SNC2P1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 2
+  },
+  "SNC2L1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 2
+  },
+  "SBI3C1": {
+    "department": "Biology",
+    "name": "Biology",
+    "grade": 3
+  },
+  "SBI3U1": {
+    "department": "Biology",
+    "name": "Biology",
+    "grade": 3
+  },
+  "SBI4U1": {
+    "department": "Biology",
+    "name": "Biology",
+    "grade": 4
+  },
+  "SCH3U1": {
+    "department": "Chemistry",
+    "name": "Chemistry",
+    "grade": 3
+  },
+  "SCH4C1": {
+    "department": "Chemistry",
+    "name": "Chemistry",
+    "grade": 4
+  },
+  "SCH4U1": {
+    "department": "Chemistry",
+    "name": "Chemistry",
+    "grade": 4
+  },
+  "SPH3U1": {
+    "department": "Physics",
+    "name": "Physics",
+    "grade": 3
+  },
+  "SPH4C1": {
+    "department": "Physics",
+    "name": "Physics",
+    "grade": 4
+  },
+  "SPH4U1": {
+    "department": "Physics",
+    "name": "Physics",
+    "grade": 4
+  },
+  "SES4U1": {
+    "department": "Physics",
+    "name": "Earth and Space",
+    "grade": 4
+  },
+  "HIF1O1": {
+    "department": "Family Studies",
+    "name": "Family Studies",
+    "grade": 1
+  },
+  "HFN2O1": {
+    "department": "Family Studies",
+    "name": "Food and Nutrition",
+    "grade": 2
+  },
+  "HFC3M1": {
+    "department": "Family Studies",
+    "name": "Food and Culture",
+    "grade": 3
+  },
+  "HPW3C1": {
+    "department": "Family Studies",
+    "name": "Working with infants",
+    "grade": 3
+  },
+  "HFA4U1": {
+    "department": "Family Studies",
+    "name": "Nutrition",
+    "grade": 4
+  },
+  "HHG4M1": {
+    "department": "Family Studies",
+    "name": "Human Development",
+    "grade": 4
+  },
+  "HHS4U1": {
+    "department": "Family Studies",
+    "name": "Families",
+    "grade": 4
+  },
+  "HNB4M1": {
+    "department": "Family Studies",
+    "name": "Fashion",
+    "grade": 4
+  },
+  "TEJ1O1": {
+    "department": "Technology",
+    "name": "Computer Tech",
+    "grade": 1
+  },
+  "TIJ1O1": {
+    "department": "Technology",
+    "name": "Tech",
+    "grade": 1
+  },
+  "TCJ2O1": {
+    "department": "Technology",
+    "name": "Construction Tech",
+    "grade": 2
+  },
+  "TDJ2O1": {
+    "department": "Technology",
+    "name": "Tech Design",
+    "grade": 2
+  },
+  "TEJ2O1": {
+    "department": "Technology",
+    "name": "Computer Tech",
+    "grade": 2
+  },
+  "TGJ2O1": {
+    "department": "Technology",
+    "name": "Communications Tech",
+    "grade": 2
+  },
+  "TCJ3C1": {
+    "department": "Technology",
+    "name": "Construction Tech",
+    "grade": 3
+  },
+  "TDJ3M1": {
+    "department": "Technology",
+    "name": "Tech Design",
+    "grade": 3
+  },
+  "TEJ3M1": {
+    "department": "Technology",
+    "name": "Computer Engineering",
+    "grade": 3
+  },
+  "TGJ3M1": {
+    "department": "Technology",
+    "name": "Communications Tech",
+    "grade": 3
+  },
+  "TCJ4C1": {
+    "department": "Technology",
+    "name": "Construction Tech",
+    "grade": 4
+  },
+  "TDJ4M1": {
+    "department": "Technology",
+    "name": "Tech Design",
+    "grade": 4
+  },
+  "TEJ4M1": {
+    "department": "Technology",
+    "name": "Computer Engineering",
+    "grade": 4
+  },
+  "TGJ4M1": {
+    "department": "Technology",
+    "name": "Communications Tech",
+    "grade": 4
+  },
+  "TGG4M1": {
+    "department": "Technology",
+    "name": "Yearbook",
+    "grade": 4
+  }
+}

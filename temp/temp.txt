@@ -1,0 +1,3 @@
+regex expression for mathcing a course code 
+
+[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]
