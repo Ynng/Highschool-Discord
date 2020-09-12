@@ -1,0 +1,310 @@
+Discipline & Department
+Grade 9
+Grade 10
+Grade 11
+Grade 12
+ARTS UNIONVILLE- DANCE
+ATB1OM Dance-Ballet
+ATM1OM Dance-Modern
+ATB2OM Dance-Ballet
+ATM2OM Dance-Modern
+ATB3MM Dance-Ballet
+ATM4MM Dance-Modern
+ATB4MM Dance-Ballet
+ATM4MM Dance-Modern
+ARTS UNIONVILLE- DRAMA
+ADA1OM Drama
+ADD1OM Drama- Production
+ADA2OM Drama
+ADD2OM Drama- Production
+ADF3MM Director’s Craft
+ADD3MM Drama- Production
+ADA4MM Drama
+ADD4MM Drama- Production
+ARTS UNIONVILLE- MUSIC
+AMK1OM Piano
+AMS1OM Strings + AMC1OM Musicianship
+AMV1OM Vocal/Choral
+AMW1OM Woodwinds
+AMK2OM Piano
+AMS2OM Strings + AMC2OM Musicianship
+AMV2OM Vocal/Choral
+AMW2OM Woodwinds
+AMK3MM Piano
+AMS3MM Strings + AMC3MM Musicianship
+AMV3MM Vocal/Choral
+AMW3MM Woodwinds
+AMK4MM Piano
+AMS4MM Strings + AMC4MM Musicianship
+AMV4MM Vocal/Choral
+AMW4MM Woodwinds
+ARTS UNIONVILLE- VISUAL ARTS
+AVI1OM Visual Arts
+AWM1OM Drawing & Painting
+AVI2OM Visual Arts
+AWM2OM Drawing & Painting
+AVI3MM Visual Arts
+AWM3MM Drawing & Painting
+AVI4MM Visual Arts
+AWM4MM Drawing & Painting
+ARTS- DANCE
+ATP1O1 Dance
+ATP2O1 Dance
+ATP3M1 Dance
+ATP4M1 Dance
+ARTS - DRAMA
+ADA1O1 Dramatic Arts
+ADA2O1 Dramatic Drawings
+ADV3M1 Film/Video
+ADB3M1 Drama- Music Theatre (Showtime)
+(Co-req. AMT3M1)
+ADV4M1 Film/Video
+ADB4M1 Drama- Music Theatre (Showtime)
+(Afterschool, Co-req. AMT4M1)
+ARTS – MUSIC
+AMI1O1 Band (Percussion, etc. (Lunchtime)
+AMI1O2 Beginning Band (Lunchtime)
+AMI1O3 Band (Woodwinds) (Lunchtime)
+AMO1O1 Strings (Lunchtime)
+AMO1O2 Beginning Strings (Lunchtime)
+AMV1O1 Vocal/Choral (Lunchtime)
+AMR1O1 Repertoire- Band
+AMR1O2 Repertoire- Strings
+AMR1O3 Repertoire- Vocal/Choral
+AMI2O1 Band (Percussion, etc.) (Lunchtime)
+AMI2O2 Beginning Band (Lunchtime)
+AMI2O3 Band (Woodwinds) (Lunchtime)
+AMO2O1 Strings (Lunchtime)
+AMO2O2 Beginning Strings (Lunchtime)
+AMV2O1 Vocal/Choral (Lunchtime)
+AMR2O1 Repertoire- Band
+AMR2O2 Repertoire- Strings
+AMR2O3 Repertoire- Vocal/Choral
+AMI3M1 Instrumental Music, Band
+AMO3M1 Strings (Lunchtime)
+AMV3M1 Vocal / Choir (Lunchtime)
+AMT3M1 Music Theatre (Afterschool, Co-req.
+ADB3M1)
+AMR3M1 Repertoire- Band
+AMR3M2 Repertoire- Strings
+AMR3M3 Repertoire- Vocal/Choral
+AMI4M1 Instrumental Music, Band
+AMO4M1 Strings (Lunchtime)
+AMV4M1 Vocal / Choir (Lunchtime)
+AMT4M1 Music Theatre (Co-req. ADB4M1)
+AMR4M1 Repertoire- Band
+AMR4M2 Repertoire- Strings
+AMR4M3 Repertoire- Vocal/Choral
+ARTS – VISUAL ARTS
+AVI1O1 Visual Arts
+AVI2O1 Visual Arts
+AWQ2O1 Visual Arts- Photography
+ASM2O1 Media Arts
+AWC2O1 Visual Arts- Ceramics
+AVI3M1 Visual Arts
+AWQ3M1 Visual Arts- Photography
+ASM3M1 Media Arts
+AWC3M1 Visual Arts- Ceramics
+AWC3O1 Visual Arts- Ceramics
+AVI4M1 Visual Arts
+AWQ4M1 Visual Arts- Photography
+ASM4M1 Media Arts
+AWC4M1 Visual Arts- Ceramics
+2
+Discipline & Department
+Grade 9
+Grade 10
+Grade 11
+Grade 12
+BUSINESS STUDIES
+BTT1O1 Information Communication
+Technology
+BBI2O1 Introduction to Business
+BAF3M1 Financial Accounting Fundamentals
+BMI3C1 Marketing: Goods, Services and Events
+BAT4M1 Financial Accounting Principles
+BBB4M1 International Business Fundamentals
+BOH4M1 Business Leadership
+CANADIAN AND WORLD STUDIES - BUSINESS
+CIE3M1 The Individual and the Economy
+CIA4U1 Analyzing Current Economic Issues
+CANADIAN AND WORLD STUDIES - GEOGRAPHY
+CGC1D1 Canadian Geography
+CGC1P1 Canadian Geography
+CGG3O1 Travel and Tourism
+CGW4U1 World Issues: A Geographic Analysis
+CANADIAN AND WORLD STUDIES - HISTORY
+CHC2D1 Canadian History Since WWI
+CHC2P1 Canadian History Since WWI
+CHV2O1 Civics (0.5 credit)
+CHW3M1 World History to the End of 15th
+Century
+CLU3M1 Understanding Canadian Law
+CHY4U1 World History since the 15th Century
+CHY4C1 World History: The West & the World
+CLN4U1 Canadian & International Law
+CLASSICAL STUDIES and INTERNATIONAL LANGUAGES
+LKMBD1 Traditional Chinese (Mandarin)
+LWSBD1 Spanish
+LKMCU1 Traditional Chinese (Mandarin)
+LWSCU1 Spanish
+LKMDU1 Traditional Chinese (Mandarin)
+LWSDU1 Spanish
+COMPUTER STUDIES
+ICS2O1 Intro to Computer Studies
+ICS3C1 Intro to Computer Programming
+ICS3U1 Intro Computer Science
+ICS4C1 Computer Programming
+ICS4U1 Computer Science
+COOPERATIVE EDUCATION
+COP3X0 Co-op (2 credit) AM or PM, any sem.
+COP4X0 Co-op (2 credit) AM or PM, any sem.
+COP4X4 Co-op (Full Day 2 credit am)
+COP4X5 Co-op (Full Day 2 credit pm)
+DUAL CREDIT
+YYY4X1 College-Delivered, 1 Course Sem. 1
+YYY4X2 College-Delivered, 1 Course Sem. 2
+ENGLISH
+ENG1D1 English
+ENG1P1 English
+ENG1L1 English
+ENG2D1 English
+ENG2P1 English
+ENG2L1 English
+ENG3C1 English
+ENG3U1 English
+ENG3E1 English
+EPS3O1 Presentation and Speaking Skills
+ENG4C1 English
+ENG4U1 English
+ENG4E1 English
+EWC4U1 The Writer’s Craft
+EWC4C1 The Writer’s Craft
+OLC4O1 Ontario Secondary School Literacy
+Course
+ENGLISH AS A SECOND LANGUAGE (By language level)
+ESLAO1 English as a Second Language, Level 1
+ESLBO1 English as a Second Language, Level 2
+ESLCO1 English as a Second Language, Level 3
+ESLDO1 English as a Second Language, Level 4
+ESLEO1 English as a Second Language, Level 5
+ESLAO1 English as a Second Language, Level 1
+ESLBO1 English as a Second Language, Level 2
+ESLCO1 English as a Second Language, Level 3
+ESLDO1 English as a Second Language, Level 4
+ESLEO1 English as a Second Language, Level 5
+ESLAO1 English as a Second Language, Level 1
+ESLBO1 English as a Second Language, Level 2
+ESLCO1 English as a Second Language, Level 3
+ESLDO1 English as a Second Language, Level 4
+ESLEO1 English as a Second Language, Level 5
+ESLAO1 English as a Second Language, Level 1
+ESLBO1 English as a Second Language, Level 2
+ESLCO1 English as a Second Language, Level 3
+ESLDO1 English as a Second Language, Level 4
+ESLEO1 English as a Second Language, Level 5
+FRENCH AS A SECOND LANGUAGE
+FSF1D1 French
+FSF1P1 French
+FSF1O1 French – Beginner
+FSF2D1 French
+FSF3U1 French
+FSF4U1 French
+3
+Discipline & Department
+Grade 9
+Grade 10
+Grade 11
+Grade 12
+GUIDANCE AND CAREER EDUCATION - GUIDANCE
+GLC2O1 Career Studies (0.5 Credit)
+GUIDANCE AND CAREER EDUCATION – SPECIAL ED.
+GLE1O1 Learning Strategies (IPRC req.)
+GLE2O1 Learning Strategies (IPRC required)
+GLE3O1 Learning Strategies (IPRC required)
+GLE4O1 Learning Strategies (IPRC required)
+HEALTH AND PHYSICAL EDUCATION
+PPL1O8 Healthy Active Living (Female)
+PPL1O9 Healthy Active Living (Male)
+PAF2O8 Healthy Active Living (Female)
+PAF2O9 Fitness (Male)
+PPL2O1 Healthy Active Living (Female & Male)
+PAD2O1 Healthy Living and Outdoor Activities
+(Female & Male)
+PAF3O8 Fitness (Female)
+PAF3O9 Fitness (Male)
+PPL3O1 Healthy Active Living (Female & Male)
+PAD3O1 Healthy Living and Outdoor Activities
+(Female & Male)
+PAF4O8 Fitness (Female)
+PAF4O9 Fitness (Male)
+PPL4O1 Healthy Active Living (Female & Male)
+PLF4M1 Rec. and Healthy Active Living
+Leadership
+INTERDISCIPLINARY
+IDC3O2 Pro-Gaming: How to Program Games NOT offering 2020-2021 offering 2021-2022
+IDC4U3 3D Visualization and Virtualization
+MATHEMATICS
+MAT1L1 Mathematics
+MFM1P1 Mathematics
+MPM1D1 Mathematics
+MAT2L1 Mathematics
+MFM2P1 Foundations of Math
+MPM2D1 Principles of Mathematics
+MBF3C1 Foundations for College Mathematics
+MCF3M1 Functions and Applications
+MCR3U1 Functions
+MEL3E1 Math for everyday life
+MAP4C1 College Mathematics
+MCT4C1 Mathematics for College Technology
+MCV4U1 Calculus and Vectors
+MDM4U1 Data Management
+MEL4E1 Math for everyday life
+MHF4U1 Advanced Function
+SCIENCE
+SNC1D1 Science
+SNC1P1 Science
+SNC1L1 Science
+SNC2D1 Science
+SNC2P1 Science
+SNC2L1 Science
+SBI3C1 Biology
+SBI3U1 Biology
+SCH3U1 Chemistry
+SPH3U1 Physics
+SBI4U1 Biology
+SCH4C1 Chemistry
+SCH4U1 Chemistry
+SPH4C1 Physics
+SPH4U1 Physics
+SES4U1 Earth and Space Science
+SOCIAL SCIENCES AND HUMANITIES – FAMILY STUDIES
+HIF1O1 Family Studies
+HFN2O1 Food and Nutrition
+HFC3M1 Food and Culture
+HPW3C1 Working with Infants and Young Children
+HFA4U1 Nutrition and Health
+HHG4M1 Human Development Throughout
+The Lifespan
+HHS4U1 Families in Canada
+HNB4M1 The World of Fashion
+SOCIAL SCIENCES AND HUMANITIES - HISTORY
+HSP3U1 Anthropology, Psychology & Sociology
+HSB4U1 Challenge and Change in Society
+HZT4U1 Philosophy: Questions and Theories
+TECHNOLOGICAL EDUCATION
+TEJ1O1 Exploring Computer Technology
+TIJ1O1 Exploring Technologies
+TCJ2O1 Construction Technology
+TDJ2O1 Technological Design
+TEJ2O1 Computer Technology
+TGJ2O1 Communications Technology
+TCJ3C1 Construction Technology
+TDJ3M1 Technological Design
+TEJ3M1 Computer Engineering Technology
+TGJ3M1 Communications Technology
+TCJ4C1 Construction Technology
+TDJ4M1 Technological Design
+TEJ4M1 Computer Engineering Technology
+TGJ4M1 Communications Technology
+TGG4M1 Communications Technology: Print
