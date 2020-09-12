@@ -146,7 +146,7 @@ HSP3U1 Sociology etc
 HSB4U1 Society Change
 HZT4U1 Philosophy
 
-International Languages
+Languages
 LKMBD1 Chinese
 LWSBD1 Spanish
 LKMCU1 Chinese
