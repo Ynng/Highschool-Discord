@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const config = require("../botconfig.json");
 const utils = require("../util/utils");
 
-
 module.exports.run = async (bot, message) => {
     // console.log(bot.emojis.resolveID(config.emojis.loadingEmojiId));
     let embed = new Discord.MessageEmbed()
