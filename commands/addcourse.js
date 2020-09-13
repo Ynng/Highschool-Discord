@@ -173,7 +173,7 @@ module.exports.run = async (bot, message, args) => {
             if (member.roles.cache.find(r => r.name === allAddedRoles[i].name))
                 courseCount++;
         })
-        console.log(`${allAddedRoles[i].name} ${courseCount/config.classChannelUserRequirement}`);
+        console.log(`${allAddedRoles[i].name} ${courseCount}/${config.classChannelUserRequirement}`);
  
         if (courseCount < config.classChannelUserRequirement)
             continue;
