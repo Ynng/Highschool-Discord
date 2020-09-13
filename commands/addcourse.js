@@ -33,26 +33,30 @@ module.exports.run = async (bot, message, args) => {
             count++;
         }
     }
-    if (count < 10) {
-        var roleAdd = message.guild.roles.cache.find(r => r.name == entry);
-        console.log(roleAdd)
-        if (roleAdd != undefined) {
-            message.member.roles.add(roleAdd);
-            return message.channel.send(`added ${role.name} to ${message.member.name}`);
+
+    courses.forEach(course => {
+        if (count < 10) {
+            var roleAdd = message.guild.roles.cache.find(r => r.name == course);
+            count++;
+
+            if (roleAdd != undefined) {
+                message.member.roles.add(roleAdd);
+                return message.channel.send(`added ${course} to ${message.member.displayName}`);
+            } else {
+                message.guild.roles.create({
+                    data: {
+                        name: course,
+                        color: 'GRAY',
+                    },
+                    reason: `New course ${course} required by ${message.member.displayName}`
+                }).then(newRole => message.member.roles.add(newRole));
+                return message.channel.send(`New course ${course} required by ${message.member.displayName}`);
+            }
         } else {
-            newRole = message.guild.roles.create({
-                data: {
-                    name: entry,
-                    color: 'GREY',
-                },
-                reason: `New course ${entry} required by ${message.member} `
-            })
-            message.member.roles.add(newRole);
-            return message.channel.send(`added ${entry} to ${message.member.name}`);
+            return message.channel.send(`too many subjects`);
         }
-    } else {
-        return message.channel.send(`too many subjects`);
-    }
+    })
+    
 
     // console.log(courses);
 
