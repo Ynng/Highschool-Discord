@@ -32,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
     // Sending a error message about all invalid course codes
     if (rawCourses.length > 0)
-        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} are not valid course codes!`, message, config.errorColor, 2 * config.tempMsgTime);
+        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} not valid course codes!`, message, config.errorColor, 2 * config.tempMsgTime);
 
     if (courses.length == 0) return;
 
@@ -173,14 +173,14 @@ module.exports.run = async (bot, message, args) => {
             if (member.roles.cache.find(r => r.name === allAddedRoles[i].name))
                 courseCount++;
         })
-        console.log(courseCount);
-
+        console.log(`${allAddedRoles[i].name} ${courseCount/config.classChannelUserRequirement}`);
+ 
         if (courseCount < config.classChannelUserRequirement)
             continue;
 
-        var courseCode = allAddedRoles[i]
-        var courseName = courselist[courseCode].grade;
-        var channel = message.guild.channels.cache.find(channel => channel.topic == courseName);
+        var courseCode = allAddedRoles[i].name
+        var courseName = courselist[courseCode].name;
+        var channel = message.guild.channels.cache.find(channel => channel.topic == courseCode);
         //If channel already exist, skip
         if (channel != undefined)
             continue;
@@ -188,7 +188,7 @@ module.exports.run = async (bot, message, args) => {
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
         await message.guild.channels.create(courseName, {
             parent: message.guild.channels.cache.find(channel => channel.name == "Class"),
-            topic: courseName,
+            topic: courseCode,
             permissionOverwrites: [
                 {
                     id: allAddedRoles[i].id,
@@ -202,10 +202,10 @@ module.exports.run = async (bot, message, args) => {
         })
     }
 
-    utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCoursesString, ', ')}  to your account!`, message, config.validColor, 2 * config.tempMsgTime);
+    utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, 2 * config.tempMsgTime);
 
     if (tooManyCourses)
-        return utils.simpleMessage(":no_entry_sign: You have too many subjects already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);
+        return utils.simpleMessage(":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);
 
 };
 
