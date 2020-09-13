@@ -118,6 +118,40 @@ module.exports.run = async (bot, message, args) => {
         }
     }
 
+
+    /****************************************
+        Create/Add "Departments" Channels
+    *************************************/
+    //If "Departments" category does not exist, create it
+    var category = message.guild.channels.cache.find(channel => channel.name == "Departments");
+    if (category == undefined)
+        await message.guild.channels.create("Departments", { type: "category" })
+    for (i = 0; i < newCreatedRoles.length; i++) {
+        var department = courselist[newCreatedRoles[i].name].department;
+        var channel = message.guild.channels.cache.find(channel => channel.topic == department);
+
+        //If channel already exist, add the new role to permission overwrite 
+        if (channel != undefined) {
+            channel.createOverwrite(newCreatedRoles[i], { 'VIEW_CHANNEL': true });
+        } else {
+            //Else, create the new channel with the correct permission overwrite
+            await message.guild.channels.create(department, {
+                parent: message.guild.channels.cache.find(channel => channel.name == "Departments"),
+                topic: department,
+                permissionOverwrites: [
+                    {
+                        id: newCreatedRoles[i].id,
+                        allow: ['VIEW_CHANNEL'],
+                    },
+                    {
+                        id: message.guild.id,
+                        deny: ['VIEW_CHANNEL'],
+                    }
+                ]
+            })
+        }
+    }
+
     utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCourses, ', ')}  to your account!`, message, config.validColor, 2 * config.tempMsgTime);
 
     if (tooManyCourses)
