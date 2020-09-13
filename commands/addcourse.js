@@ -45,8 +45,7 @@ module.exports.run = async (bot, message, args) => {
             } else {
                 message.guild.roles.create({
                     data: {
-                        name: course,
-                        color: 'GRAY',
+                        name: course
                     },
                     reason: `New course ${course} required by ${message.member.displayName}`
                 }).then(newRole => message.member.roles.add(newRole));
