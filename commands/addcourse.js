@@ -38,10 +38,12 @@ module.exports.run = async (bot, message, args) => {
 
     //Check the already existing courses
     var courseCount = 0;
-    for (role in message.member.roles)
+    // console.log(message.member.roles.cache)
+    message.member.roles.cache.forEach(role => {
         if (re.test(role.name))
             courseCount++;
-
+    })
+    console.log(courseCount)
     /****************************************
         Add course roles to the user
     *************************************/
@@ -174,7 +176,7 @@ module.exports.run = async (bot, message, args) => {
                 courseCount++;
         })
         console.log(`${allAddedRoles[i].name} ${courseCount}/${config.classChannelUserRequirement}`);
- 
+
         if (courseCount < config.classChannelUserRequirement)
             continue;
 
@@ -202,7 +204,8 @@ module.exports.run = async (bot, message, args) => {
         })
     }
 
-    utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, 2 * config.tempMsgTime);
+    if (addedCoursesString.length > 0)
+        utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, 2 * config.tempMsgTime);
 
     if (tooManyCourses)
         return utils.simpleMessage(":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);
