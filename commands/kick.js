@@ -68,6 +68,6 @@ module.exports.help = {
     args: "{@user} [Reason]",
     description: "Kicks the target user from this server.",
     permission: "KICK_MEMBERS",
-    example: "$k @xX_KoolGamer6903_Xx for spamming",
+    example: `${config.prefix}k @xX_KoolGamer6903_Xx for spamming`,
     aliases: ["kick", "k"]
 };

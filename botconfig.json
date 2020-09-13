@@ -1,5 +1,5 @@
 {
-    "prefix": "&",
+    "prefix": "$",
     "moderationChannel": "moderation-log",
     "welcomeChannel": "welcome",
     "embedColor": "#6bdbff",

@@ -76,9 +76,9 @@ module.exports.run = async (bot, message, args) => {
 };
 
 module.exports.help = {
-    name: "Add Course",
+    name: "addcourse",
     args: "Any text containing course codes",
     description: "Add a new course to your user!",
-    example: "&addcourse ENG1D0 COP4X0-01 MDM4U1-01 : Mathematics of Data",
+    example: `${config.prefix}addcourse ENG1D0 COP4X0-01 MDM4U1-01 : Mathematics of Data`,
     aliases: ["addcourse"]
 };

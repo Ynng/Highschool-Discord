@@ -68,6 +68,6 @@ module.exports.help = {
     args: "{@user} {Reason}",
     description: "Bans the target user from this server.",
     permission: "BAN_MEMBERS",
-    example: "$ban @xX_6GamerGirl9_Xx for being retarded, $b @xXtrapsAreGayXx because traps are not gay",
+    example: `${config.prefix}ban @TestUser for being retarded, ${config.prefix}b @Ynng because why not`,
     aliases: ["ban","b"]
 };

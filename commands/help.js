@@ -53,6 +53,6 @@ module.exports.help = {
     name: "help",
     description: "DM you helpful infos on the given command, or just lists the commands and prefix",
     args: "[command name]",
-    example: `$help, $? ping, $?`,
+    example: `${config.prefix}help, ${config.prefix}? ping, ${config.prefix}?`,
     aliases: ["help", "?", "h"]
 };
