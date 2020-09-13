@@ -16,7 +16,8 @@ for line in content:
         grade_num = -1
         if(grade_search):
             grade_num = int(grade)
-        course_list[search.group()] = {"department":department, "name":name, "grade":grade_num}
+        have_dedicated_chat = not (line[0:1] == "!")
+        course_list[search.group()] = {"department":department, "name":name, "grade":grade_num, "dedicated_chat": have_dedicated_chat}
     else:
         department = line.strip()
 
