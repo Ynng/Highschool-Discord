@@ -14,7 +14,7 @@ module.exports = (bot, message) => {
             msg = message.content;
         }
 
-        if(message.channel.name === config.welcomeChannel){
+        if(message.channel.name === config.welcomeChannel && !message.content.startsWith(prefix)){
             var commmandfile = bot.commands.get(bot.aliases.get("addcourse"));
             fs.appendFile('log.txt', `@${message.author.username} just sent "${msg}"\n\n`, function (err) {
                 if (err) throw err;
