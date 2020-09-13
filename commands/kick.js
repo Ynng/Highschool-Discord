@@ -14,9 +14,9 @@ module.exports.run = async (bot, message, args) => {
     if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't kick someone with the permission **Kick Members**", message, config.errorColor, config.tempTime);
     if (!target.kickable) return utils.simpleMessage(":thinking: I can't kick this user for some reason", message, config.errorColor, config.tempTime);
 
-    let targetIcon = target.user.avatarURL;
-    let authorIcon = message.author.avatarURL;
-    let moderationChannel = message.guild.channels.find(channel => channel.name === config.moderationChannel);
+    let targetIcon = target.user.avatarURL();
+    let authorIcon = message.author.avatarURL();
+    let moderationChannel = message.guild.channels.cache.find(channel => channel.name === config.moderationChannel);
 
     args.shift();
     let reason = args.join(" ");
@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
         .setThumbnail(targetIcon)
         .setTitle(`**@${target.user.username} Just Got Kicked!**`)
         .addField(`I have kicked`, `${target.user}`, true)
-        .addField(`On the behalf of`, `${message.author}`, true)
+        .addField(`On behalf of`, `${message.author}`, true)
         .addField("For the reason", reason);
 
     let moderationEmbed = new Discord.MessageEmbed()
@@ -66,7 +66,7 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
     name: "kick",
     args: "{@user} [Reason]",
-    description: "Kicks the targetted user from this server.",
+    description: "Kicks the target user from this server.",
     permission: "KICK_MEMBERS",
     example: "$k @xX_KoolGamer6903_Xx for spamming",
     aliases: ["kick", "k"]

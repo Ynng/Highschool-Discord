@@ -161,8 +161,8 @@ module.exports = {
         }
     },
 
-    safeDeleteMessage: function (message, timeout) {
-        message.delete(timeout).catch(error => {
+    safeDeleteMessage: function (message, t) {
+        message.delete({timeout: t, reason: 'Temporary bot message'}).catch(error => {
             console.log("Failed to delete message");
             return;
         });
@@ -171,7 +171,7 @@ module.exports = {
     embedAddStamp: function (message, embed, author) {
         if (message.channel.type != "dm") {
             embed
-                .setFooter(`Requested by: ${author.username}`, author.avatarURL)
+                .setFooter(`Requested by: ${author.username}`, author.avatarURL())
                 .setTimestamp();
         }
     },

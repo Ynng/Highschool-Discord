@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
 
         var embed = new Discord.MessageEmbed()
             .setColor(`${config.embedColor}`)
-            .setAuthor(`Help for ${bot.user.username}`, bot.user.displayAvatarURL)
+            .setAuthor(`Help for ${bot.user.username}`, bot.user.displayAvatarURL())
             .addField("My commands:", `\`${commandsArray.join("\` \`")}\``)
             .addField("My prefix:", `\`${config.prefix}\``)
             .addField("Need help on the commands?", `\`\`\`html\n< ${config.prefix}help {command} >\`\`\``);

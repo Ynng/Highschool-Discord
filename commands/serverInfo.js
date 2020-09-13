@@ -5,7 +5,7 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message) => {
   if (utils.checkDm(message)) return;
 
-  let serverIcon = message.guild.iconURL;
+  let serverIcon = message.guild.iconURL();
 
   let embed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)

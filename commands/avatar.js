@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     let target = message.guild.member(message.mentions.users.first());
     if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
 
-    let userIcon = target.user.displayAvatarURL;
+    let userIcon = target.user.displayAvatarURL();
 
     let embed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
