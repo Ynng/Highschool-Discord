@@ -1,5 +1,9 @@
-# Cached history
+# vscode local history extension
 .history/
+
+# private files
+tokens.json
+log.txt
 
 # Logs
 logs

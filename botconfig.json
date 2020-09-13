@@ -1,0 +1,13 @@
+{
+    "prefix": "&",
+    "moderationChannel": "moderation-log",
+    "welcomeChannel": "welcome",
+    "embedColor": "#6bdbff",
+    "errorColor": "#b71c1c",
+    "validColor": "#35e03e",
+    "loadingColor": "#528596",
+    "tempMsgTime": 15000,
+    "emojis":{
+        "loadingEmojiId":"567467203402924042"
+    }
+}
