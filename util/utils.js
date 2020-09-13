@@ -125,13 +125,13 @@ module.exports = {
 
     simpleMessage: function (text, message, color, timeout) {
         if (!message.deletable || !timeout) {
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
                 .setColor(color);
             this.embedAddStamp(message, embed, message.author);
             return message.channel.send(embed);
         } else {
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
                 .setFooter(`Removing in ${timeout / 1000} seconds`)
                 .setColor(color);
@@ -144,13 +144,13 @@ module.exports = {
 
     editSimpleMessage: function (text, editMessage, originMessage, color, timeout) {
         if (!originMessage.deletable || !timeout) {
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
                 .setColor(color);
             this.embedAddStamp(originMessage, embed, originMessage.author);
             return editMessage.edit(embed);
         } else {
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
                 .setFooter(`Removing in ${timeout / 1000} seconds`)
                 .setColor(color);
@@ -162,9 +162,7 @@ module.exports = {
     },
 
     safeDeleteMessage: function (message, timeout) {
-        // eslint-disable-next-line no-unused-vars
         message.delete(timeout).catch(error => {
-            // eslint-disable-next-line no-console
             console.log("Failed to delete message");
             return;
         });

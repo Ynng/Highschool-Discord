@@ -4,13 +4,13 @@ const utils = require("../util/utils");
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
-
-    let target = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    
+    let target = message.guild.member(message.mentions.users.first());
     if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
 
     let userIcon = target.user.displayAvatarURL;
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setImage(userIcon)
         .setTitle("Avatar/Profile picture")
@@ -22,9 +22,9 @@ module.exports.run = async (bot, message, args) => {
 };
 
 module.exports.help = {
-    name: "avater",
+    name: "avatar",
     args: "{@user}",
     description: "Gets the avatar/profile picture of the given user",
-    example: "$avatar @KoolGamer5742, $pfp @xxYitisbiggestfanxx",
-    aliases: ["avater","pfp","profile"]
+    example: "$avatar @KoolGamer5742, $pfp @Karasawamiko",
+    aliases: ["avatar","pfp","profile"]
 };

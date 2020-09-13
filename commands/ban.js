@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Ban Members** permission to do that", message, config.errorColor, config.tempTime);
     if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Ban Members** permission to do that", message, config.errorColor, config.tempTime);
 
-    let target = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
     if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
     if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't ban someone with the permission **Ban Members**", message, config.errorColor, config.tempTime);
     if (!target.bannable) return utils.simpleMessage(":thinking: I can't ban this user for some reason", message, config.errorColor, config.tempTime);
@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
     if (!reason) return utils.simpleMessage(":warning: You need a reason to ban someone", message, config.errorColor, config.tempTime);
 
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(targetIcon)
         .setTitle(`**@${target.user.username} Just Got Banned!**`)
@@ -31,7 +31,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(`On the behalf of`, `${message.author}`, true)
         .addField("For the reason", reason);
 
-    let moderationEmbed = new Discord.RichEmbed()
+    let moderationEmbed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(targetIcon)
         .setTitle(`**Ban**`)
@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Ban Reason", reason)
         .addField("Ban Time", message.createdAt);
 
-    let pmEmbed = new Discord.RichEmbed()
+    let pmEmbed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(authorIcon)
         .setTitle(`**You Just Got Banned from the server "${message.guild.name}"**`)

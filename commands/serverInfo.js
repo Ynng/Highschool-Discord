@@ -7,7 +7,7 @@ module.exports.run = async (bot, message) => {
 
   let serverIcon = message.guild.iconURL;
 
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)
     .setThumbnail(serverIcon)
     .setTitle(`Server Information`)

@@ -12,7 +12,7 @@ module.exports.run = async (bot, message, args) => {
             commandsArray.push(command.help.name);
         });
 
-        var embed = new Discord.RichEmbed()
+        var embed = new Discord.MessageEmbed()
             .setColor(`${config.embedColor}`)
             .setAuthor(`Help for ${bot.user.username}`, bot.user.displayAvatarURL)
             .addField("My commands:", `\`${commandsArray.join("\` \`")}\``)
@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
 
     if (bot.commands.get(bot.aliases.get(targetCommand))) {
         var command = bot.commands.get(bot.aliases.get(targetCommand));
-        var pmEmbed = new Discord.RichEmbed()
+        var pmEmbed = new Discord.MessageEmbed()
             .setColor(`${config.embedColor}`);
         utils.embedAddStamp(message, pmEmbed, message.author);
 

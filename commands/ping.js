@@ -4,7 +4,7 @@ const utils = require("../util/utils");
 
 
 module.exports.run = async (bot, message) => {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
         .setTitle(`${bot.emojis.get(config.emojis.loadingEmojiId)} pinging....`)
         .setColor(config.loadingColor);
     utils.embedAddStamp(message, embed, message.author);

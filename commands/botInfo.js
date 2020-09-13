@@ -5,7 +5,7 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message) => {
   let botIcon = bot.user.displayAvatarURL;
 
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)
     .setThumbnail(botIcon)
     .setTitle("Bot Information")

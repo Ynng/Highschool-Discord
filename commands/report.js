@@ -6,7 +6,7 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message, args) => {
   if (utils.checkDm(message)) return;
   
-  let target = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+  let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
   if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
 
   let moderationChannel = message.guild.channels.find(channel => channel.name === config.moderationChannel);
@@ -19,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
   let targetIcon = target.user.avatarURL;
   let authorIcon = message.author.avatarURL;
 
-  let embed = new Discord.RichEmbed()
+  let embed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)
     .setThumbnail(targetIcon)
     .setTitle(`**@${target.user.username} Just Got Reported!**`)
@@ -27,7 +27,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("On the behalf of", message.author, true)
     .addField("For the reason", reason);
 
-  let moderationEmbed = new Discord.RichEmbed()
+  let moderationEmbed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)
     .setThumbnail(targetIcon)
     .setTitle(`**Report**`)
@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Report Reason", reason)
     .addField("Report Time", message.createdAt);
 
-  let pmEmbed = new Discord.RichEmbed()
+  let pmEmbed = new Discord.MessageEmbed()
     .setColor(`${config.embedColor}`)
     .setThumbnail(authorIcon)
     .setTitle(`**You Just Got Reported in the server "${message.guild.name}"**`)

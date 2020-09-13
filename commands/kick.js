@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Kick Members** permission to do that", message, config.errorColor, config.tempTime);
     if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Kick Members** permission to do that", message, config.errorColor, config.tempTime);
 
-    let target = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
+    let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
     if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
     if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't kick someone with the permission **Kick Members**", message, config.errorColor, config.tempTime);
     if (!target.kickable) return utils.simpleMessage(":thinking: I can't kick this user for some reason", message, config.errorColor, config.tempTime);
@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args) => {
     let reason = args.join(" ");
     if (!reason) reason = "No Reason was Given";
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(targetIcon)
         .setTitle(`**@${target.user.username} Just Got Kicked!**`)
@@ -30,7 +30,7 @@ module.exports.run = async (bot, message, args) => {
         .addField(`On the behalf of`, `${message.author}`, true)
         .addField("For the reason", reason);
 
-    let moderationEmbed = new Discord.RichEmbed()
+    let moderationEmbed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(targetIcon)
         .setTitle(`**Kick**`)
@@ -39,7 +39,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Kick Reason", reason)
         .addField("Kick Time", message.createdAt);
 
-    let pmEmbed = new Discord.RichEmbed()
+    let pmEmbed = new Discord.MessageEmbed()
         .setColor(`${config.embedColor}`)
         .setThumbnail(authorIcon)
         .setTitle(`**You Just Got Kicked from the server "${message.guild.name}"**`)

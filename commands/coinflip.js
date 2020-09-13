@@ -5,7 +5,7 @@ const utils = require("../util/utils");
 
 module.exports.run = async (bot, message) => {
     let result = Math.random() < 0.5;
-    let embed = new Discord.RichEmbed();
+    let embed = new Discord.MessageEmbed();
     if (result) {
         embed.setTitle(`${bot.emojis.get(config.emojis.coinHeadEmojiId)} Heads`)
             .setColor(config.embedColor);
