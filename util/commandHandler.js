@@ -23,7 +23,7 @@ module.exports = (bot, message) => {
         }else{
             msg = msg.replace(/\s+/g, ' ');
             var args = msg.split(" ");
-            var cmd = args.shift();
+            var cmd = args.shift().toLowerCase();
             fs.appendFile('log.txt', `@${message.author.username} just requested "${cmd}" with args "${args}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');

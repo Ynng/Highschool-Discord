@@ -2,1216 +2,1459 @@
   "ATB1OM": {
     "department": "AU Dance",
     "name": "Ballet",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ATM1OM": {
     "department": "AU Dance",
     "name": "Modern Dance",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ATB2OM": {
     "department": "AU Dance",
     "name": "Ballet",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ATM2OM": {
     "department": "AU Dance",
     "name": "Modern Dance",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ATB3MM": {
     "department": "AU Dance",
     "name": "Ballet",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ATM4MM": {
     "department": "AU Dance",
     "name": "Modern Dance",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ATB4MM": {
     "department": "AU Dance",
     "name": "Ballet",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ADA1OM": {
     "department": "AU Drama",
     "name": "Drama",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ADD1OM": {
     "department": "AU Drama",
     "name": "Drama Production",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ADA2OM": {
     "department": "AU Drama",
     "name": "Drama",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ADD2OM": {
     "department": "AU Drama",
     "name": "Drama Production",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ADF3MM": {
     "department": "AU Drama",
     "name": "Director\u2019s Craft",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ADD3MM": {
     "department": "AU Drama",
     "name": "Drama Production",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ADA4MM": {
     "department": "AU Drama",
     "name": "Drama",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ADD4MM": {
     "department": "AU Drama",
     "name": "Drama Production",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMK1OM": {
     "department": "AU Music",
     "name": "Piano",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMS1OM": {
     "department": "AU Music",
     "name": "Strings",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMC1OM": {
     "department": "AU Music",
     "name": "Musicianship",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMV1OM": {
     "department": "AU Music",
     "name": "Vocal",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMW1OM": {
     "department": "AU Music",
     "name": "Woodwinds",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMK2OM": {
     "department": "AU Music",
     "name": "Piano",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMS2OM": {
     "department": "AU Music",
     "name": "Strings",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMC2OM": {
     "department": "AU Music",
     "name": "Musicianship",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMV2OM": {
     "department": "AU Music",
     "name": "Vocal",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMW2OM": {
     "department": "AU Music",
     "name": "Woodwinds",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMK3MM": {
     "department": "AU Music",
     "name": "Piano",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMS3MM": {
     "department": "AU Music",
     "name": "Strings",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMC3MM": {
     "department": "AU Music",
     "name": "Musicianship",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMV3MM": {
     "department": "AU Music",
     "name": "Vocal",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMW3MM": {
     "department": "AU Music",
     "name": "Woodwinds",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMK4MM": {
     "department": "AU Music",
     "name": "Piano",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMS4MM": {
     "department": "AU Music",
     "name": "Strings",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMC4MM": {
     "department": "AU Music",
     "name": "Musicianship",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMV4MM": {
     "department": "AU Music",
     "name": "Vocal",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMW4MM": {
     "department": "AU Music",
     "name": "Woodwinds",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AVI1OM": {
     "department": "AU Visual Arts",
     "name": "Visual Arts",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AWM1OM": {
     "department": "AU Visual Arts",
-    "name": "Drawing",
-    "grade": 1
+    "name": "Painting",
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AVI2OM": {
     "department": "AU Visual Arts",
     "name": "Visual Arts",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AWM2OM": {
     "department": "AU Visual Arts",
-    "name": "Drawing",
-    "grade": 2
+    "name": "Painting",
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AVI3MM": {
     "department": "AU Visual Arts",
     "name": "Visual Arts",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AWM3MM": {
     "department": "AU Visual Arts",
-    "name": "Drawing",
-    "grade": 3
+    "name": "Painting",
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AVI4MM": {
     "department": "AU Visual Arts",
     "name": "Visual Arts",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AWM4MM": {
     "department": "AU Visual Arts",
-    "name": "Drawing",
-    "grade": 4
+    "name": "Painting",
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ATP1O1": {
     "department": "Dance",
     "name": "Dance",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ATP2O1": {
     "department": "Dance",
     "name": "Dance",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ATP3M1": {
     "department": "Dance",
     "name": "Dance",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ATP4M1": {
     "department": "Dance",
     "name": "Dance",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ADA1O1": {
     "department": "Drama",
     "name": "Dramatic Arts",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ADA2O1": {
     "department": "Drama",
     "name": "Dramatic Drawings",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ADV3M1": {
     "department": "Drama",
     "name": "Video",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ADB3M1": {
     "department": "Drama",
     "name": "Showtime",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ADV4M1": {
     "department": "Drama",
     "name": "Video",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ADB4M1": {
     "department": "Drama",
     "name": "Showtime",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMI1O1": {
     "department": "Music",
     "name": "Percussion Band",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMI1O2": {
     "department": "Music",
     "name": "Beginning Band",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMI1O3": {
     "department": "Music",
     "name": "Woodwinds Band",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMO1O1": {
     "department": "Music",
     "name": "Strings",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMO1O2": {
     "department": "Music",
     "name": "Beginning Strings",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMV1O1": {
     "department": "Music",
     "name": "Vocal",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMR1O1": {
     "department": "Music",
     "name": "Repertoire Band",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMR1O2": {
     "department": "Music",
     "name": "Repertoire Strings",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMR1O3": {
     "department": "Music",
     "name": "Repertoire Choral",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AMI2O1": {
     "department": "Music",
     "name": "Percussion Band",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMI2O2": {
     "department": "Music",
     "name": "Beginning Band",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMI2O3": {
     "department": "Music",
     "name": "Woodwinds Band",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMO2O1": {
     "department": "Music",
     "name": "Strings",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMO2O2": {
     "department": "Music",
     "name": "Beginning Strings",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMV2O1": {
     "department": "Music",
     "name": "Vocal",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMR2O1": {
     "department": "Music",
     "name": "Repertoire Band",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMR2O2": {
     "department": "Music",
     "name": "Repertoire Strings",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMR2O3": {
     "department": "Music",
     "name": "Repertoire Choral",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AMI3M1": {
     "department": "Music",
     "name": "Band",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMO3M1": {
     "department": "Music",
     "name": "Strings",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMV3M1": {
     "department": "Music",
     "name": "Vocal",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMT3M1": {
     "department": "Music",
     "name": "Music Theatre",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMR3M1": {
     "department": "Music",
     "name": "Repertoire Band",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMR3M2": {
     "department": "Music",
     "name": "Repertoire Strings",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMR3M3": {
     "department": "Music",
     "name": "Repertoire Choral",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AMI4M1": {
     "department": "Music",
     "name": "Band",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMO4M1": {
     "department": "Music",
     "name": "Strings",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMV4M1": {
     "department": "Music",
     "name": "Vocal",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMT4M1": {
     "department": "Music",
     "name": "Music Theatre",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMR4M1": {
     "department": "Music",
     "name": "Repertoire Band",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMR4M2": {
     "department": "Music",
     "name": "Repertoire Strings",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AMR4M3": {
     "department": "Music",
     "name": "Repertoire Choral",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AVI1O1": {
     "department": "Visual Arts",
     "name": "Visual Arts",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "AVI2O1": {
     "department": "Visual Arts",
     "name": "Visual Arts",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AWQ2O1": {
     "department": "Visual Arts",
     "name": "Photography",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ASM2O1": {
     "department": "Visual Arts",
     "name": "Media Arts",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AWC2O1": {
     "department": "Visual Arts",
     "name": "Ceramics",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "AVI3M1": {
     "department": "Visual Arts",
     "name": "Visual Arts",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AWQ3M1": {
     "department": "Visual Arts",
     "name": "Photography",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ASM3M1": {
     "department": "Visual Arts",
     "name": "Media Arts",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AWC3M1": {
     "department": "Visual Arts",
     "name": "Ceramics",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AWC3O1": {
     "department": "Visual Arts",
     "name": "Ceramics",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "AVI4M1": {
     "department": "Visual Arts",
     "name": "Visual Arts",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AWQ4M1": {
     "department": "Visual Arts",
     "name": "Photography",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ASM4M1": {
     "department": "Visual Arts",
     "name": "Media Arts",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "AWC4M1": {
     "department": "Visual Arts",
     "name": "Ceramics",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "BTT1O1": {
     "department": "Business",
     "name": "Business Technology",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "BBI2O1": {
     "department": "Business",
     "name": "Business Intro",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "BAF3M1": {
     "department": "Business",
     "name": "Accounting Intro",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "BMI3C1": {
     "department": "Business",
     "name": "Marketing",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "BAT4M1": {
     "department": "Business",
     "name": "Accounting",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "BBB4M1": {
     "department": "Business",
     "name": "Business",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "BOH4M1": {
     "department": "Business",
     "name": "Leadership",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "CIE3M1": {
     "department": "Business",
     "name": "Individual and Economy",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "CIA4U1": {
     "department": "Business",
     "name": "Current Economic",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "CGC1D1": {
     "department": "Geography",
     "name": "Geography",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "CGC1P1": {
     "department": "Geography",
     "name": "Geography",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "CGG3O1": {
     "department": "Geography",
     "name": "Travel and Tourism",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "CGW4U1": {
     "department": "Geography",
     "name": "Geographic Analysis",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "CHC2D1": {
     "department": "History",
     "name": "Canadian History",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "CHC2P1": {
     "department": "History",
     "name": "Canadian History",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "CHW3M1": {
     "department": "History",
     "name": "World History",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "CLU3M1": {
     "department": "History",
     "name": "Canadian Law",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "CHY4U1": {
     "department": "History",
     "name": "World History",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "CHY4C1": {
     "department": "History",
     "name": "West World History",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "CLN4U1": {
     "department": "History",
     "name": "International Law",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HSP3U1": {
     "department": "Social Science",
     "name": "Sociology etc",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "HSB4U1": {
     "department": "Social Science",
     "name": "Society Change",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HZT4U1": {
     "department": "Social Science",
     "name": "Philosophy",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "LKMBD1": {
-    "department": "Languages",
+    "department": "Chinese",
     "name": "Chinese",
-    "grade": -1
-  },
-  "LWSBD1": {
-    "department": "Languages",
-    "name": "Spanish",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "LKMCU1": {
-    "department": "Languages",
+    "department": "Chinese",
     "name": "Chinese",
-    "grade": -1
-  },
-  "LWSCU1": {
-    "department": "Languages",
-    "name": "Spanish",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "LKMDU1": {
-    "department": "Languages",
+    "department": "Chinese",
     "name": "Chinese",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
+  },
+  "LWSBD1": {
+    "department": "Spanish",
+    "name": "Spanish",
+    "grade": -1,
+    "dedicated_chat": true
+  },
+  "LWSCU1": {
+    "department": "Spanish",
+    "name": "Spanish",
+    "grade": -1,
+    "dedicated_chat": true
   },
   "LWSDU1": {
-    "department": "Languages",
+    "department": "Spanish",
     "name": "Spanish",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "ICS2O1": {
-    "department": "Computer Science",
+    "department": "Programming",
     "name": "Com Sci Intro",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ICS3C1": {
-    "department": "Computer Science",
+    "department": "Programming",
     "name": "programming intro",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "ICS4C1": {
+    "department": "Programming",
+    "name": "Programming",
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ICS3U1": {
     "department": "Computer Science",
     "name": "Com Sci Intro",
-    "grade": 3
-  },
-  "ICS4C1": {
-    "department": "Computer Science",
-    "name": "Programming",
-    "grade": 4
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ICS4U1": {
     "department": "Computer Science",
     "name": "Com Sci",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "COP3X0": {
     "department": "Co-op",
     "name": "Co-op",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": false
   },
   "COP4X0": {
     "department": "Co-op",
     "name": "Co-op",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": false
   },
   "COP4X4": {
     "department": "Co-op",
     "name": "Co-op",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": false
   },
   "COP4X5": {
     "department": "Co-op",
     "name": "Co-op",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": false
   },
   "YYY4X1": {
     "department": "Dual Credit",
     "name": "College",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "YYY4X2": {
     "department": "Dual Credit",
     "name": "College",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "ENG1P1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "ENG1L1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "ENG2P1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "ENG2L1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "ENG3C1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "ENG3E1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "ENG4C1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "ENG4E1": {
+    "department": "Applied English",
+    "name": "English",
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ENG1D1": {
     "department": "English",
     "name": "English",
-    "grade": 1
-  },
-  "ENG1P1": {
-    "department": "English",
-    "name": "English",
-    "grade": 1
-  },
-  "ENG1L1": {
-    "department": "English",
-    "name": "English",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "ENG2D1": {
     "department": "English",
     "name": "English",
-    "grade": 2
-  },
-  "ENG2P1": {
-    "department": "English",
-    "name": "English",
-    "grade": 2
-  },
-  "ENG2L1": {
-    "department": "English",
-    "name": "English",
-    "grade": 2
-  },
-  "ENG3C1": {
-    "department": "English",
-    "name": "English",
-    "grade": 3
+    "grade": 2,
+    "dedicated_chat": true
   },
   "ENG3U1": {
     "department": "English",
     "name": "English",
-    "grade": 3
-  },
-  "ENG3E1": {
-    "department": "English",
-    "name": "English",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "EPS3O1": {
     "department": "English",
     "name": "Presentation",
-    "grade": 3
-  },
-  "ENG4C1": {
-    "department": "English",
-    "name": "English",
-    "grade": 4
+    "grade": 3,
+    "dedicated_chat": true
   },
   "ENG4U1": {
     "department": "English",
     "name": "English",
-    "grade": 4
-  },
-  "ENG4E1": {
-    "department": "English",
-    "name": "English",
-    "grade": 4
-  },
-  "EWC4U1": {
-    "department": "English",
-    "name": "Writer\u2019s Craft",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "EWC4C1": {
     "department": "English",
     "name": "Writer\u2019s Craft",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "EWC4U1": {
+    "department": "English",
+    "name": "Writer\u2019s Craft",
+    "grade": 4,
+    "dedicated_chat": true
   },
   "OLC4O1": {
     "department": "English",
     "name": "Literacy",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "ESLAO1": {
     "department": "ESL",
     "name": "ESL 1",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "ESLBO1": {
     "department": "ESL",
     "name": "ESL 2",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "ESLCO1": {
     "department": "ESL",
     "name": "ESL 3",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "ESLDO1": {
     "department": "ESL",
     "name": "ESL 4",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "ESLEO1": {
     "department": "ESL",
     "name": "ESL 5",
-    "grade": -1
+    "grade": -1,
+    "dedicated_chat": true
   },
   "FSF1D1": {
-    "department": "French",
+    "department": "Grade 9 French",
     "name": "French",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "FSF1P1": {
-    "department": "French",
+    "department": "Grade 9 French",
     "name": "French",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "FSF1O1": {
-    "department": "French",
+    "department": "Grade 9 French",
     "name": "Open French",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "FSF2D1": {
     "department": "French",
     "name": "French",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "FSF3U1": {
     "department": "French",
     "name": "French",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "FSF4U1": {
     "department": "French",
     "name": "French",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "GLC2O1": {
     "department": "Career Civics",
     "name": "Career",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "CHV2O1": {
     "department": "Career Civics",
     "name": "Civics",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "GLE1O1": {
     "department": "Special Ed",
     "name": "Special Ed",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "GLE2O1": {
     "department": "Special Ed",
     "name": "Special Ed",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "GLE3O1": {
     "department": "Special Ed",
     "name": "Special Ed",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "GLE4O1": {
     "department": "Special Ed",
     "name": "Special Ed",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "PPL1O8": {
-    "department": "Fitness",
+    "department": "Grade 9 Phys-ed",
     "name": "Phys-ed",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "PPL1O9": {
-    "department": "Fitness",
+    "department": "Grade 9 Phys-ed",
     "name": "Phys-ed",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "PAF2O8": {
     "department": "Fitness",
     "name": "Phys-ed",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "PAF2O9": {
     "department": "Fitness",
     "name": "Fitness",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "PPL2O1": {
     "department": "Fitness",
     "name": "Phys-ed",
-    "grade": 2
-  },
-  "PAD2O1": {
-    "department": "Fitness",
-    "name": "Outdoor",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "PAF3O8": {
     "department": "Fitness",
     "name": "Fitness",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "PAF3O9": {
     "department": "Fitness",
     "name": "Fitness",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "PPL3O1": {
     "department": "Fitness",
     "name": "Phys-ed",
-    "grade": 3
-  },
-  "PAD3O1": {
-    "department": "Fitness",
-    "name": "Outdoor",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "PAF4O8": {
     "department": "Fitness",
     "name": "Fitness",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "PAF4O9": {
     "department": "Fitness",
     "name": "Fitness",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "PPL4O1": {
     "department": "Fitness",
     "name": "Phys-ed",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "PLF4M1": {
     "department": "Fitness",
     "name": "Active Leadership",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "PAD2O1": {
+    "department": "Outdoors",
+    "name": "Outdoor",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "PAD3O1": {
+    "department": "Outdoors",
+    "name": "Outdoor",
+    "grade": 3,
+    "dedicated_chat": true
   },
   "IDC3O2": {
-    "department": "Cool things",
+    "department": "Interdisciplinary",
     "name": "Pro-Gaming",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "IDC4U3": {
-    "department": "Cool things",
+    "department": "Interdisciplinary",
     "name": "3D",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "MAT1L1": {
-    "department": "Math",
+    "department": "Applied Math",
     "name": "Math",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "MFM1P1": {
-    "department": "Math",
+    "department": "Applied Math",
     "name": "Math",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "MAT2L1": {
+    "department": "Applied Math",
+    "name": "Math",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "MFM2P1": {
+    "department": "Applied Math",
+    "name": "Math Applied",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "MBF3C1": {
+    "department": "Applied Math",
+    "name": "Math",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MCF3M1": {
+    "department": "Applied Math",
+    "name": "Functions Application",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MEL3E1": {
+    "department": "Applied Math",
+    "name": "Everyday Math",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MAP4C1": {
+    "department": "Applied Math",
+    "name": "College Math",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "MCT4C1": {
+    "department": "Applied Math",
+    "name": "Tech Math",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "MEL4E1": {
+    "department": "Applied Math",
+    "name": "Everyday Math",
+    "grade": 4,
+    "dedicated_chat": true
   },
   "MPM1D1": {
     "department": "Math",
     "name": "Math",
-    "grade": 1
-  },
-  "MAT2L1": {
-    "department": "Math",
-    "name": "Math",
-    "grade": 2
-  },
-  "MFM2P1": {
-    "department": "Math",
-    "name": "Math Applied",
-    "grade": 2
+    "grade": 1,
+    "dedicated_chat": true
   },
   "MPM2D1": {
     "department": "Math",
     "name": "Math",
-    "grade": 2
-  },
-  "MBF3C1": {
-    "department": "Math",
-    "name": "Math",
-    "grade": 3
-  },
-  "MCF3M1": {
-    "department": "Math",
-    "name": "Functions Application",
-    "grade": 3
-  },
-  "MEL3E1": {
-    "department": "Math",
-    "name": "Everyday Math",
-    "grade": 3
-  },
-  "MAP4C1": {
-    "department": "Math",
-    "name": "College Math",
-    "grade": 4
-  },
-  "MCT4C1": {
-    "department": "Math",
-    "name": "Tech Math",
-    "grade": 4
-  },
-  "MEL4E1": {
-    "department": "Math",
-    "name": "Everyday Math",
-    "grade": 4
+    "grade": 2,
+    "dedicated_chat": true
   },
   "MCR3U1": {
-    "department": "Tryhard Math",
+    "department": "Math",
     "name": "Functions",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "MCV4U1": {
-    "department": "Tryhard Math",
+    "department": "Math",
     "name": "Calculus",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "MDM4U1": {
-    "department": "Tryhard Math",
+    "department": "Math",
     "name": "Data Management",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "MHF4U1": {
-    "department": "Tryhard Math",
+    "department": "Math",
     "name": "Adv Function",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "SNC1P1": {
+    "department": "Applied Science",
+    "name": "Science",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "SNC1L1": {
+    "department": "Applied Science",
+    "name": "Science",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "SNC2P1": {
+    "department": "Applied Science",
+    "name": "Science",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "SNC2L1": {
+    "department": "Applied Science",
+    "name": "Science",
+    "grade": 2,
+    "dedicated_chat": true
   },
   "SNC1D1": {
     "department": "Science",
     "name": "Science",
-    "grade": 1
-  },
-  "SNC1P1": {
-    "department": "Science",
-    "name": "Science",
-    "grade": 1
-  },
-  "SNC1L1": {
-    "department": "Science",
-    "name": "Science",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "SNC2D1": {
     "department": "Science",
     "name": "Science",
-    "grade": 2
-  },
-  "SNC2P1": {
-    "department": "Science",
-    "name": "Science",
-    "grade": 2
-  },
-  "SNC2L1": {
-    "department": "Science",
-    "name": "Science",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "SBI3C1": {
     "department": "Biology",
     "name": "Biology",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "SBI3U1": {
     "department": "Biology",
     "name": "Biology",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "SBI4U1": {
     "department": "Biology",
     "name": "Biology",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "SCH3U1": {
     "department": "Chemistry",
     "name": "Chemistry",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "SCH4C1": {
     "department": "Chemistry",
     "name": "Chemistry",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "SCH4U1": {
     "department": "Chemistry",
     "name": "Chemistry",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "SPH3U1": {
     "department": "Physics",
     "name": "Physics",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "SPH4C1": {
     "department": "Physics",
     "name": "Physics",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "SPH4U1": {
     "department": "Physics",
     "name": "Physics",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "SES4U1": {
     "department": "Physics",
     "name": "Earth and Space",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HIF1O1": {
     "department": "Family Studies",
     "name": "Family Studies",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "HFN2O1": {
     "department": "Family Studies",
     "name": "Food and Nutrition",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "HFC3M1": {
     "department": "Family Studies",
     "name": "Food and Culture",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "HPW3C1": {
     "department": "Family Studies",
     "name": "Working with infants",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "HFA4U1": {
     "department": "Family Studies",
     "name": "Nutrition",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HHG4M1": {
     "department": "Family Studies",
     "name": "Human Development",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HHS4U1": {
     "department": "Family Studies",
     "name": "Families",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "HNB4M1": {
     "department": "Family Studies",
     "name": "Fashion",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "TEJ1O1": {
     "department": "Technology",
     "name": "Computer Tech",
-    "grade": 1
+    "grade": 1,
+    "dedicated_chat": true
   },
   "TIJ1O1": {
     "department": "Technology",
     "name": "Tech",
-    "grade": 1
-  },
-  "TCJ2O1": {
-    "department": "Technology",
-    "name": "Construction Tech",
-    "grade": 2
+    "grade": 1,
+    "dedicated_chat": true
   },
   "TDJ2O1": {
     "department": "Technology",
     "name": "Tech Design",
-    "grade": 2
+    "grade": 2,
+    "dedicated_chat": true
   },
   "TEJ2O1": {
     "department": "Technology",
     "name": "Computer Tech",
-    "grade": 2
-  },
-  "TGJ2O1": {
-    "department": "Technology",
-    "name": "Communications Tech",
-    "grade": 2
-  },
-  "TCJ3C1": {
-    "department": "Technology",
-    "name": "Construction Tech",
-    "grade": 3
+    "grade": 2,
+    "dedicated_chat": true
   },
   "TDJ3M1": {
     "department": "Technology",
     "name": "Tech Design",
-    "grade": 3
+    "grade": 3,
+    "dedicated_chat": true
   },
   "TEJ3M1": {
     "department": "Technology",
     "name": "Computer Engineering",
-    "grade": 3
-  },
-  "TGJ3M1": {
-    "department": "Technology",
-    "name": "Communications Tech",
-    "grade": 3
-  },
-  "TCJ4C1": {
-    "department": "Technology",
-    "name": "Construction Tech",
-    "grade": 4
+    "grade": 3,
+    "dedicated_chat": true
   },
   "TDJ4M1": {
     "department": "Technology",
     "name": "Tech Design",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "TEJ4M1": {
     "department": "Technology",
     "name": "Computer Engineering",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "TGJ2O1": {
+    "department": "Comm Tech",
+    "name": "Communications Tech",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "TGJ3M1": {
+    "department": "Comm Tech",
+    "name": "Communications Tech",
+    "grade": 3,
+    "dedicated_chat": true
   },
   "TGJ4M1": {
-    "department": "Technology",
+    "department": "Comm Tech",
     "name": "Communications Tech",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": true
   },
   "TGG4M1": {
-    "department": "Technology",
+    "department": "Yearbook",
     "name": "Yearbook",
-    "grade": 4
+    "grade": 4,
+    "dedicated_chat": false
+  },
+  "TCJ2O1": {
+    "department": "Construction Tech",
+    "name": "Construction Tech",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "TCJ3C1": {
+    "department": "Construction Tech",
+    "name": "Construction Tech",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "TCJ4C1": {
+    "department": "Construction Tech",
+    "name": "Construction Tech",
+    "grade": 4,
+    "dedicated_chat": true
   }
 }
