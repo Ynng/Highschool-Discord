@@ -35,18 +35,19 @@ module.exports.run = async (bot, message, args) => {
     }
     if (count < 10) {
         var roleAdd = message.guild.roles.cache.find(r => r.name == entry);
-        if (typeof roleAdd != undefined) {
-            message.member.addRole(roleAdd);
+        console.log(roleAdd)
+        if (roleAdd != undefined) {
+            message.member.roles.add(roleAdd);
             return message.channel.send(`added ${role.name} to ${message.member.name}`);
         } else {
-            message.guild.roles.create({
+            newRole = message.guild.roles.create({
                 data: {
                     name: entry,
-                    color: 'BLACK',
+                    color: 'GREY',
                 },
                 reason: `New course ${entry} required by ${message.member} `
             })
-            message.member.addRole(message.guild.roles.find(rNew => rNew.name == entry));
+            message.member.roles.add(newRole);
             return message.channel.send(`added ${entry} to ${message.member.name}`);
         }
     } else {
