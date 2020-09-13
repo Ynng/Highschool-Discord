@@ -7,13 +7,17 @@ const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
+
+    /****************************************
+        Parsing user input
+    *************************************/
     var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
     utils.safeDeleteMessage(message, 1000);
 
     //Match all potential course code with regex
     var rawCourses = message.content.match(re);
     if (!rawCourses)
-        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime /3 * 2);
+        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime / 3 * 2);
 
     //Remove duplicated inputs
     rawCourses = [...new Set(rawCourses)];
@@ -28,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
 
     // Sending a error message about all invalid course codes
     if (rawCourses.length > 0)
-        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} are not valid course codes!`, message, config.errorColor,  2 * config.tempMsgTime);
+        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} are not valid course codes!`, message, config.errorColor, 2 * config.tempMsgTime);
 
     if (courses.length == 0) return;
 
@@ -38,39 +42,85 @@ module.exports.run = async (bot, message, args) => {
         if (re.test(role.name))
             courseCount++;
 
-    //Add course roles to the user
+    /****************************************
+        Add course roles to the user
+    *************************************/
     var tooManyCourses = false;
     var addedCourses = [];
-    courses.forEach(course => {
-        if (courseCount > 8){
+    var newCreatedRoles = [];
+    for (i = 0; i < courses.length; i++) {
+        course = courses[i];
+        if (courseCount > 8) {
             tooManyCourses = true;
-            return;
+            continue;
         }
-
         addedCourses.push(course);
         var existingRole = message.guild.roles.cache.find(r => r.name == course);
         courseCount++;
 
         if (existingRole != undefined) {
             message.member.roles.add(existingRole);
-            return;
+            continue;
         }
-        message.guild.roles.create({
+
+        //Creating new course role
+        await message.guild.roles.create({
             data: {
                 name: course
             },
             reason: `New course ${course} required by ${message.member.displayName}`
-        }).then(newRole => message.member.roles.add(newRole));
+        }).then(newRole => {
+            //Adds the role to the user
+            message.member.roles.add(newRole);
+            newCreatedRoles.push(newRole);
+        });
 
         fs.appendFile('log.txt', `New course ${course} required by ${message.member.displayName}\n`, function (err) {
             if (err) throw err;
             console.log('Saved!');
         });
-    })
+    }
 
-    utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCourses, ', ')}  to your account!`, message, config.validColor,  2 * config.tempMsgTime);
+    /****************************************
+        Create/Add "Grade" Channels
+    *************************************/
+    //If "Grades" category does not exist, create it
+    var category = message.guild.channels.cache.find(channel => channel.name == "Grades");
+    if (category == undefined)
+        await message.guild.channels.create("Grades", { type: "category" })
+    for (i = 0; i < newCreatedRoles.length; i++) {
+        if (courselist[newCreatedRoles[i].name].grade == -1)
+            continue;
 
-    if(tooManyCourses)
+        var grade = courselist[newCreatedRoles[i].name].grade;
+        var gradeString = `grade-${grade + 8}`
+        var channel = message.guild.channels.cache.find(channel => channel.name == gradeString);
+
+        //If channel already exist, add the new role to permission overwrite 
+        if (channel != undefined) {
+            channel.createOverwrite(newCreatedRoles[i], { 'VIEW_CHANNEL': true });
+        } else {
+            //Else, create the new channel with the correct permission overwrite
+            await message.guild.channels.create(gradeString, {
+                parent: message.guild.channels.cache.find(channel => channel.name == "Grades"),
+                position: grade,
+                permissionOverwrites: [
+                    {
+                        id: newCreatedRoles[i].id,
+                        allow: ['VIEW_CHANNEL'],
+                    },
+                    {
+                        id: message.guild.id,
+                        deny: ['VIEW_CHANNEL'],
+                    }
+                ]
+            })
+        }
+    }
+
+    utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCourses, ', ')}  to your account!`, message, config.validColor, 2 * config.tempMsgTime);
+
+    if (tooManyCourses)
         return utils.simpleMessage(":no_entry_sign: You have too many subjects already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);
 
 };

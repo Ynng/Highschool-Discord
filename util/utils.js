@@ -133,7 +133,7 @@ module.exports = {
         } else {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
-                .setFooter(`Removing this message in ${timeout / 1000} seconds`)
+                .setFooter(`${message.author.username} | Removing this message in ${timeout / 1000} seconds`, message.author.avatarURL())
                 .setColor(color);
             return message.channel.send(embed).then(msg => {
                 this.safeDeleteMessage(msg, timeout);
@@ -152,7 +152,7 @@ module.exports = {
         } else {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
-                .setFooter(`Removing this message in ${timeout / 1000} seconds`)
+                .setFooter(`${originMessage.author.username} | Removing this message in ${timeout / 1000} seconds`, message.author.avatarURL())
                 .setColor(color);
             return editMessage.edit(embed).then(msg => {
                 this.safeDeleteMessage(msg, timeout);
