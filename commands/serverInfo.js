@@ -8,19 +8,19 @@ module.exports.run = async (bot, message) => {
   let serverIcon = message.guild.iconURL();
 
   let embed = new Discord.MessageEmbed()
-          .setAuthor(`${serverName}`)
-          .setFooter(`Server created on ${message.guild.createdAt} ||---|| SERVER PREFIX ${prefix}`)
+          .setAuthor(`${message.guild.name}`)
+          .setFooter(`Server created on ${message.guild.createdAt} ||---|| SERVER PREFIX ${config.prefix}`)
           .setThumbnail(serverIcon)
           .setTitle("Server Information!")
           .addField("You joined on", message.member.joinedAt, true)
           .addField("Total Members", `**${message.guild.memberCount}**`, true)
-          .addBlankField()
-          .addField('Humans', `**${message.guild.members.filter(member => !member.user.bot).size}**`, true)
-          .addField('Bots', `**${message.guild.members.filter(member => member.user.bot).size}**`, true)
-          .addField('Member Status', `**${message.guild.members.filter(o => o.presence.status === 'online').size}** Online\n**${message.guild.members.filter(i => i.presence.status === 'idle').size}** Idle/Away\n**${message.guild.members.filter(dnd => dnd.presence.status === 'dnd').size}** Do Not Disturb\n**${message.guild.members.filter(off => off.presence.status === 'offline').size}** Offline/Invisible\n**${message.guild.members.filter(s => s.presence.status === 'streaming').size}** Streaming`)
+          .addField('\u200b', '\u200b')
+          .addField('Humans', `**${message.guild.members.cache.filter(member => !member.user.bot).size}**`, true)
+          .addField('Bots', `**${message.guild.members.cache.filter(member => member.user.bot).size}**`, true)
+          .addField('Member Status', `**${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** Online\n**${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** Idle/Away\n**${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** Do Not Disturb\n**${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** Offline/Invisible\n**${message.guild.members.cache.filter(s => s.presence.status === 'streaming').size}** Streaming`)
           .addField("Server Owner", message.guild.owner.user.tag, true)
-          .addField("Region", region)
-          .setColor(`${message.guild.displayHexColor}`);
+          .addField("Region", message.guild.region)
+          .setColor(config.embedColor);
   utils.embedAddStamp(message, embed, message.author);
   message.channel.send(embed);
 };

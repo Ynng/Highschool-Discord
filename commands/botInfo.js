@@ -17,14 +17,14 @@ module.exports.run = async (bot, message) => {
     .setColor(`${config.embedColor}`)
     .setThumbnail(botIcon)
     .setTitle("Bot Information")
-    .addField("Hi, my name is", bot.user.username, true)
+    .addField("Hi, my name is", "Wolfy the robot", true)
     .addField(`Library`, `[discord.js](https://discord.js.org/#/)`, true)
-    .addField(`Users`, `${client.users.size}`, true)
+    .addField(`Users`, `${bot.users.cache.size}`, true)
     .addField(`I have been Oneline for`, `${uptime}`, true)
     .addField("I have existed for", utils.getAgeString(utils.getAgeDate(bot.user.createdAt)), true)
     .addField("My Prefix is", `\`${config.prefix}\``, true)
-    .addField("Author", "@Ynng#1017", true);
-    .setTimestamp()
+    .addField("Author", "@Ynng#1017", true)
+    .setTimestamp();
   utils.embedAddStamp(message, embed, message.author);
 
   message.channel.send(embed);
