@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
   var messageCount = args[0];
   if (!messageCount) return utils.simpleMessage(":warning: Please enter the number of messages to remove", message, config.errorColor, config.tempMsgTime);
   messageCount = Number(messageCount);
-  if (!messageCount || messageCount < 1 || messageCount > 100) return utils.simpleMessage(":warning: Please enter a integer number between 1 and 100", message, config.errorColor, config.tempMsgTime);
+  if (!messageCount || messageCount < 1 || messageCount > 99) return utils.simpleMessage(":warning: Please enter a integer number between 1 and 99", message, config.errorColor, config.tempMsgTime);
 
   message.channel.bulkDelete(messageCount + 1);
   utils.simpleMessage(`:ok_hand: Removed ${messageCount} messages from #${message.channel.name}`, message, config.embedColor);
