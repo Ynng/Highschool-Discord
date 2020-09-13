@@ -13,32 +13,32 @@ module.exports.run = async (bot, message, args) => {
                 message.channel.send(`works format, ${message.content}`);
                 noMatch = false;
                 var count = 0;
-                var roleExists = false;
                 for (role in message.member.roles) {
                     if (re.test(role.name)) {
                         count++;
-                        if (count < 10) {
-                            if (entry == role.name) {
-                                roleExists = true;
-                                message.member.addRole(role);
-                                message.channel.send(`added ${role.name} to ${message.member.name}`);
-                            }
-                        } else {
-                            message.channel.send(`too many subjects`);
-                        }
+                    }
+                    if (entry == role.name) {
+                        return message.channel.send("Role already assigned");
                     }
                 }
-                if (!roleExists) {
-                    message.guild.roles.create({
-                        data: {
-                            name: entry,
-                            color: 'BLACK',
-                        },
-                        reason: `New course ${entry} required by ${message.member} `
-                    })
-                    message.member.addRole(message.guild.roles.find(rNew => rNew.name == entry));
-                    message.channel.send(`added ${entry} to ${message.member.name}`);
-
+                if (count < 10) {
+                    var roleAdd = message.guild.roles.cache.find(r => x.name == entry);
+                    if (typeof roleAdd != undefined) {
+                        message.member.addRole(roleAdd);
+                        return message.channel.send(`added ${role.name} to ${message.member.name}`);
+                    } else {
+                        message.guild.roles.create({
+                            data: {
+                                name: entry,
+                                color: 'BLACK',
+                            },
+                            reason: `New course ${entry} required by ${message.member} `
+                        })
+                        message.member.addRole(message.guild.roles.find(rNew => rNew.name == entry));
+                        return message.channel.send(`added ${entry} to ${message.member.name}`);
+                    }
+                } else {
+                    return message.channel.send(`too many subjects`);
                 }
             }
         }
