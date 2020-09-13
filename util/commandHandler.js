@@ -3,13 +3,12 @@ const config = require("../botconfig.json");
 module.exports = (bot, message) => {
 
     var prefix = config.prefix;
-    if (message.content.startsWith(prefix) || message.content.startsWith(`<@${bot.user.id}>`) || message.channel.type == "dm") {
-        // console.log("triggered")
+    if (message.content.startsWith(prefix) || message.content.startsWith(`<@!${bot.user.id}>`) || message.channel.type == "dm") {
         var msg;
         if (message.content.startsWith(prefix)) {
             msg = message.content.substring(prefix.length).trim();
-        } else if(message.content.startsWith(`<@${bot.user.id}>`)){
-            msg = message.content.substring(bot.user.id.length+3).trim();            
+        } else if(message.content.startsWith(`<@!${bot.user.id}>`)){
+            msg = message.content.substring(bot.user.id.length+4).trim();   
         }else {
             msg = message.content;
         }
