@@ -47,7 +47,7 @@ bot.on("message", async message => {
   commandHandler(bot, message);
 });
 
-bot.login(token).catch(error => {
+bot.login(process.env.BOT_TOKEN).catch(error => {
   console.log(error);
   console.log("Failed to Connect");
   return;
