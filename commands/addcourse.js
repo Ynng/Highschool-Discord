@@ -7,7 +7,8 @@ const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
-
+    messageContent = message.content.toUpperCase();
+    messageContent = messageContent.replace(/\s/g, '');
     /****************************************
         Parsing user input
     *************************************/
@@ -15,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     utils.safeDeleteMessage(message, 1000);
 
     //Match all potential course code with regex
-    var rawCourses = message.content.match(re);
+    var rawCourses = messageContent.match(re);
     if (!rawCourses)
         return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime / 3 * 2);
 
@@ -38,10 +39,10 @@ module.exports.run = async (bot, message, args) => {
 
     //Check the already existing courses
     var courseCount = 0;
-    for (role in message.member.roles)
+    message.member.roles.cache.forEach(role => {
         if (re.test(role.name))
             courseCount++;
-
+    })
     /****************************************
         Add course roles to the user
     *************************************/
@@ -174,7 +175,7 @@ module.exports.run = async (bot, message, args) => {
                 courseCount++;
         })
         console.log(`${allAddedRoles[i].name} ${courseCount}/${config.classChannelUserRequirement}`);
- 
+
         if (courseCount < config.classChannelUserRequirement)
             continue;
 
@@ -202,10 +203,11 @@ module.exports.run = async (bot, message, args) => {
         })
     }
 
-    utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, 2 * config.tempMsgTime);
+    if (addedCoursesString.length > 0)
+        utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, config.tempMsgTime);
 
     if (tooManyCourses)
-        return utils.simpleMessage(":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);
+        return utils.simpleMessage(":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", message, config.errorColor, config.tempMsgTime);
 
 };
 

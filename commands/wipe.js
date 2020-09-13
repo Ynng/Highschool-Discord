@@ -21,6 +21,6 @@ module.exports.help = {
   args: "{# of messages}",
   permission: "MANAGE_MESSAGES",
   description: "Wipes the specified number (1~99) of messages in the current channel",
-  example: `${config.prefix}wipe 10, ${config.prefix}remove 2, ${config.prefix}w 5`,
-  aliases: ["wipe", "w", "remove", "clear", "c"]
+  example: `${config.prefix}wipe 10, ${config.prefix}delete 2, ${config.prefix}w 5`,
+  aliases: ["wipe", "w", "delete", "clear", "c"]
 };
