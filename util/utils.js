@@ -133,7 +133,7 @@ module.exports = {
         } else {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
-                .setFooter(`Removing in ${timeout / 1000} seconds`)
+                .setFooter(`Removing this message in ${timeout / 1000} seconds`)
                 .setColor(color);
             return message.channel.send(embed).then(msg => {
                 this.safeDeleteMessage(msg, timeout);
@@ -152,7 +152,7 @@ module.exports = {
         } else {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
-                .setFooter(`Removing in ${timeout / 1000} seconds`)
+                .setFooter(`Removing this message in ${timeout / 1000} seconds`)
                 .setColor(color);
             return editMessage.edit(embed).then(msg => {
                 this.safeDeleteMessage(msg, timeout);
@@ -181,5 +181,18 @@ module.exports = {
             this.simpleMessage(":warning: This command only works in a server", message, config.errorColor);
             return true;
         } else return false;
+    },
+
+    andisarejoin: function (array, seperator) {
+        if(array.length == 1)
+            return `${array[0]} is`;
+        var string = array[0];
+        for (var i = 1; i < array.length-1; i++) {
+            string+=seperator;
+            string+=array[i];
+        }
+        string+=" and ";
+        string+=array[array.length-1];
+        return string;
     }
 };
