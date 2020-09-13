@@ -216,7 +216,13 @@ module.exports.run = async (bot, message, args) => {
                     deny: ['VIEW_CHANNEL'],
                 }
             ]
-        })
+        }).then(channel => {
+            let embed = new Discord.MessageEmbed()
+                .setTitle(`New Dedicated Chat!`)
+                .addField(`Welcome to the new dedicated chat for ${allAddedRoles[i].name}!`, `${allAddedRoles[i]}This chat is created automatically. A dedicated class chat is created automatically when more then ${config.classChannelUserRequirement} people in the server have the same class.`)
+                .setColor(config.embedColor);
+            channel.send(embed);
+        });
     }
 
     if (tooManyCourses)
