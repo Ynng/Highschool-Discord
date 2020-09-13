@@ -211,7 +211,7 @@ FSF2D1 French
 FSF3U1 French
 FSF4U1 French
 
-Career Civics
+Careers Civics
 GLC2O1 Career
 CHV2O1 Civics
 
@@ -236,8 +236,6 @@ PAF4O8 Fitness
 PAF4O9 Fitness
 PPL4O1 Phys-ed
 PLF4M1 Active Leadership
-
-Outdoors
 PAD2O1 Outdoor
 PAD3O1 Outdoor
 
@@ -245,34 +243,32 @@ Interdisciplinary
 IDC3O2 Pro-Gaming
 IDC4U3 3D
 
-Applied Math
+Junior Math
+MPM1D1 Math
 MAT1L1 Math
 MFM1P1 Math
+MPM2D1 Math
 MAT2L1 Math
 MFM2P1 Math Applied
+
+Math
+MCR3U1 Functions
 MBF3C1 Math
 MCF3M1 Functions Application
 MEL3E1 Everyday Math
 MAP4C1 College Math
 MCT4C1 Tech Math
 MEL4E1 Everyday Math
-
-Math
-MPM1D1 Math
-MPM2D1 Math
-MCR3U1 Functions
 MCV4U1 Calculus
 MDM4U1 Data Management
 MHF4U1 Adv Function
 
-Applied Science
+Science
 SNC1P1 Science
 SNC1L1 Science
+SNC1D1 Science
 SNC2P1 Science
 SNC2L1 Science
-
-Science
-SNC1D1 Science
 SNC2D1 Science
 
 Biology
@@ -315,9 +311,7 @@ Comm Tech
 TGJ2O1 Communications Tech
 TGJ3M1 Communications Tech
 TGJ4M1 Communications Tech
-
-Yearbook
-!TGG4M1 Yearbook
+TGG4M1 Yearbook
 
 Construction Tech
 TCJ2O1 Construction Tech
