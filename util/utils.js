@@ -185,16 +185,25 @@ module.exports = {
         } else return false;
     },
 
-    andisarejoin: function (array, seperator) {
+    andjoin: function(array, separator){
         if(array.length == 1)
-            return `${array[0]} is`;
+            return `${array[0]}`;
         var string = array[0];
         for (var i = 1; i < array.length-1; i++) {
-            string+=seperator;
+            string+=separator;
             string+=array[i];
         }
         string+=" and ";
         string+=array[array.length-1];
         return string;
+    },
+
+    andisarejoin: function (array, separator) {
+        if(array.length == 1)
+            return `${this.andjoin(array,separator)} is`;
+        else
+            return `${this.andjoin(array,separator)} are`;
     }
+
+
 };
