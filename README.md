@@ -12,3 +12,4 @@ Discord bot to manage a discord server for my highschool
 Thanks to
 * Frank for a few info and fun commands.
 * Owen for part of the highlight feature code.
+* Sritejas for moral support
