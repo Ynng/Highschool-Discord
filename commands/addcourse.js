@@ -11,7 +11,6 @@ module.exports.run = async (bot, message, args) => {
         for (entry in list) {
             if (message.content == entry) {
                 message.channel.send(`works format, ${message.content}`);
-                message.guild.createChannel(message.author.username, message.content)
                 noMatch = false;
                 var count = 0;
                 var roleExists = false;
