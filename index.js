@@ -2,7 +2,7 @@
 
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-
+const recent = new Set();
 // eslint-disable-next-line no-unused-vars
 // const config = require("./botconfig.json");
  
