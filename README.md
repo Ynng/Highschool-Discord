@@ -13,3 +13,6 @@ Thanks to
 * [Frank](https://github.com/3Nya3) for a few info and fun commands.
 * [Owen](https://github.com/MiraclePalette) for part of the highlight feature code.
 * [Matthew](https://github.com/Weezity) for part of the removecourse code
+
+## Some graph
+![](https://cdn.discordapp.com/attachments/558408313067405334/754508593620975669/UHS_discord_server_1.png)
