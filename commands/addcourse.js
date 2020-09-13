@@ -164,6 +164,9 @@ module.exports.run = async (bot, message, args) => {
     if (category == undefined)
         await message.guild.channels.create("Class", { type: "category" })
     for (i = 0; i < allAddedRoles.length; i++) {
+        if(!courselist[allAddedRoles[i].name].dedicated_chat)
+            continue;
+
         /****************************************
             Check to see if the new role has enough user
         *************************************/
