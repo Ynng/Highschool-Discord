@@ -46,19 +46,21 @@ module.exports.run = async (bot, message, args) => {
         Add course roles to the user
     *************************************/
     var tooManyCourses = false;
-    var addedCourses = [];
+    var allAddedRoles = [];
     var newCreatedRoles = [];
+    var addedCoursesString = [];
     for (i = 0; i < courses.length; i++) {
         course = courses[i];
         if (courseCount > 8) {
             tooManyCourses = true;
             continue;
         }
-        addedCourses.push(course);
+        addedCoursesString.push(course);
         var existingRole = message.guild.roles.cache.find(r => r.name == course);
         courseCount++;
 
         if (existingRole != undefined) {
+            allAddedRoles.push(existingRole);
             message.member.roles.add(existingRole);
             continue;
         }
@@ -73,6 +75,7 @@ module.exports.run = async (bot, message, args) => {
             //Adds the role to the user
             message.member.roles.add(newRole);
             newCreatedRoles.push(newRole);
+            allAddedRoles.push(newRole);
         });
 
         fs.appendFile('log.txt', `New course ${course} required by ${message.member.displayName}\n`, function (err) {
@@ -152,7 +155,54 @@ module.exports.run = async (bot, message, args) => {
         }
     }
 
-    utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCourses, ', ')}  to your account!`, message, config.validColor, 2 * config.tempMsgTime);
+    /****************************************
+        Create/Add "Class" Channels
+    *************************************/
+    //If "Class" category does not exist, create it
+    var category = message.guild.channels.cache.find(channel => channel.name == "Class");
+    if (category == undefined)
+        await message.guild.channels.create("Class", { type: "category" })
+    for (i = 0; i < allAddedRoles.length; i++) {
+        /****************************************
+            Check to see if the new role has enough user
+        *************************************/
+        var courseCount = 1;//Yourself
+        message.guild.members.cache.forEach(member => {
+            if (member.id === message.author.id)
+                return;
+            if (member.roles.cache.find(r => r.name === allAddedRoles[i].name))
+                courseCount++;
+        })
+        console.log(courseCount);
+
+        if (courseCount < config.classChannelUserRequirement)
+            continue;
+
+        var courseCode = allAddedRoles[i]
+        var courseName = courselist[courseCode].grade;
+        var channel = message.guild.channels.cache.find(channel => channel.topic == courseName);
+        //If channel already exist, skip
+        if (channel != undefined)
+            continue;
+        //Else, create the new channel with the correct permission overwrite
+        utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
+        await message.guild.channels.create(courseName, {
+            parent: message.guild.channels.cache.find(channel => channel.name == "Class"),
+            topic: courseName,
+            permissionOverwrites: [
+                {
+                    id: allAddedRoles[i].id,
+                    allow: ['VIEW_CHANNEL'],
+                },
+                {
+                    id: message.guild.id,
+                    deny: ['VIEW_CHANNEL'],
+                }
+            ]
+        })
+    }
+
+    utils.simpleMessage(`:ok_hand: Added ${utils.andisarejoin(addedCoursesString, ', ')}  to your account!`, message, config.validColor, 2 * config.tempMsgTime);
 
     if (tooManyCourses)
         return utils.simpleMessage(":no_entry_sign: You have too many subjects already. Ask an admin to remove some for you before adding more!", message, config.errorColor, 2 * config.tempMsgTime);

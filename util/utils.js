@@ -127,6 +127,7 @@ module.exports = {
         if (!message.deletable || !timeout) {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
+                .setFooter(`Requested by: ${message.author.username}`, message.author.avatarURL())
                 .setColor(color);
             this.embedAddStamp(message, embed, message.author);
             return message.channel.send(embed);
@@ -146,6 +147,7 @@ module.exports = {
         if (!originMessage.deletable || !timeout) {
             let embed = new Discord.MessageEmbed()
                 .setTitle(`${text}`)
+                .setFooter(`Requested by: ${message.author.username}`, message.author.avatarURL())
                 .setColor(color);
             this.embedAddStamp(originMessage, embed, originMessage.author);
             return editMessage.edit(embed);
