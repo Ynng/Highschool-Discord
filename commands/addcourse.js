@@ -3,17 +3,11 @@ const config = require("../botconfig.json");
 const utils = require("../util/utils");
 const courselist = require('../course_list.json');
 const fs = require('fs');
-//Initiate a set for recent users
-
-
 
 
 module.exports.run = async (bot, message, args) => {
-    if(recent.has(message.author.id)){
-        return utils.simpleMessage(":no_entry_sign: User has recently added their course code too fast", message, config.errorColor, config.tempMsgTime / 3 * 2);
-    }
-    else{
-        messageContent = message.content.toUpperCase();
+    if (utils.checkDm(message)) return;
+    messageContent = message.content.toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
 
     replyToUser = [];
@@ -249,10 +243,8 @@ module.exports.run = async (bot, message, args) => {
     }
 
     message.channel.send(embed);
-    setTimeout(recent.delete(msg.author.id),30000)
-    };
-}
 
+};
 
 module.exports.help = {
     name: "addcourse",
