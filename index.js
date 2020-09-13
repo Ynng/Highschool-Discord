@@ -6,7 +6,7 @@ const bot = new Discord.Client();
 // eslint-disable-next-line no-unused-vars
 // const config = require("./botconfig.json");
  
-const { token } = require("./tokens.json");
+// const { token } = require("./tokens.json");
 
 const fs = require("fs");
 
