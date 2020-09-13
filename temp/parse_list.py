@@ -1,7 +1,7 @@
 import re
 import json
 
-filename = "course_list_simplified.txt"
+filename = "temp\course_list_simplified.txt"
 with open(filename, "r", encoding='utf8') as f:
     content = f.readlines()
 
@@ -22,3 +22,5 @@ for line in content:
 
 with open("course_list.json", "w", encoding='utf8') as f:
     json.dump(course_list, f)
+
+print("Course list convertted successfully!")
