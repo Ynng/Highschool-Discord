@@ -8,13 +8,19 @@ module.exports.run = async (bot, message) => {
   let serverIcon = message.guild.iconURL();
 
   let embed = new Discord.MessageEmbed()
-    .setColor(`${config.embedColor}`)
-    .setThumbnail(serverIcon)
-    .setTitle(`Server Information`)
-    .addField("Name", message.guild.name, true)
-    .addField("Owner", message.guild.owner, true)
-    .addField("Age", `${utils.getAgeString(utils.getAgeDate(message.guild.createdAt))}`, true)
-    .addField("Population", message.guild.memberCount);
+          .setAuthor(`${serverName}`)
+          .setFooter(`Server created on ${message.guild.createdAt} ||---|| SERVER PREFIX ${prefix}`)
+          .setThumbnail(serverIcon)
+          .setTitle("Server Information!")
+          .addField("You joined on", message.member.joinedAt, true)
+          .addField("Total Members", `**${message.guild.memberCount}**`, true)
+          .addBlankField()
+          .addField('Humans', `**${message.guild.members.filter(member => !member.user.bot).size}**`, true)
+          .addField('Bots', `**${message.guild.members.filter(member => member.user.bot).size}**`, true)
+          .addField('Member Status', `**${message.guild.members.filter(o => o.presence.status === 'online').size}** Online\n**${message.guild.members.filter(i => i.presence.status === 'idle').size}** Idle/Away\n**${message.guild.members.filter(dnd => dnd.presence.status === 'dnd').size}** Do Not Disturb\n**${message.guild.members.filter(off => off.presence.status === 'offline').size}** Offline/Invisible\n**${message.guild.members.filter(s => s.presence.status === 'streaming').size}** Streaming`)
+          .addField("Server Owner", message.guild.owner.user.tag, true)
+          .addField("Region", region)
+          .setColor(`${message.guild.displayHexColor}`);
   utils.embedAddStamp(message, embed, message.author);
   message.channel.send(embed);
 };
