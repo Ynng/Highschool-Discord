@@ -13,7 +13,8 @@ module.exports.run = async (bot, message, args) => {
         Parsing user input
     *************************************/
     var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
-    utils.safeDeleteMessage(message, 1000);
+    if(message.channel.name === config.welcomeChannel && !message.content.startsWith(config.prefix))
+        utils.safeDeleteMessage(message);
 
     //Match all potential course code with regex
     var rawCourses = messageContent.match(re);
@@ -34,6 +35,18 @@ module.exports.run = async (bot, message, args) => {
     // Sending a error message about all invalid course codes
     if (rawCourses.length > 0)
         utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} not valid course codes!`, message, config.errorColor, 2 * config.tempMsgTime);
+
+    var coursesAlreadyIn = [];
+    message.member.roles.cache.forEach(role => {
+        for (let i = courses.length - 1; i >= 0; i--)
+            if (courses[i] === role.name) {
+                coursesAlreadyIn.push(role.name);
+                courses.splice(i, 1);
+            }
+    });
+
+    if (coursesAlreadyIn.length > 0)
+        utils.simpleMessage(`:thinking: You are already in ${utils.andjoin(coursesAlreadyIn, ', ')}.`, message, config.errorColor, config.tempMsgTime);
 
     if (courses.length == 0) return;
 
@@ -164,6 +177,9 @@ module.exports.run = async (bot, message, args) => {
     if (category == undefined)
         await message.guild.channels.create("Class", { type: "category" })
     for (i = 0; i < allAddedRoles.length; i++) {
+        if(!courselist[allAddedRoles[i].name].dedicated_chat)
+            continue;
+
         /****************************************
             Check to see if the new role has enough user
         *************************************/

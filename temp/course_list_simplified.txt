@@ -42,13 +42,13 @@ AMW4MM Woodwinds
 
 AU Visual Arts
 AVI1OM Visual Arts
-AWM1OM Drawing
+AWM1OM Painting
 AVI2OM Visual Arts
-AWM2OM Drawing
+AWM2OM Painting
 AVI3MM Visual Arts
-AWM3MM Drawing
+AWM3MM Painting
 AVI4MM Visual Arts
-AWM4MM Drawing
+AWM4MM Painting
 
 Dance
 ATP1O1 Dance
@@ -114,7 +114,6 @@ AWQ4M1 Photography
 ASM4M1 Media Arts
 AWC4M1 Ceramics
 
-
 Business
 BTT1O1 Business Technology
 BBI2O1 Business Intro
@@ -146,47 +145,53 @@ HSP3U1 Sociology etc
 HSB4U1 Society Change
 HZT4U1 Philosophy
 
-Languages
+Chinese
 LKMBD1 Chinese
-LWSBD1 Spanish
 LKMCU1 Chinese
-LWSCU1 Spanish
 LKMDU1 Chinese
+
+Spanish
+LWSBD1 Spanish
+LWSCU1 Spanish
 LWSDU1 Spanish
 
-Computer Science
+Programming
 ICS2O1 Com Sci Intro
 ICS3C1 programming intro
-ICS3U1 Com Sci Intro
 ICS4C1 Programming
+
+Computer Science
+ICS3U1 Com Sci Intro
 ICS4U1 Com Sci
 
 Co-op
-COP3X0 Co-op
-COP4X0 Co-op
-COP4X4 Co-op
-COP4X5 Co-op
+!COP3X0 Co-op
+!COP4X0 Co-op
+!COP4X4 Co-op
+!COP4X5 Co-op
 
 Dual Credit
 YYY4X1 College
 YYY4X2 College
 
-English
-ENG1D1 English
+Applied English
 ENG1P1 English
 ENG1L1 English
-ENG2D1 English
 ENG2P1 English
 ENG2L1 English
 ENG3C1 English
-ENG3U1 English
 ENG3E1 English
-EPS3O1 Presentation
 ENG4C1 English
-ENG4U1 English
 ENG4E1 English
-EWC4U1 Writer’s Craft
+
+English
+ENG1D1 English
+ENG2D1 English
+ENG3U1 English
+EPS3O1 Presentation
+ENG4U1 English
 EWC4C1 Writer’s Craft
+EWC4U1 Writer’s Craft
 OLC4O1 Literacy
 
 ESL
@@ -196,10 +201,12 @@ ESLCO1 ESL 3
 ESLDO1 ESL 4
 ESLEO1 ESL 5
 
-French
+Grade 9 French
 FSF1D1 French
 FSF1P1 French
 FSF1O1 Open French
+
+French
 FSF2D1 French
 FSF3U1 French
 FSF4U1 French
@@ -214,33 +221,35 @@ GLE2O1 Special Ed
 GLE3O1 Special Ed
 GLE4O1 Special Ed
 
-Fitness
+Grade 9 Phys-ed
 PPL1O8 Phys-ed
 PPL1O9 Phys-ed
+
+Fitness
 PAF2O8 Phys-ed
 PAF2O9 Fitness
 PPL2O1 Phys-ed
-PAD2O1 Outdoor
 PAF3O8 Fitness
 PAF3O9 Fitness
 PPL3O1 Phys-ed
-PAD3O1 Outdoor
 PAF4O8 Fitness
 PAF4O9 Fitness
 PPL4O1 Phys-ed
 PLF4M1 Active Leadership
 
-Cool things
+Outdoors
+PAD2O1 Outdoor
+PAD3O1 Outdoor
+
+Interdisciplinary
 IDC3O2 Pro-Gaming
 IDC4U3 3D
 
-Math
+Applied Math
 MAT1L1 Math
 MFM1P1 Math
-MPM1D1 Math
 MAT2L1 Math
 MFM2P1 Math Applied
-MPM2D1 Math
 MBF3C1 Math
 MCF3M1 Functions Application
 MEL3E1 Everyday Math
@@ -248,19 +257,23 @@ MAP4C1 College Math
 MCT4C1 Tech Math
 MEL4E1 Everyday Math
 
-Tryhard Math
+Math
+MPM1D1 Math
+MPM2D1 Math
 MCR3U1 Functions
 MCV4U1 Calculus
 MDM4U1 Data Management
 MHF4U1 Adv Function
 
-Science
-SNC1D1 Science
+Applied Science
 SNC1P1 Science
 SNC1L1 Science
-SNC2D1 Science
 SNC2P1 Science
 SNC2L1 Science
+
+Science
+SNC1D1 Science
+SNC2D1 Science
 
 Biology
 SBI3C1 Biology
@@ -291,16 +304,22 @@ HNB4M1 Fashion
 Technology
 TEJ1O1 Computer Tech
 TIJ1O1 Tech
-TCJ2O1 Construction Tech
 TDJ2O1 Tech Design
 TEJ2O1 Computer Tech
-TGJ2O1 Communications Tech
-TCJ3C1 Construction Tech
 TDJ3M1 Tech Design
 TEJ3M1 Computer Engineering
-TGJ3M1 Communications Tech
-TCJ4C1 Construction Tech
 TDJ4M1 Tech Design
 TEJ4M1 Computer Engineering
+
+Comm Tech
+TGJ2O1 Communications Tech
+TGJ3M1 Communications Tech
 TGJ4M1 Communications Tech
-TGG4M1 Yearbook
+
+Yearbook
+!TGG4M1 Yearbook
+
+Construction Tech
+TCJ2O1 Construction Tech
+TCJ3C1 Construction Tech
+TCJ4C1 Construction Tech
