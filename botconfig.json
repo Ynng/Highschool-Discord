@@ -1,5 +1,5 @@
 {
-    "prefix": "!",
+    "prefix": "&",
     "moderationChannel": "moderation-log",
     "embedColor": "#6bdbff",
     "errorColor": "#b71c1c",

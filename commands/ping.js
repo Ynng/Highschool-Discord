@@ -4,16 +4,17 @@ const utils = require("../util/utils");
 
 
 module.exports.run = async (bot, message) => {
+    // console.log(bot.emojis.resolveID(config.emojis.loadingEmojiId));
     let embed = new Discord.MessageEmbed()
-        .setTitle(`${bot.emojis.get(config.emojis.loadingEmojiId)} pinging....`)
+        .setTitle(`${bot.emojis.resolve(config.emojis.loadingEmojiId)} pinging....`)
         .setColor(config.loadingColor);
     utils.embedAddStamp(message, embed, message.author);
     message.channel.send(embed).then(msg => {
         msg.edit(embed
             .setTitle(`:ping_pong: pong!`)
             .setColor(config.embedColor)
-            .addField("Bot Ping:", `${(msg.createdTimestamp - message.createdTimestamp).toFixed(0)}ms`, true)
-            .addField("Api Ping:", `${bot.ping.toFixed(0)}ms`, true));
+            .addField("Bot Ping:", `${msg.createdTimestamp - message.createdTimestamp}ms`, true)
+            .addField("Api Ping:", `${bot.ws.ping}ms`, true));
     });
 };
 
