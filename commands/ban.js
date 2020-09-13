@@ -6,13 +6,13 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
 
-    if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Ban Members** permission to do that", message, config.errorColor, config.tempTime);
-    if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Ban Members** permission to do that", message, config.errorColor, config.tempTime);
+    if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Ban Members** permission to do that", message, config.errorColor, config.tempMsgTime);
+    if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Ban Members** permission to do that", message, config.errorColor, config.tempMsgTime);
 
     let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
-    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
-    if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't ban someone with the permission **Ban Members**", message, config.errorColor, config.tempTime);
-    if (!target.bannable) return utils.simpleMessage(":thinking: I can't ban this user for some reason", message, config.errorColor, config.tempTime);
+    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempMsgTime);
+    if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't ban someone with the permission **Ban Members**", message, config.errorColor, config.tempMsgTime);
+    if (!target.bannable) return utils.simpleMessage(":thinking: I can't ban this user for some reason", message, config.errorColor, config.tempMsgTime);
 
     let targetIcon = target.user.avatarURL();
     let authorIcon = message.author.avatarURL();
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
 
     args.shift();
     let reason = args.join(" ");
-    if (!reason) return utils.simpleMessage(":warning: You need a reason to ban someone", message, config.errorColor, config.tempTime);
+    if (!reason) return utils.simpleMessage(":warning: You need a reason to ban someone", message, config.errorColor, config.tempMsgTime);
 
 
     let embed = new Discord.MessageEmbed()

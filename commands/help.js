@@ -34,18 +34,18 @@ module.exports.run = async (bot, message, args) => {
         await message.author.send(utils.getHelpString(command)).catch(() => {
             console.log("Error, can't send dm to a user");
             dmAble = false;
-            utils.simpleMessage(":frowning2: I can't dm you, please change your settings or unblock me", message, config.errorColor, config.tempTime);
+            utils.simpleMessage(":frowning2: I can't dm you, please change your settings or unblock me", message, config.errorColor, config.tempMsgTime);
         });
         if (message.channel.type != "dm") {
             if (dmAble) {
                 message.author.send(pmEmbed).catch(() => {
                     // console.log("Error, can't send dm to a user B");
                 });
-                utils.simpleMessage(":ok_hand: Check your DMs!", message, config.embedColor, config.tempTime);
+                utils.simpleMessage(":ok_hand: Check your DMs!", message, config.embedColor, config.tempMsgTime);
             }
         }
     } else {
-        utils.simpleMessage(":frowning2: I can't find that command, do `!help` to get a list of available commands", message, config.errorColor, config.tempTime);
+        utils.simpleMessage(":frowning2: I can't find that command, do `!help` to get a list of available commands", message, config.errorColor, config.tempMsgTime);
     }
 };
 

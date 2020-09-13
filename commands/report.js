@@ -7,14 +7,14 @@ module.exports.run = async (bot, message, args) => {
   if (utils.checkDm(message)) return;
   
   let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
-  if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
+  if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempMsgTime);
 
   let moderationChannel = message.guild.channels.cache.find(channel => channel.name === config.moderationChannel);
-  if (!moderationChannel) return utils.simpleMessage(`:warning: Can't find the moderation channel: "${config.moderationChannel}", no where to report to`, message, config.errorColor, config.tempTime);
+  if (!moderationChannel) return utils.simpleMessage(`:warning: Can't find the moderation channel: "${config.moderationChannel}", no where to report to`, message, config.errorColor, config.tempMsgTime);
 
   args.shift();
   let reason = args.join(" ");
-  if (!reason) return utils.simpleMessage(":warning: You need a reason to report someone", message, config.errorColor, config.tempTime);
+  if (!reason) return utils.simpleMessage(":warning: You need a reason to report someone", message, config.errorColor, config.tempMsgTime);
 
   let targetIcon = target.user.avatarURL();
   let authorIcon = message.author.avatarURL();

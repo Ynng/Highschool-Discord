@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
     
     let target = message.guild.member(message.mentions.users.first());
-    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
+    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempMsgTime);
 
     let userIcon = target.user.displayAvatarURL();
 

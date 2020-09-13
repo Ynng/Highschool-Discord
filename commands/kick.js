@@ -6,13 +6,13 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
 
-    if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Kick Members** permission to do that", message, config.errorColor, config.tempTime);
-    if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Kick Members** permission to do that", message, config.errorColor, config.tempTime);
+    if (!message.guild.member(bot.user).hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: **I** need the **Kick Members** permission to do that", message, config.errorColor, config.tempMsgTime);
+    if (!message.member.hasPermission(this.help.permission)) return utils.simpleMessage(":no_entry_sign: You need the **Kick Members** permission to do that", message, config.errorColor, config.tempMsgTime);
 
     let target = message.guild.member(message.mentions.users.first() || message.guild.members.cache.get(args[0]));
-    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempTime);
-    if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't kick someone with the permission **Kick Members**", message, config.errorColor, config.tempTime);
-    if (!target.kickable) return utils.simpleMessage(":thinking: I can't kick this user for some reason", message, config.errorColor, config.tempTime);
+    if (!target) return utils.simpleMessage(":frowning2: Can't find the user", message, config.errorColor, config.tempMsgTime);
+    if (target.hasPermission(this.help.permission)) return utils.simpleMessage(":warning: You can't kick someone with the permission **Kick Members**", message, config.errorColor, config.tempMsgTime);
+    if (!target.kickable) return utils.simpleMessage(":thinking: I can't kick this user for some reason", message, config.errorColor, config.tempMsgTime);
 
     let targetIcon = target.user.avatarURL();
     let authorIcon = message.author.avatarURL();
