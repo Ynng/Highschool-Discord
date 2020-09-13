@@ -9,17 +9,19 @@ module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
     messageContent = message.content.toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
+
+    replyToUser = [];
     /****************************************
         Parsing user input
     *************************************/
     var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
-    if(message.channel.name === config.welcomeChannel && !message.content.startsWith(config.prefix))
+    if (message.channel.name === config.welcomeChannel)
         utils.safeDeleteMessage(message);
 
     //Match all potential course code with regex
     var rawCourses = messageContent.match(re);
     if (!rawCourses)
-        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime / 3 * 2);
+        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime);
 
     //Remove duplicated inputs
     rawCourses = [...new Set(rawCourses)];
@@ -34,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
 
     // Sending a error message about all invalid course codes
     if (rawCourses.length > 0)
-        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} not valid course codes!`, message, config.errorColor, 2 * config.tempMsgTime);
+        replyToUser.push([`:thinking: The following course codes are not valid!`, utils.andjoin(rawCourses, ', ')]);
 
     var coursesAlreadyIn = [];
     message.member.roles.cache.forEach(role => {
@@ -46,9 +48,7 @@ module.exports.run = async (bot, message, args) => {
     });
 
     if (coursesAlreadyIn.length > 0)
-        utils.simpleMessage(`:thinking: You are already in ${utils.andjoin(coursesAlreadyIn, ', ')}.`, message, config.errorColor, config.tempMsgTime);
-
-    if (courses.length == 0) return;
+        replyToUser.push([`:thinking: You are already in the following courses!`, utils.andjoin(coursesAlreadyIn, ', ')]);
 
     //Check the already existing courses
     var courseCount = 0;
@@ -177,7 +177,7 @@ module.exports.run = async (bot, message, args) => {
     if (category == undefined)
         await message.guild.channels.create("Class", { type: "category" })
     for (i = 0; i < allAddedRoles.length; i++) {
-        if(!courselist[allAddedRoles[i].name].dedicated_chat)
+        if (!courselist[allAddedRoles[i].name].dedicated_chat)
             continue;
 
         /****************************************
@@ -219,11 +219,24 @@ module.exports.run = async (bot, message, args) => {
         })
     }
 
-    if (addedCoursesString.length > 0)
-        utils.simpleMessage(`:ok_hand: ${utils.andisarejoin(addedCoursesString, ', ')} added to your account!`, message, config.embedColor, config.tempMsgTime);
-
     if (tooManyCourses)
-        return utils.simpleMessage(":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", message, config.errorColor, config.tempMsgTime);
+        replyToUser.push([":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", "\u200b"]);
+
+    let embed = new Discord.MessageEmbed()
+        .setColor(`${config.errorColor}`)
+        .setTitle("Error adding courses")
+        .setFooter(`${message.author.username} | Removing this message in ${config.tempMsgTime * 2 / 1000} seconds`, message.author.avatarURL());
+
+    if (addedCoursesString.length > 0){
+        replyToUser.push([`:ok_hand: The following courses are added to your account!`, utils.andjoin(addedCoursesString, ', ')]);
+        embed.setColor(config.embedColor).setTitle("Success adding courses");
+    }
+    
+    for(let i = replyToUser.length - 1; i >= 0; i--){
+        embed.addField(replyToUser[i][0], replyToUser[i][1]);
+    }
+
+    message.channel.send(embed);
 
 };
 
