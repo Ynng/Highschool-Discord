@@ -1,259 +1,43 @@
 {
   "ATB1OM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Ballet",
     "grade": 1,
     "dedicated_chat": true
   },
   "ATM1OM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Modern Dance",
     "grade": 1,
     "dedicated_chat": true
   },
   "ATB2OM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Ballet",
     "grade": 2,
     "dedicated_chat": true
   },
   "ATM2OM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Modern Dance",
     "grade": 2,
     "dedicated_chat": true
   },
   "ATB3MM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Ballet",
     "grade": 3,
     "dedicated_chat": true
   },
   "ATM4MM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Modern Dance",
     "grade": 4,
     "dedicated_chat": true
   },
   "ATB4MM": {
-    "department": "AU Dance",
+    "department": "Dance",
     "name": "Ballet",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "ADA1OM": {
-    "department": "AU Drama",
-    "name": "Drama",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "ADD1OM": {
-    "department": "AU Drama",
-    "name": "Drama Production",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "ADA2OM": {
-    "department": "AU Drama",
-    "name": "Drama",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "ADD2OM": {
-    "department": "AU Drama",
-    "name": "Drama Production",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "ADF3MM": {
-    "department": "AU Drama",
-    "name": "Director\u2019s Craft",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "ADD3MM": {
-    "department": "AU Drama",
-    "name": "Drama Production",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "ADA4MM": {
-    "department": "AU Drama",
-    "name": "Drama",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "ADD4MM": {
-    "department": "AU Drama",
-    "name": "Drama Production",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AMK1OM": {
-    "department": "AU Music",
-    "name": "Piano",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AMS1OM": {
-    "department": "AU Music",
-    "name": "Strings",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AMC1OM": {
-    "department": "AU Music",
-    "name": "Musicianship",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AMV1OM": {
-    "department": "AU Music",
-    "name": "Vocal",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AMW1OM": {
-    "department": "AU Music",
-    "name": "Woodwinds",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AMK2OM": {
-    "department": "AU Music",
-    "name": "Piano",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AMS2OM": {
-    "department": "AU Music",
-    "name": "Strings",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AMC2OM": {
-    "department": "AU Music",
-    "name": "Musicianship",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AMV2OM": {
-    "department": "AU Music",
-    "name": "Vocal",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AMW2OM": {
-    "department": "AU Music",
-    "name": "Woodwinds",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AMK3MM": {
-    "department": "AU Music",
-    "name": "Piano",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AMS3MM": {
-    "department": "AU Music",
-    "name": "Strings",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AMC3MM": {
-    "department": "AU Music",
-    "name": "Musicianship",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AMV3MM": {
-    "department": "AU Music",
-    "name": "Vocal",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AMW3MM": {
-    "department": "AU Music",
-    "name": "Woodwinds",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AMK4MM": {
-    "department": "AU Music",
-    "name": "Piano",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AMS4MM": {
-    "department": "AU Music",
-    "name": "Strings",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AMC4MM": {
-    "department": "AU Music",
-    "name": "Musicianship",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AMV4MM": {
-    "department": "AU Music",
-    "name": "Vocal",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AMW4MM": {
-    "department": "AU Music",
-    "name": "Woodwinds",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AVI1OM": {
-    "department": "AU Visual Arts",
-    "name": "Visual Arts",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AWM1OM": {
-    "department": "AU Visual Arts",
-    "name": "Painting",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "AVI2OM": {
-    "department": "AU Visual Arts",
-    "name": "Visual Arts",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AWM2OM": {
-    "department": "AU Visual Arts",
-    "name": "Painting",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "AVI3MM": {
-    "department": "AU Visual Arts",
-    "name": "Visual Arts",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AWM3MM": {
-    "department": "AU Visual Arts",
-    "name": "Painting",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "AVI4MM": {
-    "department": "AU Visual Arts",
-    "name": "Visual Arts",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "AWM4MM": {
-    "department": "AU Visual Arts",
-    "name": "Painting",
     "grade": 4,
     "dedicated_chat": true
   },
@@ -278,6 +62,54 @@
   "ATP4M1": {
     "department": "Dance",
     "name": "Dance",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "ADA1OM": {
+    "department": "Drama",
+    "name": "Drama",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "ADD1OM": {
+    "department": "Drama",
+    "name": "Drama Production",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "ADA2OM": {
+    "department": "Drama",
+    "name": "Drama",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "ADD2OM": {
+    "department": "Drama",
+    "name": "Drama Production",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "ADF3MM": {
+    "department": "Drama",
+    "name": "Director\u2019s Craft",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "ADD3MM": {
+    "department": "Drama",
+    "name": "Drama Production",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "ADA4MM": {
+    "department": "Drama",
+    "name": "Drama",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "ADD4MM": {
+    "department": "Drama",
+    "name": "Drama Production",
     "grade": 4,
     "dedicated_chat": true
   },
@@ -314,6 +146,126 @@
   "ADB4M1": {
     "department": "Drama",
     "name": "Showtime",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AMK1OM": {
+    "department": "Music",
+    "name": "Piano",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AMS1OM": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AMC1OM": {
+    "department": "Music",
+    "name": "Musicianship",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AMV1OM": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AMW1OM": {
+    "department": "Music",
+    "name": "Woodwinds",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AMK2OM": {
+    "department": "Music",
+    "name": "Piano",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AMS2OM": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AMC2OM": {
+    "department": "Music",
+    "name": "Musicianship",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AMV2OM": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AMW2OM": {
+    "department": "Music",
+    "name": "Woodwinds",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AMK3MM": {
+    "department": "Music",
+    "name": "Piano",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AMS3MM": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AMC3MM": {
+    "department": "Music",
+    "name": "Musicianship",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AMV3MM": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AMW3MM": {
+    "department": "Music",
+    "name": "Woodwinds",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AMK4MM": {
+    "department": "Music",
+    "name": "Piano",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AMS4MM": {
+    "department": "Music",
+    "name": "Strings",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AMC4MM": {
+    "department": "Music",
+    "name": "Musicianship",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AMV4MM": {
+    "department": "Music",
+    "name": "Vocal",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AMW4MM": {
+    "department": "Music",
+    "name": "Woodwinds",
     "grade": 4,
     "dedicated_chat": true
   },
@@ -506,6 +458,54 @@
   "AMR4M3": {
     "department": "Music",
     "name": "Repertoire Choral",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AVI1OM": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AWM1OM": {
+    "department": "Visual Arts",
+    "name": "Painting",
+    "grade": 1,
+    "dedicated_chat": true
+  },
+  "AVI2OM": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AWM2OM": {
+    "department": "Visual Arts",
+    "name": "Painting",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "AVI3MM": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AWM3MM": {
+    "department": "Visual Arts",
+    "name": "Painting",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "AVI4MM": {
+    "department": "Visual Arts",
+    "name": "Visual Arts",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "AWM4MM": {
+    "department": "Visual Arts",
+    "name": "Painting",
     "grade": 4,
     "dedicated_chat": true
   },
