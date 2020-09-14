@@ -1,10 +1,36 @@
 OUTLINE:
 >INFORMATION
     >WELCOME
+        /*WELCOME!
+
+        UHS Wolfpack is your one stop shop for everything UHS!
+        Use it to connect with all of UHS!
+
+        > Need help with homework? Join COURSE CHATS and find someone to help you out!
+        > Want to connect with your grade! Make use of the BATCH GROUPS!
+        > Seeking advice on Universities/Colleges? Why not ASK AN ALUM?
+        > Getting bored at home? Find someone to game with in the ENTERTAINMENT category!
+        > Searching for a new passion? Join CLUB CHATS of your liking!
+        */
+    
+    >INTRODUCTION
+        /*WELCOME!
+
+        UHS Wolfpack is your one stop shop for everything UHS!
+        Use it to connect with all of UHS!
+
+        > Need help with homework? Join COURSE CHATS and find someone to help you out!
+        > Want to connect with your grade! Make use of the BATCH GROUPS!
+        > Seeking advice on Universities/Colleges? Why not ASK AN ALUM?
+        > Getting bored at home? Find someone to game with in the ENTERTAINMENT category!
+        > Searching for a new passion? Join CLUB CHATS of your liking!
+        */
+        
     >ANNOUNCEMENTS
 >MAIN
     >GENERAL CHAT
     >OPPORTUNITIES
+    >REQUEST TECH SUPPORT
     >VC
     >VC
     >VC
