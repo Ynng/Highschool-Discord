@@ -15,8 +15,8 @@ module.exports.run = async (bot, message, args) => {
         var embed = new Discord.MessageEmbed()
             .setColor(`${config.embedColor}`)
             .setAuthor(`Help for ${bot.user.username}`, bot.user.displayAvatarURL())
-            .addField("My commands:", `\`${commandsArray.join("\` \`")}\``)
-            .addField("My prefix:", `\`${config.prefix}\``)
+            .addField("My commands:", `\`${config.prefix}${commandsArray.join(`\`, \`${config.prefix}`)}\``)
+            // .addField("My prefix:", `\`${config.prefix}\``)
             .addField("Need help on a command?", `\`\`\`html\n< ${config.prefix}help {command} >\`\`\``);
 
         utils.embedAddStamp(message, embed, message.author);
@@ -24,6 +24,9 @@ module.exports.run = async (bot, message, args) => {
         return;
     }
 
+    if (targetCommand.startsWith(config.prefix)) {
+        targetCommand = targetCommand.substring(config.prefix.length).trim();
+    }
     if (bot.commands.get(bot.aliases.get(targetCommand))) {
         var command = bot.commands.get(bot.aliases.get(targetCommand));
         var pmEmbed = new Discord.MessageEmbed()

@@ -996,13 +996,13 @@
     "dedicated_chat": true
   },
   "GLC2O1": {
-    "department": "Career Civics",
+    "department": "Careers Civics",
     "name": "Career",
     "grade": 2,
     "dedicated_chat": true
   },
   "CHV2O1": {
-    "department": "Career Civics",
+    "department": "Careers Civics",
     "name": "Civics",
     "grade": 2,
     "dedicated_chat": true
@@ -1104,13 +1104,13 @@
     "dedicated_chat": true
   },
   "PAD2O1": {
-    "department": "Outdoors",
+    "department": "Fitness",
     "name": "Outdoor",
     "grade": 2,
     "dedicated_chat": true
   },
   "PAD3O1": {
-    "department": "Outdoors",
+    "department": "Fitness",
     "name": "Outdoor",
     "grade": 3,
     "dedicated_chat": true
@@ -1127,75 +1127,39 @@
     "grade": 4,
     "dedicated_chat": true
   },
+  "MPM1D1": {
+    "department": "Junior Math",
+    "name": "Math",
+    "grade": 1,
+    "dedicated_chat": true
+  },
   "MAT1L1": {
-    "department": "Applied Math",
+    "department": "Junior Math",
     "name": "Math",
     "grade": 1,
     "dedicated_chat": true
   },
   "MFM1P1": {
-    "department": "Applied Math",
-    "name": "Math",
-    "grade": 1,
-    "dedicated_chat": true
-  },
-  "MAT2L1": {
-    "department": "Applied Math",
-    "name": "Math",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "MFM2P1": {
-    "department": "Applied Math",
-    "name": "Math Applied",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "MBF3C1": {
-    "department": "Applied Math",
-    "name": "Math",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "MCF3M1": {
-    "department": "Applied Math",
-    "name": "Functions Application",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "MEL3E1": {
-    "department": "Applied Math",
-    "name": "Everyday Math",
-    "grade": 3,
-    "dedicated_chat": true
-  },
-  "MAP4C1": {
-    "department": "Applied Math",
-    "name": "College Math",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "MCT4C1": {
-    "department": "Applied Math",
-    "name": "Tech Math",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "MEL4E1": {
-    "department": "Applied Math",
-    "name": "Everyday Math",
-    "grade": 4,
-    "dedicated_chat": true
-  },
-  "MPM1D1": {
-    "department": "Math",
+    "department": "Junior Math",
     "name": "Math",
     "grade": 1,
     "dedicated_chat": true
   },
   "MPM2D1": {
-    "department": "Math",
+    "department": "Junior Math",
     "name": "Math",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "MAT2L1": {
+    "department": "Junior Math",
+    "name": "Math",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "MFM2P1": {
+    "department": "Junior Math",
+    "name": "Math Applied",
     "grade": 2,
     "dedicated_chat": true
   },
@@ -1203,6 +1167,42 @@
     "department": "Math",
     "name": "Functions",
     "grade": 3,
+    "dedicated_chat": true
+  },
+  "MBF3C1": {
+    "department": "Math",
+    "name": "Math",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MCF3M1": {
+    "department": "Math",
+    "name": "Functions Application",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MEL3E1": {
+    "department": "Math",
+    "name": "Everyday Math",
+    "grade": 3,
+    "dedicated_chat": true
+  },
+  "MAP4C1": {
+    "department": "Math",
+    "name": "College Math",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "MCT4C1": {
+    "department": "Math",
+    "name": "Tech Math",
+    "grade": 4,
+    "dedicated_chat": true
+  },
+  "MEL4E1": {
+    "department": "Math",
+    "name": "Everyday Math",
+    "grade": 4,
     "dedicated_chat": true
   },
   "MCV4U1": {
@@ -1224,33 +1224,33 @@
     "dedicated_chat": true
   },
   "SNC1P1": {
-    "department": "Applied Science",
+    "department": "Science",
     "name": "Science",
     "grade": 1,
     "dedicated_chat": true
   },
   "SNC1L1": {
-    "department": "Applied Science",
+    "department": "Science",
     "name": "Science",
     "grade": 1,
-    "dedicated_chat": true
-  },
-  "SNC2P1": {
-    "department": "Applied Science",
-    "name": "Science",
-    "grade": 2,
-    "dedicated_chat": true
-  },
-  "SNC2L1": {
-    "department": "Applied Science",
-    "name": "Science",
-    "grade": 2,
     "dedicated_chat": true
   },
   "SNC1D1": {
     "department": "Science",
     "name": "Science",
     "grade": 1,
+    "dedicated_chat": true
+  },
+  "SNC2P1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 2,
+    "dedicated_chat": true
+  },
+  "SNC2L1": {
+    "department": "Science",
+    "name": "Science",
+    "grade": 2,
     "dedicated_chat": true
   },
   "SNC2D1": {
@@ -1434,10 +1434,10 @@
     "dedicated_chat": true
   },
   "TGG4M1": {
-    "department": "Yearbook",
+    "department": "Comm Tech",
     "name": "Yearbook",
     "grade": 4,
-    "dedicated_chat": false
+    "dedicated_chat": true
   },
   "TCJ2O1": {
     "department": "Construction Tech",
