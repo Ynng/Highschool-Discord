@@ -5,20 +5,10 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message) => {
     if (utils.checkDm(message)) return;
 
-    let embed = new Discord.MessageEmbed().setTitle("The **Unionville HS** Discord Server is your one stop shop for everything UHS!")
-        .addField('\u200b', '\u200b')
-        .addField(":books: Need help with homework?", "Join `Course Chats` and find someone to help you out! ")
-        .addField(":link: Want to connect with your grade!", " Make use of the `Grade Chats`!")
-        .addField(":school: Seeking advice on Universities?", "Why not `#ask-an-alum`? ")
-        .addField(":mask: Getting bored at home?", "Find someone to game with in the `Entertainment` category!")
-        .addField(":desktop: Having Tech issues?", "Ask a question in the `#tech-support` channel!")
-        .addField(":thinking: Make sure to read `#rules-and-info`", "Sending any message in this server means you've read and agreed to follow the rules.")
-        .addField('\u200b', '\u200b')
-        .addField(":clap::clap:**ENTER THE COURSE CODES OF YOUR CLASSES BELOW** :point_down: to join your course chats, department chats and grade chats!", "Don't worry about formatting, if the code is valid, we can read it!")
-        .addField('\u200b', 'Please only use this channel to post course codes. All messages will be deleted automatically')
+    let embed = new Discord.MessageEmbed().setTitle("Invite your classmates!")
+        .addField(":laughing:  A dedicated `course chat` will be created automatically when there are more then 5 people from the same class", "More dedicated chats and features will be added later")
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
         .setColor(config.embedColor);
-
 
     // let embed = new Discord.MessageEmbed()
     //     .setAuthor(`${message.guild.name}`)
@@ -35,7 +25,7 @@ module.exports.run = async (bot, message) => {
 };
 
 module.exports.help = {
-    name: "customembed",
+    name: "customembeda",
     description: "This is a debug command only available to the owner of the server",
-    aliases: ["customembed"]
+    aliases: ["customembeda"]
 };
