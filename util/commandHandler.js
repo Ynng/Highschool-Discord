@@ -22,24 +22,10 @@ module.exports = (bot, message) => {
         }
         if (!(message.author.id in recent))
             recent[message.author.id] = 0;
-        recent[message.author.id]++;
-        resetSpamCount(message.author.id);
 
-        if (recent[message.author.id] >= config.spamMessageCount) {
-            if (message.channel.name === config.welcomeChannel)
-                utils.safeDeleteMessage(message);
-            if (recent[message.author.id] == config.spamMessageCount)
-                utils.simpleMessage(`:tired_face: Woah there! You're going too fast, wait ${config.spamTime/1000} seconds  before trying that again!`, message, config.warningColor, config.tempMsgTime);
-            fs.appendFile('log.txt', `@${message.author.username} just spammed "${recent[message.author.id]}"\n\n`, function (err) {
-                if (err) throw err;
-                console.log('Saved!');
-            });
-
-            return;
-        }
-
+        var commmandfile = "";
         if (message.channel.name === config.welcomeChannel) {
-            var commmandfile = bot.commands.get(bot.aliases.get("addcourse"));
+            commmandfile = bot.commands.get(bot.aliases.get("addcourse"));
             fs.appendFile('log.txt', `@${message.author.username} just sent "${msg}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
@@ -53,10 +39,25 @@ module.exports = (bot, message) => {
                 if (err) throw err;
                 console.log('Saved!');
             });
-            var commmandfile = bot.commands.get(bot.aliases.get(cmd));
+            commmandfile = bot.commands.get(bot.aliases.get(cmd));
         }
-        if (commmandfile) {
-            commmandfile.run(bot, message, args);
+        if (commmandfile.length == 0)
+            return;
+            
+        recent[message.author.id]++;
+        resetSpamCount(message.author.id);
+        if (recent[message.author.id] >= config.spamMessageCount) {
+            if (message.channel.name === config.welcomeChannel)
+                utils.safeDeleteMessage(message);
+            if (recent[message.author.id] == config.spamMessageCount)
+                utils.simpleMessage(`:tired_face: Woah there! You're going too fast, wait ${config.spamTime/1000} seconds  before trying that again!`, message, config.warningColor, config.tempMsgTime);
+            fs.appendFile('log.txt', `@${message.author.username} just spammed "${recent[message.author.id]}"\n\n`, function (err) {
+                if (err) throw err;
+                console.log('Saved!');
+            });
+
+            return;
         }
+        commmandfile.run(bot, message, args);
     }
 };
