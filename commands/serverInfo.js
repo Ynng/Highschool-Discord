@@ -9,16 +9,13 @@ module.exports.run = async (bot, message) => {
 
   let embed = new Discord.MessageEmbed()
           .setAuthor(`${message.guild.name}`)
-          .setFooter(`Server created on ${message.guild.createdAt} ||---|| SERVER PREFIX ${config.prefix}`)
           .setThumbnail(serverIcon)
           .setTitle("Server Information!")
-          .addField("You joined on", message.member.joinedAt, true)
+          .addField("Age", `${utils.getAgeString(utils.getAgeDate(message.guild.createdAt))}`, true)
           .addField("Region", message.guild.region, true)
           .addField("Server Owner", message.guild.owner.user.tag, true)
-          .addField("Total Members", `**${message.guild.memberCount}**`, true)
-          .addField('Humans', `**${message.guild.members.cache.filter(member => !member.user.bot).size}**`, true)
-          .addField('Bots', `**${message.guild.members.cache.filter(member => member.user.bot).size}**`, true)
           .addField('Member Status', `**${message.guild.members.cache.filter(o => o.presence.status === 'online').size}** Online\n**${message.guild.members.cache.filter(i => i.presence.status === 'idle').size}** Idle/Away\n**${message.guild.members.cache.filter(dnd => dnd.presence.status === 'dnd').size}** Do Not Disturb\n**${message.guild.members.cache.filter(off => off.presence.status === 'offline').size}** Offline/Invisible\n**${message.guild.members.cache.filter(s => s.presence.status === 'streaming').size}** Streaming`, true)
+          .addField("Members", `**${message.guild.memberCount}** Total\n**${message.guild.members.cache.filter(member => !member.user.bot).size}** Humans\n**${message.guild.members.cache.filter(member => member.user.bot).size}** Bots`, true)
           .setColor(config.embedColor);
   utils.embedAddStamp(message, embed, message.author);
   message.channel.send(embed);
