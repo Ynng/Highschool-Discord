@@ -1,4 +1,4 @@
-AU Dance
+Dance
 ATB1OM Ballet
 ATM1OM Modern Dance
 ATB2OM Ballet
@@ -7,8 +7,12 @@ ATB3MM Ballet
 ATM4MM Modern Dance
 ATB4MM Ballet
 ATM4MM Modern Dance
+ATP1O1 Dance
+ATP2O1 Dance
+ATP3M1 Dance
+ATP4M1 Dance
 
-AU Drama
+Drama
 ADA1OM Drama
 ADD1OM Drama Production
 ADA2OM Drama
@@ -17,8 +21,14 @@ ADF3MM Director’s Craft
 ADD3MM Drama Production
 ADA4MM Drama
 ADD4MM Drama Production
+ADA1O1 Dramatic Arts
+ADA2O1 Dramatic Drawings
+ADV3M1 Video
+ADB3M1 Showtime
+ADV4M1 Video
+ADB4M1 Showtime
 
-AU Music
+Music
 AMK1OM Piano
 AMS1OM Strings
 AMC1OM Musicianship
@@ -39,32 +49,6 @@ AMS4MM Strings
 AMC4MM Musicianship
 AMV4MM Vocal
 AMW4MM Woodwinds
-
-AU Visual Arts
-AVI1OM Visual Arts
-AWM1OM Painting
-AVI2OM Visual Arts
-AWM2OM Painting
-AVI3MM Visual Arts
-AWM3MM Painting
-AVI4MM Visual Arts
-AWM4MM Painting
-
-Dance
-ATP1O1 Dance
-ATP2O1 Dance
-ATP3M1 Dance
-ATP4M1 Dance
-
-Drama
-ADA1O1 Dramatic Arts
-ADA2O1 Dramatic Drawings
-ADV3M1 Video
-ADB3M1 Showtime
-ADV4M1 Video
-ADB4M1 Showtime
-
-Music
 AMI1O1 Percussion Band
 AMI1O2 Beginning Band
 AMI1O3 Woodwinds Band
@@ -99,6 +83,14 @@ AMR4M2 Repertoire Strings
 AMR4M3 Repertoire Choral
 
 Visual Arts
+AVI1OM Visual Arts
+AWM1OM Painting
+AVI2OM Visual Arts
+AWM2OM Painting
+AVI3MM Visual Arts
+AWM3MM Painting
+AVI4MM Visual Arts
+AWM4MM Painting
 AVI1O1 Visual Arts
 AVI2O1 Visual Arts
 AWQ2O1 Photography
