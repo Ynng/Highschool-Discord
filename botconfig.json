@@ -1,5 +1,5 @@
 {
-    "prefix": "$",
+    "prefix": "!",
     "moderationChannel": "moderation-log",
     "welcomeChannel": "welcome",
     "classChannelUserRequirement": 5,
