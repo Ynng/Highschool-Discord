@@ -1,0 +1,48 @@
+OUTLINE:
+>INFORMATION
+    >WELCOME
+    >ANNOUNCEMENTS
+>MAIN
+    >GENERAL CHAT
+    >OPPORTUNITIES
+    >VC
+    >VC
+    >VC
+>BATCH GROUPS
+    >GRADE 9
+        >VC
+            >ADD MORE BASED ON REQUIREMENTS (MAX 5)
+    >GRADE 10
+        >VC
+    >GRADE 11
+        >VC
+    >GRADE 12
+        >VC
+>DEPARTMENTS
+    ><insert dept>
+        >VC {if more than 10 people}
+    ><insert dept>
+    ><insert dept>
+    ><insert dept>
+>MY COURSES
+    ><insert course>
+        >VC {if more than 10 people}
+    ><insert course>
+    ><insert course>
+>ALUMNI 
+    >CHAT
+    >ASK-AN-ALUMNI
+    >VC
+        >ADD MORE BASED ON REQUIREMENTS (MAX 5)
+    >2 PERSON VC
+>CLUBS
+    >ROBOTICS
+    >DECA
+        >ADD MORE BASED ON REQUIREMENTS
+>ENTERTAINMENT
+    >OFF TOPIC
+    >GAMING
+    >BASKETBALL-NBA
+    >MUSIC-COMMANDS
+    >VR
+        >ADD MORE BASED ON REQUIREMENTS (MAX 5)
