@@ -231,7 +231,7 @@ module.exports.run = async (bot, message, args) => {
     let embed = new Discord.MessageEmbed()
         .setColor(`${config.errorColor}`)
         .setTitle("Error adding courses")
-        .setFooter(`${message.author.username} | Removing this message in ${config.tempMsgTime} seconds`, message.author.avatarURL());
+        .setFooter(`${message.author.username} | Removing this message in ${config.tempMsgTime / 1000} seconds`, message.author.avatarURL());
 
     if (addedCoursesString.length > 0){
         replyToUser.push([`:ok_hand: The following courses are added to your account!`, utils.andjoin(addedCoursesString, ', ')]);
