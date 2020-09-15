@@ -17,7 +17,8 @@ module.exports.run = async (bot, message, args) => {
             .setAuthor(`Help for ${bot.user.username}`, bot.user.displayAvatarURL())
             .addField("My commands:", `\`${config.prefix}${commandsArray.join(`\`, \`${config.prefix}`)}\``)
             // .addField("My prefix:", `\`${config.prefix}\``)
-            .addField("Need help on a command?", `\`\`\`html\n< ${config.prefix}help {command} >\`\`\``);
+            .addField("Need help on a command?", `\`\`\`html\n< ${config.prefix}help {command} >\`\`\``)
+            .addField(`Add courses in #${config.welcomeChannel}`, `Remove courses using the \`${config.prefix}removecourse\` command`);
 
         utils.embedAddStamp(message, embed, message.author);
         message.channel.send(embed);
