@@ -102,16 +102,16 @@ module.exports.run = async (bot, message, args) => {
         Create/Add "Grade" Channels
     *************************************/
     //If "Grades" category does not exist, create it
-    var category = message.guild.channels.cache.find(channel => channel.name == "Grades");
+    var category = message.guild.channels.cache.find(channel => channel.name == "🏫Grades");
     if (category == undefined)
-        await message.guild.channels.create("Grades", { type: "category" })
+        await message.guild.channels.create("🏫Grades", { type: "category" })
     for (i = 0; i < newCreatedRoles.length; i++) {
         if (courselist[newCreatedRoles[i].name].grade == -1)
             continue;
 
         var grade = courselist[newCreatedRoles[i].name].grade;
-        var gradeString = `grade-${grade + 8}`
-        var channel = message.guild.channels.cache.find(channel => channel.name == gradeString);
+        var gradeString = `Grade ${grade + 8}`
+        var channel = message.guild.channels.cache.find(channel => channel.topic == gradeString);
 
         //If channel already exist, add the new role to permission overwrite 
         if (channel != undefined) {
@@ -119,8 +119,9 @@ module.exports.run = async (bot, message, args) => {
         } else {
             //Else, create the new channel with the correct permission overwrite
             await message.guild.channels.create(gradeString, {
-                parent: message.guild.channels.cache.find(channel => channel.name == "Grades"),
+                parent: message.guild.channels.cache.find(channel => channel.name == "🏫Grades"),
                 position: grade,
+                topic: gradeString,
                 permissionOverwrites: [
                     {
                         id: newCreatedRoles[i].id,
@@ -140,9 +141,9 @@ module.exports.run = async (bot, message, args) => {
         Create/Add "Departments" Channels
     *************************************/
     //If "Departments" category does not exist, create it
-    var category = message.guild.channels.cache.find(channel => channel.name == "Departments");
+    var category = message.guild.channels.cache.find(channel => channel.name == "📚Departments");
     if (category == undefined)
-        await message.guild.channels.create("Departments", { type: "category" })
+        await message.guild.channels.create("📚Departments", { type: "category" })
     for (i = 0; i < newCreatedRoles.length; i++) {
         var department = courselist[newCreatedRoles[i].name].department;
         var channel = message.guild.channels.cache.find(channel => channel.topic == department);
@@ -153,7 +154,7 @@ module.exports.run = async (bot, message, args) => {
         } else {
             //Else, create the new channel with the correct permission overwrite
             await message.guild.channels.create(department, {
-                parent: message.guild.channels.cache.find(channel => channel.name == "Departments"),
+                parent: message.guild.channels.cache.find(channel => channel.name == "📚Departments"),
                 topic: department,
                 permissionOverwrites: [
                     {
@@ -179,9 +180,9 @@ module.exports.run = async (bot, message, args) => {
         Create/Add "Class" Channels
     *************************************/
     //If "Class" category does not exist, create it
-    var category = message.guild.channels.cache.find(channel => channel.name == "Class");
+    var category = message.guild.channels.cache.find(channel => channel.name == "📙Classes");
     if (category == undefined)
-        await message.guild.channels.create("Class", { type: "category" })
+        await message.guild.channels.create("📙Classes", { type: "category" })
     for (i = 0; i < allAddedRoles.length; i++) {
         if (!courselist[allAddedRoles[i].name].dedicated_chat)
             continue;
@@ -210,7 +211,7 @@ module.exports.run = async (bot, message, args) => {
         //Else, create the new channel with the correct permission overwrite
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
         await message.guild.channels.create(courseName, {
-            parent: message.guild.channels.cache.find(channel => channel.name == "Class"),
+            parent: message.guild.channels.cache.find(channel => channel.name == "📙Classes"),
             topic: courseCode,
             permissionOverwrites: [
                 {
