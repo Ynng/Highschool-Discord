@@ -7,10 +7,10 @@ const fs = require('fs');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
-    messageContent = message.content.toUpperCase();
+    messageContent = args.join(' ').toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
 
-    replyToUser = [];
+    var replyToUser = [];
     /****************************************
         Parsing user input
     *************************************/
@@ -18,10 +18,22 @@ module.exports.run = async (bot, message, args) => {
     if (message.channel.name === config.welcomeChannel)
         utils.safeDeleteMessage(message);
 
+    var missingLastDigit = false;
+
     //Match all potential course code with regex
     var rawCourses = messageContent.match(re);
-    if (!rawCourses)
-        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime);
+    if (!rawCourses) {
+        //Maybe the user didn't add the last digit?
+        var resimple = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX]/g);
+        rawCourses = messageContent.match(resimple);
+        missingLastDigit = true;
+        if (!rawCourses)
+            return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime);
+        for (var i = 0; i < rawCourses.length; i++)
+            rawCourses[i] = rawCourses[i] + "1";
+        replyToUser.push([`:warning: The full course code is **6** characters long.`, "Course code detection for 5 characters is buggy and might not work."]);
+        replyToUser.push([`\u200b`, "\u200b"]);
+    }
 
     //Remove duplicated inputs
     rawCourses = [...new Set(rawCourses)];

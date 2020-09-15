@@ -6,7 +6,7 @@ const courselist = require('../course_list.json');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
-    messageContent = args.join().toUpperCase();
+    messageContent = args.join(' ').toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
     /****************************************
         Parsing user input
@@ -18,10 +18,23 @@ module.exports.run = async (bot, message, args) => {
     // if (rank > botrank)
     //     return utils.simpleMessage(`:no_entry_sign: The bot does not have sufficient permission to edit the role you request.`, message, config.errorColor, config.tempMsgTime)
 
+    var missingLastDigit = false;
+    var replyToUser = [];
+
     //Match all potential course code with regex
     var rawCourses = messageContent.match(re);
-    if (!rawCourses)
-        return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime / 3 * 2);
+    if (!rawCourses) {
+        //Maybe the user didn't add the last digit?
+        var resimple = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX]/g);
+        rawCourses = messageContent.match(resimple);
+        missingLastDigit = true;
+        if (!rawCourses)
+            return utils.simpleMessage(":thinking: No valid course code detected!", message, config.errorColor, config.tempMsgTime);
+        for (var i = 0; i < rawCourses.length; i++)
+            rawCourses[i] = rawCourses[i] + "1";
+        replyToUser.push([`:warning: The full course code is **6** characters long.`, "Course code detection for 5 characters is buggy and might not work."]);
+        replyToUser.push([`\u200b`, "\u200b"]);
+    }
 
     //Remove duplicated inputs
     rawCourses = [...new Set(rawCourses)];
@@ -36,7 +49,7 @@ module.exports.run = async (bot, message, args) => {
 
     // Sending a error message about all invalid course codes
     if (rawCourses.length > 0)
-        utils.simpleMessage(`:thinking: ${utils.andisarejoin(rawCourses, ', ')} not valid course codes!`, message, config.errorColor, config.tempMsgTime);
+        replyToUser.push([`:thinking: The following course codes are not valid!`, utils.andjoin(rawCourses, ', ')]);
     if (courses.length == 0) return;
 
     var rolesToRemove = [];
@@ -49,7 +62,7 @@ module.exports.run = async (bot, message, args) => {
     });
 
     if (courses.length > 0)
-        utils.simpleMessage(`:thinking: You are not in ${utils.andjoin(courses, ', ')}.`, message, config.errorColor, config.tempMsgTime);
+        replyToUser.push([`:thinking: You are not in the following courses!`, utils.andjoin(courses, ', ')]);
 
     var removedRolesString = [];
 
@@ -58,7 +71,21 @@ module.exports.run = async (bot, message, args) => {
         await rolesToRemove[i].delete();
     }
 
-    return utils.simpleMessage(`:ok_hand: Removed you from ${utils.andjoin(removedRolesString, ', ')}.`, message, config.embedColor, config.tempMsgTime)
+    let embed = new Discord.MessageEmbed()
+        .setColor(`${config.errorColor}`)
+        .setTitle("Error removing courses")
+        .setFooter(`Requested by ${message.author.username}`, message.author.avatarURL());
+
+    if (removedRolesString.length > 0) {
+        replyToUser.push([`:ok_hand: The following courses are removed from your account!`, utils.andjoin(removedRolesString, ', ')]);
+        embed.setColor(config.embedColor).setTitle("Success removing courses");
+    }
+
+    for (let i = replyToUser.length - 1; i >= 0; i--) {
+        embed.addField(replyToUser[i][0], replyToUser[i][1]);
+    }
+
+    message.channel.send(embed);
 }
 
 module.exports.help = {

@@ -26,6 +26,8 @@ module.exports = (bot, message) => {
         var commmandfile = "";
         if (message.channel.name === config.welcomeChannel) {
             commmandfile = bot.commands.get(bot.aliases.get("addcourse"));
+            msg = msg.replace(/\s+/g, ' ');
+            var args = msg.split(" ");
             fs.appendFile('log.txt', `@${message.author.username} just sent "${msg}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
@@ -41,6 +43,8 @@ module.exports = (bot, message) => {
             });
             commmandfile = bot.commands.get(bot.aliases.get(cmd));
         }
+        if(!commmandfile)
+            return;
         if (commmandfile.length == 0)
             return;
             
