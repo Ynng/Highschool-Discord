@@ -12,8 +12,16 @@ module.exports.run = async (bot, message) => {
         .addField(":clap::clap:**ENTER THE COURSE CODES OF YOUR CLASSES BELOW** :point_down: to join your course chats, department chats and grade chats!", "Don't worry about formatting, if the code is valid, we can read it!")
         .addField('\u200b', 'Please only use this channel to post course codes. All messages will be deleted automatically')
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
-        .setColor(config.embedColor);
+        .setColor(config.serverColor);
 
+    message.channel.send(embed);
+
+    embed = new Discord.MessageEmbed().setTitle("Invite your classmates!")
+        .addField(":laughing:  A dedicated `course chat` will be created automatically when there are more then 5 people from the same class", "More dedicated chats and features will be added later")
+        .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
+        .setColor(config.serverColor);
+
+    message.channel.send(embed);
 
     // let embed = new Discord.MessageEmbed()
     //     .setAuthor(`${message.guild.name}`)
@@ -26,7 +34,6 @@ module.exports.run = async (bot, message) => {
     //     .addField("Members", `**${message.guild.memberCount}** Total\n**${message.guild.members.cache.filter(member => !member.user.bot).size}** Humans\n**${message.guild.members.cache.filter(member => member.user.bot).size}** Bots`, true)
     //     .setColor(config.embedColor);
     // utils.embedAddStamp(message, embed, message.author);
-    message.channel.send(embed);
 };
 
 module.exports.help = {
