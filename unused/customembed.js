@@ -6,7 +6,7 @@ module.exports.run = async (bot, message) => {
     if (utils.checkDm(message)) return;
 
     let embed = new Discord.MessageEmbed().setTitle("Welcome!")
-        .addField('The **Unionville HS** Discord Server is your one stop shop for everything UHS!', ':books: `Course Chats` For the homework helps!\n:link: `Grade Chats` to connect ith your grade!\n:school: `#sk-an-alum` for any University questions!\n:joystick: `Entertainment` To find someone to game with!\n:desktop: `tech-support` if you need any, well, tech support.\n')
+        .addField('The **Unionville HS** Discord Server is your one stop shop for everything UHS!', ':books: `Course Chats` for the homework advice!\n:link: `Grade Chats` to connect with your grade!\n:school: `#ask-an-alum` for post-secondary advice!\n:joystick: `Entertainment` to find someone to game with!\n:desktop: `tech-support` if you need any, well, tech support.\n:question: And more to come!')
         .addField(":thinking: Make sure to read `#rules-and-info`", "Sending any message in this server means you've read and agreed to the server rules.")
         .addField('\u200b', '\u200b')
         .addField(":clap::clap:**ENTER THE COURSE CODES OF YOUR CLASSES BELOW** :point_down: to join your course chats, department chats and grade chats!", "Don't worry about formatting, if the code is valid, we can read it!")
