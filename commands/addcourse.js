@@ -162,8 +162,13 @@ module.exports.run = async (bot, message, args) => {
         var channel = message.guild.channels.cache.find(channel => channel.topic == department);
 
         //If channel already exist, add the new role to permission overwrite 
+        let embed = new Discord.MessageEmbed()
+            .setTitle(`:laughing: New Class Added!`)
+            .addField(`Welcome ${allAddedRoles[i].name} to the \`${department}\` department!`, `This means that for the first time, a person added ${allAddedRoles[i].name} to their course list.`)
+            .setColor(config.embedColor);
         if (channel != undefined) {
             channel.createOverwrite(newCreatedRoles[i], { 'VIEW_CHANNEL': true });
+            channel.send(embed);
         } else {
             //Else, create the new channel with the correct permission overwrite
             await message.guild.channels.create(department, {
@@ -180,10 +185,6 @@ module.exports.run = async (bot, message, args) => {
                     }
                 ]
             }).then(channel => {
-                let embed = new Discord.MessageEmbed()
-                    .setTitle(`:laughing: New Class Added!`)
-                    .addField(`Welcome ${allAddedRoles[i].name} to the \`${department}\` department!`, `This means that for the first time, a person added ${allAddedRoles[i].name} to their course list.`)
-                    .setColor(config.embedColor);
                 channel.send(embed);
             })
         }
