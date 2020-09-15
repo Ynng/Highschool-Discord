@@ -232,7 +232,7 @@ module.exports.run = async (bot, message, args) => {
             continue;
         //Else, create the new channel with the correct permission overwrite
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
-        await message.guild.channels.create(courseName, {
+        await message.guild.channels.create(courseCode, {
             parent: category,
             topic: courseCode,
             permissionOverwrites: [
