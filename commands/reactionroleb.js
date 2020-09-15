@@ -10,8 +10,8 @@ module.exports.run = async (bot, message) => {
     if (botrank > rank)
         return utils.simpleMessage(`:no_entry_sign: This is an admin only command.`, message, config.errorColor, config.tempMsgTime)
 
-    let embed = new Discord.MessageEmbed().setTitle("Become an alumni!")
-        .addField("React to this message with the emoji that corresponds to your interest.", "")
+    let embed = new Discord.MessageEmbed().setTitle("Join a chat for your interest!")
+        .addField("React to this message with the emoji that corresponds to your interest.", "🏯︱Anime\n📺︱Party Games\n🏅︱Sports\n🎮︱Gaming\n💻︱Technology")
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
         .setColor(config.serverColor);
 
