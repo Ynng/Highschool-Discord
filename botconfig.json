@@ -1,7 +1,7 @@
 {
     "prefix": "!",
     "moderationChannel": "moderation-log",
-    "welcomeChannel": "welcome",
+    "welcomeChannel": "add-course",
     "classChannelUserRequirement": 5,
     "embedColor": "#6bdbff",
     "serverColor": "#ff3500",
