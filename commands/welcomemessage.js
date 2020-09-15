@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
         return utils.simpleMessage(`:no_entry_sign: This is an admin only command.`, message, config.errorColor, config.tempMsgTime)
 
     if (args == "1")
-        message.channel.send("", { files: ["https://i.imgur.com/QUhC0c7.png"] });
+        message.channel.send("", { files: ["https://i.imgur.com/jGgYLka.png"] });
     else if (args == "2") {
         let embed = new Discord.MessageEmbed().setTitle("Welcome!")
             .addField('The **Unionville HS** Discord Server is your one stop shop for everything UHS!', ':books: `Course Chats` for the homework advice!\n:link: `Grade Chats` to connect with your grade!\n:school: `#ask-an-alum` for post-secondary advice!\n:joystick: `Entertainment` to find someone to game with!\n:desktop: `tech-support` if you need any, well, tech support.\n:question: And more to come!')
@@ -24,7 +24,7 @@ module.exports.run = async (bot, message, args) => {
 
         message.channel.send(embed);
     } else if (args == "3")
-        message.channel.send("", { files: ["https://i.imgur.com/UqVnclU.png"] });
+        message.channel.send("", { files: ["https://i.imgur.com/bEK7jpB.png"] });
     else if (args == "4") {
         embed = new Discord.MessageEmbed().setTitle("Invite your classmates!")
             .addField(":laughing:  A dedicated `course chat` will be created automatically when there are more then 5 people from the same class", "More dedicated chats and features will be added later")
