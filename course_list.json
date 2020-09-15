@@ -834,25 +834,25 @@
     "dedicated_chat": true
   },
   "ENG1P1": {
-    "department": "Applied English",
+    "department": "Jr Applied English",
     "name": "English",
     "grade": 1,
     "dedicated_chat": true
   },
   "ENG1L1": {
-    "department": "Applied English",
+    "department": "Jr Applied English",
     "name": "English",
     "grade": 1,
     "dedicated_chat": true
   },
   "ENG2P1": {
-    "department": "Applied English",
+    "department": "Jr Applied English",
     "name": "English",
     "grade": 2,
     "dedicated_chat": true
   },
   "ENG2L1": {
-    "department": "Applied English",
+    "department": "Jr Applied English",
     "name": "English",
     "grade": 2,
     "dedicated_chat": true
@@ -882,13 +882,13 @@
     "dedicated_chat": true
   },
   "ENG1D1": {
-    "department": "English",
+    "department": "Jr English",
     "name": "English",
     "grade": 1,
     "dedicated_chat": true
   },
   "ENG2D1": {
-    "department": "English",
+    "department": "Jr English",
     "name": "English",
     "grade": 2,
     "dedicated_chat": true

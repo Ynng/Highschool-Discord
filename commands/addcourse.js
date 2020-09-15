@@ -165,6 +165,12 @@ module.exports.run = async (bot, message, args) => {
                         deny: ['VIEW_CHANNEL'],
                     }
                 ]
+            }).then(channel => {
+                let embed = new Discord.MessageEmbed()
+                    .setTitle(`:laughing: New Class Added!`)
+                    .addField(`Welcome ${allAddedRoles[i].name} to the \`${department}\` department!`, `This means that for the first time, a person added ${allAddedRoles[i].name} to their course list.`)
+                    .setColor(config.embedColor);
+                channel.send(embed);
             })
         }
     }
@@ -233,12 +239,12 @@ module.exports.run = async (bot, message, args) => {
         .setTitle("Error adding courses")
         .setFooter(`${message.author.username} | Removing this message in ${config.tempMsgTime / 1000} seconds`, message.author.avatarURL());
 
-    if (addedCoursesString.length > 0){
+    if (addedCoursesString.length > 0) {
         replyToUser.push([`:ok_hand: The following courses are added to your account!`, utils.andjoin(addedCoursesString, ', ')]);
         embed.setColor(config.embedColor).setTitle("Success adding courses");
     }
-    
-    for(let i = replyToUser.length - 1; i >= 0; i--){
+
+    for (let i = replyToUser.length - 1; i >= 0; i--) {
         embed.addField(replyToUser[i][0], replyToUser[i][1]);
     }
 

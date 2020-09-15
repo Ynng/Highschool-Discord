@@ -166,19 +166,23 @@ Dual Credit
 YYY4X1 College
 YYY4X2 College
 
-Applied English
+Jr Applied English
 ENG1P1 English
 ENG1L1 English
 ENG2P1 English
 ENG2L1 English
+
+Applied English
 ENG3C1 English
 ENG3E1 English
 ENG4C1 English
 ENG4E1 English
 
-English
+Jr English
 ENG1D1 English
 ENG2D1 English
+
+English
 ENG3U1 English
 EPS3O1 Presentation
 ENG4U1 English
