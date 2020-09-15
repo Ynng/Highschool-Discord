@@ -170,7 +170,7 @@ module.exports.run = async (bot, message, args) => {
         //If channel already exist, add the new role to permission overwrite 
         let embed = new Discord.MessageEmbed()
             .setTitle(`:laughing: New Class Added!`)
-            .addField(`Welcome ${allAddedRoles[i].name} to the \`${department}\` department!`, `This means that for the first time, a person added ${allAddedRoles[i].name} to their course list.`)
+            .addField(`Welcome ${newCreatedRoles[i].name} to the \`${department}\` department!`, `This means that for the first time, a person added ${newCreatedRoles[i].name} to their course list.`)
             .setColor(config.embedColor);
         if (channel != undefined) {
             channel.createOverwrite(newCreatedRoles[i], { 'VIEW_CHANNEL': true });
