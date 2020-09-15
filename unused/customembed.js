@@ -5,14 +5,9 @@ const utils = require("../util/utils");
 module.exports.run = async (bot, message) => {
     if (utils.checkDm(message)) return;
 
-    let embed = new Discord.MessageEmbed().setTitle("The **Unionville HS** Discord Server is your one stop shop for everything UHS!")
-        .addField('\u200b', '\u200b')
-        .addField(":books: Need help with homework?", "Join `Course Chats` and find someone to help you out! ")
-        .addField(":link: Want to connect with your grade!", " Make use of the `Grade Chats`!")
-        .addField(":school: Seeking advice on Universities?", "Why not `#ask-an-alum`? ")
-        .addField(":mask: Getting bored at home?", "Find someone to game with in the `Entertainment` category!")
-        .addField(":desktop: Having Tech issues?", "Ask a question in the `#tech-support` channel!")
-        .addField(":thinking: Make sure to read `#rules-and-info`", "Sending any message in this server means you've read and agreed to follow the rules.")
+    let embed = new Discord.MessageEmbed().setTitle("Welcome!")
+        .addField('The **Unionville HS** Discord Server is your one stop shop for everything UHS!', ':books: `Course Chats` For the homework helps!\n:link: `Grade Chats` to connect ith your grade!\n:school: `#sk-an-alum` for any University questions!\n:joystick: `Entertainment` To find someone to game with!\n:desktop: `tech-support` if you need any, well, tech support.\n')
+        .addField(":thinking: Make sure to read `#rules-and-info`", "Sending any message in this server means you've read and agreed to the server rules.")
         .addField('\u200b', '\u200b')
         .addField(":clap::clap:**ENTER THE COURSE CODES OF YOUR CLASSES BELOW** :point_down: to join your course chats, department chats and grade chats!", "Don't worry about formatting, if the code is valid, we can read it!")
         .addField('\u200b', 'Please only use this channel to post course codes. All messages will be deleted automatically')

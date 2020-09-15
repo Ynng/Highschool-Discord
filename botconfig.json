@@ -4,7 +4,7 @@
     "welcomeChannel": "welcome",
     "classChannelUserRequirement": 5,
     "embedColor": "#6bdbff",
-    "newEmbedColor": "#CF4A27",
+    "newEmbedColor": "#ff3500",
     "errorColor": "#d90000",
     "validColor": "#17e321",
     "warningColor": "#dbdb16",
