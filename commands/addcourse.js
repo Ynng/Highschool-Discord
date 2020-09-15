@@ -242,7 +242,9 @@ module.exports.run = async (bot, message, args) => {
         embed.addField(replyToUser[i][0], replyToUser[i][1]);
     }
 
-    message.channel.send(embed);
+    message.channel.send(embed).then(msg => {
+        utils.safeDeleteMessage(msg, config.tempMsgTime);
+    });
 
 };
 
