@@ -64,8 +64,9 @@ module.exports.run = async (bot, message, args) => {
 
     //Check the already existing courses
     var courseCount = 0;
+    var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
     message.member.roles.cache.forEach(role => {
-        if (re.test(role.name))
+        if (role.name.match(re))
             courseCount++;
     })
     /****************************************
@@ -245,7 +246,7 @@ module.exports.run = async (bot, message, args) => {
     }
 
     if (tooManyCourses)
-        replyToUser.push([":no_entry_sign: You have too many classes already. Ask an admin to remove some for you before adding more!", "\u200b"]);
+        replyToUser.push([":no_entry_sign: You have too many classes already. Remove some before adding more!", "\u200b"]);
 
     let embed = new Discord.MessageEmbed()
         .setColor(`${config.errorColor}`)
