@@ -10,10 +10,11 @@ Discord bot to manage a discord server for my highschool
 
 ## Contributors
 Thanks to
-* [Frank](https://github.com/3Nya3) for a few info and fun commands.
-* [Owen](https://github.com/MiraclePalette) for part of the highlight feature code.
-* [Matthew](https://github.com/Weezity) for part of the removecourse code
-* [Sritejas](https://github.com/SritejasMurugan) for server structuring and outline and part of course groupings
+* [Frank Ye](https://github.com/3Nya3) for a few info and fun commands.
+* [Owen Hu](https://github.com/MiraclePalette) for part of the highlight feature code.
+* [Matthew Lee](https://github.com/Weezity) for part of the removecourse code
+* [Sritejas Murugan](https://github.com/SritejasMurugan) for server structuring and outline and part of course groupings
+* [Willie Pai](https://github.com/PaisWillie) for graph draft
 
 ## Some graph
 ![](https://cdn.discordapp.com/attachments/558408313067405334/754508593620975669/UHS_discord_server_1.png)
