@@ -12,4 +12,8 @@ module.exports = async (bot, member) => {
   } else {
     member.roles.add(member.guild.roles.cache.find(r => r == config.changeUsernameRole));
   }
+
+  for(let i = 0; i<config.autoroles.length; i++){
+    member.roles.add(member.guild.roles.cache.find(r => r == config.autoroles[i]));
+  }
 };
