@@ -1,5 +1,5 @@
 {
-    "prefix": "!",
+    "prefix": "&",
     "moderationChannel": "moderation-log",
     "welcomeChannel": "add-course",
     "classChannelUserRequirement": 5,
