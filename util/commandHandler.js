@@ -54,7 +54,7 @@ module.exports = (bot, message) => {
             if (message.channel.name === config.welcomeChannel)
                 utils.safeDeleteMessage(message);
             if (recent[message.author.id] == config.spamMessageCount)
-                utils.simpleMessage(`:tired_face: Woah there! You're going too fast, wait ${config.spamTime/1000} seconds  before trying that again!`, message, config.warningColor, config.tempMsgTime);
+                utils.simpleMessage(`:tired_face: Woah there! You're going too fast, wait ${config.spamTime/1000} seconds before trying that again!`, message, config.warningColor, config.spamTime);
             fs.appendFile('log.txt', `@${message.author.username} just spammed "${recent[message.author.id]}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
