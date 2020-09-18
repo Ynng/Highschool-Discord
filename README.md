@@ -2,6 +2,8 @@
 
 Discord bot to manage a discord server for my highschool
 
+[![CodeFactor](https://www.codefactor.io/repository/github/ynng/highschool-discord/badge)](https://www.codefactor.io/repository/github/ynng/highschool-discord)
+
 ## Highlight Feature
 * Creates grade text channels (grade 11)
 * Creates department text channels (science)
