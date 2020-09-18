@@ -27,13 +27,19 @@ module.exports.run = async (bot, message, args) => {
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
         .setColor(config.serverColor);
       break;
-    case "welcome":
+    case "welcome-old":
       embed = new Discord.MessageEmbed().setTitle("Welcome!")
         .addField('The **Unionville HS** Discord Server is your one stop shop for everything UHS!', ':books: `Course Chats` for the homework advice!\n:link: `Grade Chats` to connect with your grade!\n:school: `#ask-an-alum` for post-secondary advice!\n:joystick: `Entertainment` to find someone to game with!\n:desktop: `tech-support` if you need any, well, tech support.\n:question: And more to come!')
         .addField(":thinking: Make sure to read `#rules-and-info`", "Sending any message in this server means you've read and agreed to the server rules.")
         .addField('\u200b', '\u200b')
         .addField(":clap::clap:**ENTER THE COURSE CODES OF YOUR CLASSES BELOW** :point_down: to join your course chats, department chats and grade chats!", "Don't worry about formatting, if the code is valid, we can read it!")
         .addField('\u200b', 'Please only use this channel to post course codes. All messages will be deleted automatically')
+        .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
+        .setColor(config.serverColor);
+      break;
+    case "add-course":
+      embed = new Discord.MessageEmbed().setTitle("Add your courses here!")
+        .addField(":point_down: Enter your course codes below :point_down:", "This will allow you to chat with people from your grade, department and classes.")
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
         .setColor(config.serverColor);
       break;
