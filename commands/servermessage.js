@@ -38,8 +38,8 @@ module.exports.run = async (bot, message, args) => {
         .setColor(config.serverColor);
       break;
     case "add-course":
-      embed = new Discord.MessageEmbed().setTitle("Add your courses here!")
-        .addField(":point_down: Enter your course codes below :point_down:", "This will allow you to chat with people from your grade, department and classes.")
+      embed = new Discord.MessageEmbed().setTitle(":point_down: Enter your course codes below :point_down:")
+        .addField("Chat with people from your grade, department and classes!", "The full course code is 6 characters long.")
         .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
         .setColor(config.serverColor);
       break;
