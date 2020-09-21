@@ -6,7 +6,6 @@ const courselist = require('../course_list.json');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
-    return;
     messageContent = args.join(' ').toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
     /****************************************
@@ -69,7 +68,9 @@ module.exports.run = async (bot, message, args) => {
 
     for(var i = 0; i < rolesToRemove.length; i++){
         removedRolesString.push(rolesToRemove[i].name);
-        await rolesToRemove[i].delete();
+        let roletoremove = message.guild.find(r => r.name == rolestoRemove[i]);
+        rolesToRemove.splice(i,1);
+        await message.member.roles.remove(roletoremove);
     }
 
     let embed = new Discord.MessageEmbed()

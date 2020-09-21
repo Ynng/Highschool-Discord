@@ -7,7 +7,7 @@ const bot = new Discord.Client();
 // const config = require("./botconfig.json");
  
 const { token } = require("./tokens.json");
-
+const max = 10;
 const fs = require("fs");
 
 require("./util/eventHandler")(bot);
@@ -45,6 +45,14 @@ bot.on("message", async message => {
   if (message.author.bot) return;
 
   commandHandler(bot, message);
+});
+
+client.on("voiceStateUpdate", function(oldMember, newMember){
+  var count = 1
+  if(newMember.voiceChannel.members.size == max){
+    guild.channels.create(`Channel ${count}`,{type: 'voice'})
+    count++
+  }
 });
 
 bot.login(token).catch(error => {
