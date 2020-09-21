@@ -28,7 +28,7 @@ module.exports = (bot, message) => {
             commmandfile = bot.commands.get(bot.aliases.get("addcourse"));
             msg = msg.replace(/\s+/g, ' ');
             var args = msg.split(" ");
-            fs.appendFile('log.txt', `@${message.author.username} just sent "${msg}"\n\n`, function (err) {
+            fs.appendFile('log.txt', `${new Date().toLocaleString()} @${message.author.username} ${message.member} just sent "${msg}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
             });
@@ -37,7 +37,7 @@ module.exports = (bot, message) => {
             var args = msg.split(" ");
             var cmd = args.shift().toLowerCase();
 
-            fs.appendFile('log.txt', `@${message.author.username} just requested "${cmd}" with args "${args}"\n\n`, function (err) {
+            fs.appendFile('log.txt', `${new Date().toLocaleString()} @${message.author.username} ${message.member} just requested "${cmd}" with args "${args}"\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
             });
@@ -55,7 +55,7 @@ module.exports = (bot, message) => {
                 utils.safeDeleteMessage(message);
             if (recent[message.author.id] == config.spamMessageCount)
                 utils.simpleMessage(`:tired_face: Woah there! You're going too fast, wait ${config.spamTime/1000} seconds before trying that again!`, message, config.warningColor, config.spamTime);
-            fs.appendFile('log.txt', `@${message.author.username} just spammed "${recent[message.author.id]}"\n\n`, function (err) {
+            fs.appendFile('log.txt', `${new Date().toLocaleString()} @${message.author.username} ${message.member} just spammed ${recent[message.author.id]}\n\n`, function (err) {
                 if (err) throw err;
                 console.log('Saved!');
             });

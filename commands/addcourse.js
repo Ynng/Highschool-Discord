@@ -105,7 +105,7 @@ module.exports.run = async (bot, message, args) => {
             allAddedRoles.push(newRole);
         });
 
-        fs.appendFile('log.txt', `New course ${course} required by ${message.member.displayName}\n`, function (err) {
+        fs.appendFile('log.txt', `${new Date().toLocaleString()} New course ${course} required by ${message.member.displayName} ${message.member}\n`, function (err) {
             if (err) throw err;
             console.log('Saved!');
         });

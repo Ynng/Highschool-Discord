@@ -68,9 +68,9 @@ module.exports.run = async (bot, message, args) => {
 
     for(var i = 0; i < rolesToRemove.length; i++){
         removedRolesString.push(rolesToRemove[i].name);
-        let roletoremove = message.guild.find(r => r.name == rolestoRemove[i]);
+        let removerole = message.guild.find(r => r.name == rolesToRemove[i]);
         rolesToRemove.splice(i,1);
-        await message.member.roles.remove(roletoremove);
+        await message.member.roles.remove(removerole);
     }
 
     let embed = new Discord.MessageEmbed()
