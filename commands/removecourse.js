@@ -6,6 +6,7 @@ const courselist = require('../course_list.json');
 
 module.exports.run = async (bot, message, args) => {
     if (utils.checkDm(message)) return;
+    return;
     messageContent = args.join(' ').toUpperCase();
     messageContent = messageContent.replace(/\s/g, '');
     /****************************************
