@@ -2,6 +2,7 @@
 
 Discord bot to manage a discord server for my highschool
 
+![Discord](https://discordapp.com/api/guilds/754892607556943872/widget.png?style=shield)
 [![CodeFactor](https://www.codefactor.io/repository/github/ynng/highschool-discord/badge)](https://www.codefactor.io/repository/github/ynng/highschool-discord)
 
 ## Highlight Feature
