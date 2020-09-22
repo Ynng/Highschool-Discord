@@ -12,11 +12,20 @@ module.exports.run = async (bot, message, args) => {
 
   var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
 
+  //Sets all course code role's permission to 0
+  // message.guild.roles.cache.forEach(role => {
+  //   console.log(role.name);
+  //   if(role.name.match(re)){
+  //     role.setPermissions(0);
+  //   }
+  // })
 
-  message.guild.roles.cache.forEach(role => {
-    console.log(role.name);
-    if(role.name.match(re)){
-      role.setPermissions(0);
+  message.guild.channels.cache.forEach(channel => {
+    if(channel.parentID=="755245454412873779" || channel.parentID=="755245455255928862" || channel.parentID == "755245456942170153"){
+      console.log(channel.name);
+      channel.createOverwrite(config.modrole, {
+        VIEW_CHANNEL: true
+      }, "Allowing moderators to see all channels")
     }
   })
 

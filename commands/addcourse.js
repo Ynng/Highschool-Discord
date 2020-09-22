@@ -145,6 +145,10 @@ module.exports.run = async (bot, message, args) => {
                         allow: ['VIEW_CHANNEL'],
                     },
                     {
+                        id: config.modrole,
+                        allow: ['VIEW_CHANNEL'],
+                    },
+                    {
                         id: message.guild.id,
                         deny: ['VIEW_CHANNEL'],
                     }
@@ -183,6 +187,10 @@ module.exports.run = async (bot, message, args) => {
                 permissionOverwrites: [
                     {
                         id: newCreatedRoles[i].id,
+                        allow: ['VIEW_CHANNEL'],
+                    },
+                    {
+                        id: config.modrole,
                         allow: ['VIEW_CHANNEL'],
                     },
                     {
@@ -238,6 +246,10 @@ module.exports.run = async (bot, message, args) => {
             permissionOverwrites: [
                 {
                     id: allAddedRoles[i].id,
+                    allow: ['VIEW_CHANNEL'],
+                },
+                {
+                    id: config.modrole,
                     allow: ['VIEW_CHANNEL'],
                 },
                 {
