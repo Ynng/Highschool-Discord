@@ -7,13 +7,13 @@ module.exports = async (bot, member) => {
     return;
 
   if (member.id in users.fixed_username) {
-    member.roles.add(member.guild.roles.cache.find(r => r == config.fixedUsernameRole));
+    member.roles.add(config.fixedUsernameRole);
     member.setNickname(users.fixed_username[member.id]);
   } else {
-    member.roles.add(member.guild.roles.cache.find(r => r == config.changeUsernameRole));
+    member.roles.add(config.changeUsernameRole);
   }
 
   for(let i = 0; i<config.autoroles.length; i++){
-    member.roles.add(member.guild.roles.cache.find(r => r == config.autoroles[i]));
+    member.roles.add(config.autoroles[i]);
   }
 };

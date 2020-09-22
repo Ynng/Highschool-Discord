@@ -23,15 +23,15 @@ module.exports.run = async (bot, message, args) => {
 
   if(args.length == 0){
     delete users.fixed_username[target.id];
-    target.roles.add(message.guild.roles.cache.find(r => r == config.changeUsernameRole));
-    target.roles.remove(message.guild.roles.cache.find(r => r == config.fixedUsernameRole));
+    target.roles.add(config.changeUsernameRole);
+    target.roles.remove(config.fixedUsernameRole);
     message.channel.send("Successfully removed forced username!");
 
   }else{
     users.fixed_username[target.id] = username;
     target.setNickname(username);
-    target.roles.remove(message.guild.roles.cache.find(r => r == config.changeUsernameRole));
-    target.roles.add(message.guild.roles.cache.find(r => r == config.fixedUsernameRole));
+    target.roles.remove(config.changeUsernameRole);
+    target.roles.add(config.fixedUsernameRole);
     message.channel.send("Successfully forced username!");
 
   }
