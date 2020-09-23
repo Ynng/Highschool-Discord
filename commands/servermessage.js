@@ -23,8 +23,8 @@ module.exports.run = async (bot, message, args) => {
       break;
     case "entertainment_react":
       embed = new Discord.MessageEmbed().setTitle("Join a chat of your interest!")
-        .addField("React to this message with the emoji that corresponds to your interest.", "🏯︱Anime\n📺︱Party Games\n🏅︱Sports\n🎮︱Gaming\n💻︱Technology")
-        .setFooter(text = "Message an admin if you need help, have a request or suggestion!")
+        .addField("React to this message with the emoji that corresponds to your interest.", "🏯︱Anime\n📺︱Party Games (You will get pinged for party game events)\n🏅︱Sports\n🎮︱Gaming\n💻︱Technology")
+        .setFooter(text = "Message an admin if you'd like to add more categories here!")
         .setColor(config.serverColor);
       break;
     case "welcome-old":
