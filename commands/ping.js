@@ -9,11 +9,11 @@ module.exports.run = async (bot, message) => {
         .setColor(config.loadingColor);
     utils.embedAddStamp(message, embed, message.author);
     message.channel.send(embed).then(msg => {
-        msg.edit(embed
+        setTimeout(() => msg.edit(embed
             .setTitle(`:ping_pong: pong!`)
             .setColor(config.embedColor)
             .addField("Bot Ping:", `${msg.createdTimestamp - message.createdTimestamp}ms`, true)
-            .addField("Api Ping:", `${bot.ws.ping}ms`, true));
+            .addField("Api Ping:", `${bot.ws.ping}ms`, true)), bot.ws.ping);
     });
 };
 
