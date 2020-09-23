@@ -33,5 +33,5 @@ module.exports.run = async (bot, message) => {
 module.exports.help = {
   name: "botinfo",
   description: "This displays some information on the bot, me!",
-  aliases: ["info", "botinfo", "bot", "stats", "stat"]
+  aliases: ["botinfo", "bot"]
 };
