@@ -25,7 +25,7 @@ module.exports.run = async (client, message, args) => {
 
     let result = 1;
     for(let i = 0; i < waifu.length; i++){
-        result = (result*256+waifu.charCodeAt(i))%1000;
+        result = (result*257+waifu.charCodeAt(i))%1000;
     }
     result = result/10 - (result / 10)%1;
 
