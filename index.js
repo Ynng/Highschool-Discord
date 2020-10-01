@@ -3,7 +3,7 @@
 const Discord = require("discord.js");
 //Discord bot with partials
 const bot = new Discord.Client({
-  disableEveryone: true,
+  disableMentions: 'everyone',
   partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'],
 });
 
