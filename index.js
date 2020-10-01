@@ -1,7 +1,11 @@
 'use strict';
 
 const Discord = require("discord.js");
-const bot = new Discord.Client();
+//Discord bot with partials
+const bot = new Discord.Client({
+  disableMentions: 'everyone',
+  partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'],
+});
 
 // eslint-disable-next-line no-unused-vars
 // const config = require("./botconfig.json");
