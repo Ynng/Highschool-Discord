@@ -3,13 +3,12 @@
 const Discord = require("discord.js");
 //Discord bot with partials
 const bot = new Discord.Client({
-  disableMentions: 'everyone',
-  partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'],
+  disableMentions: 'everyone'
 });
 
 // eslint-disable-next-line no-unused-vars
 // const config = require("./botconfig.json");
- 
+
 const { token } = require("./tokens.json");
 
 const fs = require("fs");
