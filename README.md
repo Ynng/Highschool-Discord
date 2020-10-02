@@ -1,6 +1,7 @@
 # Highschool-Discord
 
-Highyl *customized* and *specific* Discord bot made to manage a discord server I made for my entire highschool.
+Highyl customized and **specific** Discord bot made to manage a discord server I made for my entire highschool.
+Meant to be self-hosted and used for 1 server only.
 
 ![Discord](https://discordapp.com/api/guilds/754892607556943872/widget.png?style=shield)
 [![CodeFactor](https://www.codefactor.io/repository/github/ynng/highschool-discord/badge)](https://www.codefactor.io/repository/github/ynng/highschool-discord)
@@ -21,6 +22,7 @@ Sorted alphabetically:
 * [Owen Hu](https://github.com/MiraclePalette) for part of the highlight feature code.
 * [Sritejas Murugan](https://github.com/SritejasMurugan) for server structuring and outline and part of course groupings.
 * [Willie Pai](https://github.com/PaisWillie) for [graph draft](#Rough-logic-graph).
+* [has12zen](https://github.com/has12zen) for discord.js partials and ignoring @everyone
 
 ## Rough logic graph
 ![](https://cdn.discordapp.com/attachments/558408313067405334/754508593620975669/UHS_discord_server_1.png)
