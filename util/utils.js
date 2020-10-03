@@ -4,6 +4,8 @@ const Discord = require("discord.js");
 
 const config = require("../botconfig.json");
 
+const courseList = require("../course_list.json");
+
 module.exports = {
     getAgeDate: function (birthday) {
         return new Date(Date.now() - birthday.valueOf());
@@ -203,7 +205,49 @@ module.exports = {
             return `${this.andjoin(array,separator)} is`;
         else
             return `${this.andjoin(array,separator)} are`;
+    },
+    //decodes course types if they actually matter.
+    decodeCourseType: function(letter) {
+        switch (letter) {
+            case "M": return "Uni./College";
+            case "U": return "University";
+            case "C": return "College";
+            case "D": return "Academic";
+            case "P": return "Applied";
+            case "E": return "Workplace";
+            case "L": return "Essential";
+            case "O": case "X": default: return "";
+        }
+    },
+
+    decodeCourse: function(courseCode) {
+        //check if course actually exists
+        const courseInfo = courseList[courseCode];
+        if (courseCode == undefined) {
+            console.log(`Invalid course tried to be decoded: ${courseCode}`);
+            return;
+        }
+
+        let courseType = this.decodeCourseType(courseCode[4]);
+        if (courseType != "") {
+            courseType = " " + courseType;
+        }
+        /*
+        Explanation:
+        ESL has perfect names as-is.
+        For international languages, they go by levels B, C, D
+        Other courses get the same old treatment: "Grade 9 Academic Math", etc.
+        To fix MAP4C1 becoming "Grade 12 College College Math" there is a filter to remove duplicate words.
+        */
+        switch (courseInfo.department) {
+            case "ESL":
+                return courseInfo.name;
+            case "Chinese":
+            case "Spanish":
+                return `Level ${courseCode[3]} ${courseInfo.name}`;
+            default:
+                return `Grade ${courseInfo.grade + 8}${courseType} ${courseInfo.name}`.replace(/(\w+) \1 /g, "$1 ");
+        }
+
     }
-
-
 };

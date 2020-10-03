@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     /****************************************
         Parsing user input
     *************************************/
-    var re = new RegExp(/[A-Z]{3}[A-E1-4][OMUCDPELX][M0-9]/g);
+    var re = /[A-Z]{3}[A-E1-4][OMUCDPELX][M\d]/g;
     if (message.channel.name === config.welcomeChannel)
         utils.safeDeleteMessage(message);
 
@@ -243,7 +243,7 @@ module.exports.run = async (bot, message, args) => {
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
         await message.guild.channels.create(courseCode, {
             parent: category,
-            topic: courseCode,
+            topic: utils.decodeCourse(courseCode),
             permissionOverwrites: [
                 {
                     id: allAddedRoles[i].id,

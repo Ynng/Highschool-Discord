@@ -775,7 +775,7 @@
   },
   "ICS3C1": {
     "department": "Programming",
-    "name": "programming intro",
+    "name": "Programming Intro",
     "grade": 3,
     "dedicated_chat": true
   },
@@ -1219,7 +1219,7 @@
   },
   "MHF4U1": {
     "department": "Math",
-    "name": "Adv Function",
+    "name": "Advanced Functions",
     "grade": 4,
     "dedicated_chat": true
   },
