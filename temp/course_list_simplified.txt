@@ -149,7 +149,7 @@ LWSDU1 Spanish
 
 Programming
 ICS2O1 Com Sci Intro
-ICS3C1 programming intro
+ICS3C1 programming Intro
 ICS4C1 Programming
 
 Computer Science
@@ -257,7 +257,7 @@ MCT4C1 Tech Math
 MEL4E1 Everyday Math
 MCV4U1 Calculus
 MDM4U1 Data Management
-MHF4U1 Adv Function
+MHF4U1 Advanced Function
 
 Science
 SNC1P1 Science

@@ -235,8 +235,9 @@ module.exports = {
 
   decodeCourse: function (courseCode) {
     //check if course actually exists
+    courseCode = courseCode.toUpperCase();
     const courseInfo = courseList[courseCode];
-    if (courseCode == undefined) {
+    if (!courseInfo) {
       console.log(`Invalid course tried to be decoded: ${courseCode}`);
       return;
     }

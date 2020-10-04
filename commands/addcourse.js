@@ -96,7 +96,8 @@ module.exports.run = async (bot, message, args) => {
         await message.guild.roles.create({
             data: {
                 name: course,
-                position: 50
+                position: 50,
+                permissions: 0
             },
             reason: `New course ${course} required by ${message.member.displayName}`
         }).then(newRole => {

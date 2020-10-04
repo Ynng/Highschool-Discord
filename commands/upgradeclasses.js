@@ -31,19 +31,21 @@ module.exports.run = async (bot, message, args) => {
   //change the topic of each class. this will take a while, but thank god await exists.
   for (let temp of category.children) {
     let channel = temp[1];
-    if ((channel.type = "text")) {
+    if ((channel.type == "text")) {
       await channel.setTopic(
         utils.decodeCourse(channel.name),
         "New Channel Name Update! Hooray!"
       );
     }
   }
-  
-  return utils.simpleMessage("The update should be done! If it's totally screwed over, please don't sue me.")
+
+  return utils.simpleMessage("The update should be done! If it's totally screwed over, please don't sue me.", message,
+    config.errorColor,
+    config.tempMsgTime)
 };
 
 module.exports.help = {
-  name = "upgradeclasses",
-  description = "This is an admin command. It's used to change the class channel topics to the new format.",
-  aliases = ["upgradeclasses"]
+  name: "upgradeclasses",
+  description: "This is an admin command. It's used to change the class channel topics to the new format.",
+  aliases: ["upgradeclasses"]
 };
