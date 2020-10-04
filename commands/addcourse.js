@@ -235,7 +235,7 @@ module.exports.run = async (bot, message, args) => {
 
         var courseCode = allAddedRoles[i].name
         var courseName = courselist[courseCode].name;
-        var channel = message.guild.channels.cache.find(channel => channel.topic == courseCode);
+        var channel = message.guild.channels.cache.find(channel => channel.name == courseCode.toLowerCase());
         //If channel already exist, skip
         if (channel != undefined)
             continue;
