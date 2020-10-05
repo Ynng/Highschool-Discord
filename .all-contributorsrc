@@ -6,7 +6,6 @@
   "contributorsPerLine": 7,
   "contributorsSortAlphabetically": false,
   "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
-  "contributorTemplate": "<a href=\"<%= contributor.profile %>\"><img src=\"<%= contributor.avatar_url %>\" width=\"<%= options.imageSize %>px;\" alt=\"\"/><br /><sub><b><%= contributor.name %></b></sub></a>",
   "types": {
     "custom": {
       "symbol": "🔭",
@@ -44,10 +43,64 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "Ynng",
+      "name": "Kevin Huang",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/44907675?v=4",
+      "profile": "https://github.com/Ynng",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas",
+        "data",
+        "maintenance",
+        "test"
+      ]
+    },
+    {
+      "login": "PaisWillie",
+      "name": "Willie Pai",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/25867130?v=4",
+      "profile": "https://github.com/PaisWillie",
+      "contributions": [
+        "ideas",
+        "test"
+      ]
+    },
+    {
+      "login": "MiraclePalette",
+      "name": "Owen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/45834630?v=4",
+      "profile": "https://github.com/MiraclePalette",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "has12zen",
+      "name": "has12zen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/57583693?v=4",
+      "profile": "https://github.com/has12zen",
+      "contributions": [
+        "security"
+      ]
+    },
+    {
+      "login": "jgcodes2020",
+      "name": "jgcodes2020",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/35639051?v=4",
+      "profile": "https://github.com/jgcodes2020",
+      "contributions": [
+        "code",
+        "test",
+        "ideas"
+      ]
     }
   ],
   "projectName": "Highschool-Discord",
   "projectOwner": "Ynng",
   "repoType": "github",
-  "repoHost": "https://github.com"
+  "repoHost": "https://github.com",
+  "commitConvention": "none"
 }
