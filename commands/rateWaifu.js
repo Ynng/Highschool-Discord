@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const config = require("../botconfig.json");
+var seedrandom = require('seedrandom');
 
 module.exports.run = async (client, message, args) => {
 
@@ -13,9 +14,18 @@ module.exports.run = async (client, message, args) => {
             message.channel.send(embed);
             return;
     }
+    if (waifu.length < 3) {
+        let embed = new Discord.MessageEmbed()
+                .setTitle("Your waifu is less than 3 characters??")
+                .setDescription('I can\'t process that, try again?')
+                .setTimestamp()
+                .setColor(0xFF0013);
+            message.channel.send(embed);
+            return;
+    }
     if (waifu.length > 30) {
         let embed = new Discord.MessageEmbed()
-                .setTitle("Your waifu's is over 30 characters??")
+                .setTitle("Your waifu is over 30 characters??")
                 .setDescription('I can\'t process that, try again?')
                 .setTimestamp()
                 .setColor(0xFF0013);
@@ -23,11 +33,10 @@ module.exports.run = async (client, message, args) => {
             return;
     }
 
-    let result = 1;
-    for(let i = 0; i < waifu.length; i++){
-        result = (result*257+waifu.charCodeAt(i))%1000;
-    }
-    result = result/10 - (result / 10)%1;
+
+    let result = seedrandom(waifu)();
+    result = result*100;
+    result = result - result%1;
 
     const happyrate = new Discord.MessageEmbed()
         .setTitle("Rating...")
