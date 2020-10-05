@@ -4,7 +4,7 @@ Highyl customized and **specific** Discord bot made to manage a discord server I
 Meant to be self-hosted and used for 1 server only.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> 
 ![Discord](https://discordapp.com/api/guilds/754892607556943872/widget.png?style=shield)
 [![CodeFactor](https://www.codefactor.io/repository/github/ynng/highschool-discord/badge)](https://www.codefactor.io/repository/github/ynng/highschool-discord)
@@ -20,6 +20,17 @@ Meant to be self-hosted and used for 1 server only.
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://matthewl.xyz"><img src="https://avatars0.githubusercontent.com/u/58238450?v=4" width="100px;" alt=""/><br /><sub><b>Matthew</b></sub></a></td>
+    <td align="center"><a href="https://github.com/3Nya3"><img src="https://avatars2.githubusercontent.com/u/43357430?v=4" width="100px;" alt=""/><br /><sub><b>Sunny</b></sub></a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## Rough logic graph
