@@ -1,85 +1,35 @@
 const Discord = require('discord.js')
 const config = require("../botconfig.json");
 var seedrandom = require('seedrandom');
+const utils = require('../util/utils');
 
 module.exports.run = async (client, message, args) => {
 
     let waifu = args.join(" ");
-    if (!args[0]) {$
-        let embed = new Discord.MessageEmbed()
-                .setTitle("I need your waifu's **name**")
-                .setDescription('Try again?')
-                .setTimestamp()
-                .setColor(0xFF0013);
-            message.channel.send(embed);
-            return;
-    }
-    if (waifu.length < 3) {
-        let embed = new Discord.MessageEmbed()
-                .setTitle("Your waifu is less than 3 characters??")
-                .setDescription('I can\'t process that, try again?')
-                .setTimestamp()
-                .setColor(0xFF0013);
-            message.channel.send(embed);
-            return;
-    }
-    if (waifu.length > 30) {
-        let embed = new Discord.MessageEmbed()
-                .setTitle("Your waifu is over 30 characters??")
-                .setDescription('I can\'t process that, try again?')
-                .setTimestamp()
-                .setColor(0xFF0013);
-            message.channel.send(embed);
-            return;
-    }
+    if (!args[0])
+        return utils.simpleMessage("I need your waifu's **name**", message, config.errorColor, config.tempMsgTime);
+    if (waifu.length > 30)
+        return utils.simpleMessage("Your waifu is over 30 characters??", message, config.errorColor, config.tempMsgTime);
 
 
     let result = seedrandom(waifu)();
     result = result*100;
     result = result - result%1;
+    
+    let emoji = "😭";
+    if (result > 40) emoji = "🤔";
+    if (result > 50) emoji = "🤷";
+    if (result > 60) emoji = "👌";
+    if (result > 70) emoji = "👍";
+    if (result > 80) emoji = "👀";
+    if (result > 90) emoji = "❤";
 
-    const happyrate = new Discord.MessageEmbed()
+    const embed = new Discord.MessageEmbed()
         .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 ❤`)
-        .setColor(`GREEN`)
-
-    const sadembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 😭`)
-        .setColor(`GREEN`)
-
-    const idkembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 🤔`)
-        .setColor(`GREEN`)
-
-    const shrugembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 🤷`)
-        .setColor(`GREEN`)
-
-    const okembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 👌`)
-        .setColor(`GREEN`)
-
-    const thumbupembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 👍`)
-        .setColor(`GREEN`)
-
-    const eyesembed = new Discord.MessageEmbed()
-        .setTitle("Rating...")
-        .setDescription(`I would rate **${waifu}** ${result}/100 👀`)
-        .setColor(`GREEN`)
-
-    if (result > 90) return message.channel.send(happyrate)
-    if (result > 80) return message.channel.send(eyesembed)
-    if (result > 70) return message.channel.send(thumbupembed)
-    if (result > 60) return message.channel.send(okembed)
-    if (result > 50) return message.channel.send(shrugembed)
-    if (result > 40) return message.channel.send(idkembed)
-    return message.channel.send(sadembed)
+        .setDescription(`I would rate **${waifu}** ${result}/100 ${emoji}`)
+        .setColor(config.embedColor)
+    utils.embedAddStamp(message,embed, message.author);
+    message.channel.send(embed);
 }
 
 module.exports.help = {
