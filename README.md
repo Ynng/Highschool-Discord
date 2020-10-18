@@ -1,6 +1,6 @@
 # Highschool-Discord
 
-Highyl customized and **specific** Discord bot made to manage a discord server I made for my entire highschool.
+Highly customized and **specific** Discord bot made to manage a discord server I made for my entire highschool.
 Meant to be self-hosted and used for 1 server only.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
