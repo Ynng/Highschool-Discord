@@ -7,6 +7,7 @@ module.exports.run = async (bot, message) => {
 
   let totalSeconds = (bot.uptime / 1000);
   let days = Math.floor(totalSeconds / 86400);
+  totalSeconds %= 86400;
   let hours = Math.floor(totalSeconds / 3600);
   totalSeconds %= 3600;
   let minutes = Math.floor(totalSeconds / 60);
@@ -21,7 +22,7 @@ module.exports.run = async (bot, message) => {
     .addField(`Source Code`, `[github link](https://github.com/Ynng/Highschool-Discord)`, true)
     .addField(`Users`, `${bot.users.cache.size}`, true)
     .addField(`I have been Online for`, `${uptime}`, true)
-    .addField("I have existed for", utils.getAgeString(utils.getAgeDate(bot.user.createdAt)), true)
+    .addField("I'm this old", utils.getAgeString(utils.getAgeDate(bot.user.createdAt)), true)
     .addField("My Prefix is", `\`${config.prefix}\``, true)
     .addField("Author", "@Ynng#1017", true)
     .setTimestamp();
