@@ -237,7 +237,7 @@ module.exports.run = async (bot, message, args) => {
         //If channel already exist, skip
         if (channel != undefined){
             let embed = new Discord.MessageEmbed()
-                .setTitle(`:laughing: Welcome ${message.member.displayName}!`)
+                .setTitle(`:clap: Welcome ${message.member.displayName}!`)
                 .addField(`Welcome to the dedicated chat for ${allAddedRoles[i].name}!`, `This is where people from ${allAddedRoles[i].name} can talk with each other.`)
                 .setColor(config.embedColor);
             channel.send(`Welcome ${message.member}!`,{embed});
@@ -273,7 +273,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor(config.embedColor);
             channel.send(embed);
             embed = new Discord.MessageEmbed()
-                .setTitle(`:laughing: Welcome ${message.member.displayName}!`)
+                .setTitle(`:clap: Welcome ${message.member.displayName}!`)
                 .addField(`Welcome to the dedicated chat for ${allAddedRoles[i].name}!`, `This is where people from ${allAddedRoles[i].name} can talk with each other.`)
                 .setColor(config.embedColor);
             channel.send(`Welcome ${message.member}!`,{embed});
