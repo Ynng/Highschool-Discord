@@ -238,8 +238,14 @@ module.exports.run = async (bot, message, args) => {
         var courseName = courselist[courseCode].name;
         var channel = message.guild.channels.cache.find(channel => channel.name == courseCode.toLowerCase());
         //If channel already exist, skip
-        if (channel != undefined)
+        if (channel != undefined){
+            let embed = new Discord.MessageEmbed()
+                .setTitle(`:laughing: Welcome ${message.member.displayName}!`)
+                .addField(`Welcome to the dedicated chat for ${allAddedRoles[i].name}!`, `This is where people from ${allAddedRoles[i].name} can talk with each other.`)
+                .setColor(config.embedColor);
+            channel.send(`Welcome ${message.member}!`,{embed});
             continue;
+        }
         //Else, create the new channel with the correct permission overwrite
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
         await message.guild.channels.create(courseCode, {
@@ -265,6 +271,11 @@ module.exports.run = async (bot, message, args) => {
                 .addField(`Welcome to the new dedicated chat for ${allAddedRoles[i].name}!`, `${allAddedRoles[i]}This chat is created automatically. A dedicated class chat is created automatically when more then ${config.classChannelUserRequirement} people in the server have the same class.`)
                 .setColor(config.embedColor);
             channel.send(embed);
+            embed = new Discord.MessageEmbed()
+                .setTitle(`:laughing: Welcome ${message.member.displayName}!`)
+                .addField(`Welcome to the dedicated chat for ${allAddedRoles[i].name}!`, `This is where people from ${allAddedRoles[i].name} can talk with each other.`)
+                .setColor(config.embedColor);
+            channel.send(`Welcome ${message.member}!`,{embed});
         });
     }
 
