@@ -231,9 +231,6 @@ module.exports.run = async (bot, message, args) => {
         })
         console.log(`${allAddedRoles[i].name} ${courseCount}/${config.classChannelUserRequirement}`);
 
-        if (courseCount < config.classChannelUserRequirement)
-            continue;
-
         var courseCode = allAddedRoles[i].name
         var courseName = courselist[courseCode].name;
         var channel = message.guild.channels.cache.find(channel => channel.name == courseCode.toLowerCase());
@@ -246,7 +243,11 @@ module.exports.run = async (bot, message, args) => {
             channel.send(`Welcome ${message.member}!`,{embed});
             continue;
         }
-        //Else, create the new channel with the correct permission overwrite
+
+        //Else, if have enough people, create a new channel
+        if (courseCount < config.classChannelUserRequirement)
+            continue;
+
         utils.simpleMessage(`:laughing: That's ${courseCount} whole people in ${allAddedRoles[i].name}! A dedicated chat is created!`, message, config.validColor, 4 * config.tempMsgTime);
         await message.guild.channels.create(courseCode, {
             parent: category,
