@@ -1,7 +1,6 @@
 # Highschool-Discord
 
-Highly customized and **specific** Discord bot made to manage a discord server I made for my entire highschool.
-Meant to be self-hosted and used for 1 server only.
+Highly customizable and specific discord bot for managing the discord server I made for my high school. Designed to be self-hosted and used for one server only.
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
