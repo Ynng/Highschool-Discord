@@ -9,13 +9,13 @@ Highly customizable and specific discord bot for managing the discord server I m
 [![CodeFactor](https://www.codefactor.io/repository/github/ynng/highschool-discord/badge)](https://www.codefactor.io/repository/github/ynng/highschool-discord)
 
 ## Highlight Feature
-* Creates/adds course role (@ENG1D1).
-* Creates/adds role to grade text channels (#grade 9).
-* Creates/adds role to department text channels (#junior-english).
-* Creates course text channels (#ENG1D1) Only if more than 5 people from that course is in the server.
-* Manages permissions automatically, only create the roles and channels needed.
-* User feedback. Tells the user exactly what is wrong.
-* `forceusername` command. To lock a user's nickname in the server, even after they quit and re-join.
+* Creates/gives course role (@ENG1D1).
+* Creates/givess role to grade text channels (#grade 9).
+* Creates/givess role to department text channels (#junior-english).
+* Creates course text channels (#ENG1D1) When more than {x} students of the course joins the server.
+* Manages permissions automatically, create roles and channels only when needed.
+* User feedback. Specific and user friendly error messages
+* `forceusername` command. To link a nickname to a uid, bot will automatically set permission and nickename, resistant to re-joining.
 
 ## Contributors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
